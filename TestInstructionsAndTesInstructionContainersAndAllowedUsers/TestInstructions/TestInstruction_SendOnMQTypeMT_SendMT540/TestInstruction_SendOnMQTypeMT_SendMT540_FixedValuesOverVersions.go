@@ -1,4 +1,4 @@
-package TestInstruction_GeneralSetupTearDown_SendMT540
+package TestInstruction_SendOnMQTypeMT_SendMT540
 
 import "github.com/jlambert68/FenixTestInstructionsAdminShared/TypeAndStructs"
 

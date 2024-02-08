@@ -29,22 +29,22 @@ type TestApiEngineAttributesStruct struct {
 	TestApiEngineAttributeNameName   TestApiEngine_AttributeName_Name_SubCustody_Type    `json:"TestApiEngineAttributeNameName"`
 }
 
-// Classes, Methods and their Parameters in TestApiEngine for _SubCustody
+// Classes, Methods and their Parameters in TestApiEngine for -SubCustody
 const (
 
 	// General Attribute - ''
-	TestApiEngine_ClassName_UUID_SubCustody_GeneralAttribute_ExpectedToBePassed TestApiEngine_AttributeName_UUID_SubCustody_Type = "9b9e4ca8-e9a3-4939-b9dc-184b4e44f60e"
+	TestApiEngine_ClassName_UUID_SubCustody_GeneralAttribute_ExpectedToBePassed TestApiEngine_AttributeName_UUID_SubCustody_Type = "9edb935e-e683-4fee-bfca-f05faa0af595"
 	TestApiEngine_ClassName_Name_SubCustody_GeneralAttribute_ExpectedToBePassed TestApiEngine_AttributeName_Name_SubCustody_Type = "expectedToBePassed"
 
-	// ClassName - ***** 'GeneralSetupTearDown' *****
-	TestApiEngine_ClassName_UUID_SubCustody_GeneralSetupTearDown TestApiEngine_ClassName_UUID_SubCustody_Type = "85373d2b-30ec-49ee-823a-0d8a0b2d5599"
-	TestApiEngine_ClassName_Name_SubCustody_GeneralSetupTearDown TestApiEngine_ClassName_Name_SubCustody_Type = "GeneralSetupTearDown"
+	// ClassName - ***** 'SendOnMQTypeMT' *****
+	TestApiEngine_ClassName_UUID_SubCustody_SendOnMQTypeMT TestApiEngine_ClassName_UUID_SubCustody_Type = "8baf20d0-3882-45f9-aa2e-a6eef24fbe21"
+	TestApiEngine_ClassName_Name_SubCustody_SendOnMQTypeMT TestApiEngine_ClassName_Name_SubCustody_Type = "SendOnMQTypeMT"
 
-	// ClassName: 'GeneralSetupTearDown' - MethodName: 'Setup'
-	TestApiEngine_MethodName_UUID_SubCustody_GeneralSetupTearDown_Setup TestApiEngine_MethodName_UUID_SubCustody_Type = "093cfe88-0970-427e-9548-82568bfede8c"
-	TestApiEngine_MethodName_Name_SubCustody_GeneralSetupTearDown_Setup TestApiEngine_MethodName_Name_SubCustody_Type = "Setup"
+	// ClassName: 'SendOnMQTypeMT' - MethodName: 'SendMT540'
+	TestApiEngine_MethodName_UUID_SubCustody_SendOnMQTypeMT_SendMT540 TestApiEngine_MethodName_UUID_SubCustody_Type = "573c604d-62ad-4c2b-9bc8-57f46b3434a3"
+	TestApiEngine_MethodName_Name_SubCustody_SendOnMQTypeMT_SendMT540 TestApiEngine_MethodName_Name_SubCustody_Type = "SendMT540"
 
-	// ClassName: 'GeneralSetupTearDown' - MethodName: 'TearDown'
-	TestApiEngine_MethodName_UUID_SubCustody_GeneralSetupTearDown_TearDown TestApiEngine_MethodName_UUID_SubCustody_Type = "0db4a61c-5a85-49a2-b039-4f411de0edd9"
-	TestApiEngine_MethodName_Name_SubCustody_GeneralSetupTearDown_TearDown TestApiEngine_MethodName_Name_SubCustody_Type = "TearDown"
+	// ClassName: 'SendOnMQTypeMT' - MethodName: 'SendMT542'
+	TestApiEngine_MethodName_UUID_SubCustody_SendOnMQTypeMT_SendMT542 TestApiEngine_MethodName_UUID_SubCustody_Type = "f6d8a81a-127e-4582-8aaf-e62c4b7c142a"
+	TestApiEngine_MethodName_Name_SubCustody_SendOnMQTypeMT_SendMT542 TestApiEngine_MethodName_Name_SubCustody_Type = "SendMT542"
 )

@@ -5,7 +5,7 @@ import (
 	"github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/LocalExecutionMethods/TestApiEngineClassesAndMethods"
 	"github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/DomainData"
 	"github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions"
-	fixedValuesOverVersions "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_GeneralSetupTearDown_SendMT540"
+	fixedValuesOverVersions "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendOnMQTypeMT_SendMT540"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/Domains"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TestCaseModelElementTypes"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TestInstructionAndTestInstuctionContainerTypes"
@@ -18,8 +18,8 @@ const (
 	// *** TestInstruction *** 'SendMT540'
 	TestInstructionUUID_SubCustody_SendMT540               TypeAndStructs.OriginalElementUUIDType = fixedValuesOverVersions.TestInstructionUUID_SubCustody_SendMT540
 	TestInstructionName_SubCustody_SendMT540               TypeAndStructs.TestInstructionNameType = "SendMT540"
-	TestInstructionTypeUUID_SubCustody_SendMT540                                                  = TestInstructions.TestInstructionTypeUUID_SubCustody_GeneralSetUpTearDown
-	TestInstructionTypeName_SubCustody_SendMT540                                                  = TestInstructions.TestInstructionTypeName_SubCustody_GeneralSetUpTearDown
+	TestInstructionTypeUUID_SubCustody_SendMT540                                                  = TestInstructions.TestInstructionTypeUUID_SubCustody_SendOnMQTypeMT
+	TestInstructionTypeName_SubCustody_SendMT540                                                  = TestInstructions.TestInstructionTypeName_SubCustody_SendOnMQTypeMT
 	TestInstructionDescription_SubCustody_SendMT540        string                                 = "Sends a MT540 message on MQ"
 	TestInstructionMouseOverText_SubCustody_SendMT540      string                                 = "Sends a MT540 message on MQ"
 	TestInstructionDeprecated_SubCustody_SendMT540         bool                                   = false
@@ -74,10 +74,10 @@ func Initate_TestInstruction_SubCustody_SendMT540() *TestInstructionAndTestInstu
 				TestApiEngineClassesMethodsAttributes: &TestApiEngineClassesAndMethods.TestApiEngineClassesMethodsAttributesStruct{
 					TestInstructionOriginalUUID: TestInstructionUUID_SubCustody_SendMT540,
 					TestInstructionName:         TestInstructionName_SubCustody_SendMT540,
-					TestApiEngineClassNameUUID:  TestApiEngineClassesAndMethods.TestApiEngine_ClassName_UUID_SubCustody_GeneralSetupTearDown,
-					TestApiEngineClassNameNAME:  TestApiEngineClassesAndMethods.TestApiEngine_ClassName_Name_SubCustody_GeneralSetupTearDown,
-					TestApiEngineMethodNameUUID: TestApiEngineClassesAndMethods.TestApiEngine_MethodName_UUID_SubCustody_GeneralSetupTearDown_Setup,
-					TestApiEngineMethodNameNAME: TestApiEngineClassesAndMethods.TestApiEngine_MethodName_Name_SubCustody_GeneralSetupTearDown_Setup,
+					TestApiEngineClassNameUUID:  TestApiEngineClassesAndMethods.TestApiEngine_ClassName_UUID_SubCustody_SendOnMQTypeMT,
+					TestApiEngineClassNameNAME:  TestApiEngineClassesAndMethods.TestApiEngine_ClassName_Name_SubCustody_SendOnMQTypeMT,
+					TestApiEngineMethodNameUUID: TestApiEngineClassesAndMethods.TestApiEngine_MethodName_UUID_SubCustody_SendOnMQTypeMT_SendMT540,
+					TestApiEngineMethodNameNAME: TestApiEngineClassesAndMethods.TestApiEngine_MethodName_Name_SubCustody_SendOnMQTypeMT_SendMT540,
 					Attributes:                  testApiEngineMethodAttributeMap,
 				},
 			},
