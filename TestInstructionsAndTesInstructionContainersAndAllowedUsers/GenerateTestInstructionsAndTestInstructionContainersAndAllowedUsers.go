@@ -5,6 +5,7 @@ import (
 	"github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/DomainData"
 	SendOnMQTypeMT_SendMT540 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendOnMQTypeMT_SendMT540"
 	SendOnMQTypeMT_SendMT540_1_0 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendOnMQTypeMT_SendMT540/version_1_0"
+	SendOnMQTypeMT_SendMT542 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendOnMQTypeMT_SendMT542"
 	SendOnMQTypeMT_SendMT542_1_0 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendOnMQTypeMT_SendMT542/version_1_0"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TestInstructionAndTestInstuctionContainerTypes"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TypeAndStructs"
@@ -19,13 +20,19 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCust
 
 	var err error
 
-	// Load Allowed users from json-file (as []byte]
+	// Load Allowed users from json-file
 	err = shared_code.ParseAllowedUsersFromEmbeddedFile(allowedUsers)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
 	}
 
+	// Set AllUsersAuthorizationRights and initial Hash-value
+	shared_code.AllowedUsersLoadFromJsonFile.AllUsersAuthorizationRights = &TestInstructionAndTestInstuctionContainerTypes.AllUsersAuthorizationRightsStruct{
+		AllUsersCanListAndViewTestCaseHavingTIandTICFromThisDomain:  true,
+		AllUsersCanBuildAndSaveTestCaseHavingTIandTICFromThisDomain: true,
+	}
+	shared_code.AllowedUsersLoadFromJsonFile.AllowedUsersHash = shared_code.InitialValueBeforeHashed
 	// Generate TestInstructions
 	// SendOnMQTypeMT::SendMT540
 	SendOnMQTypeMT_SendMT540_1_0.Initate_TestInstruction_SubCustody_SendMT540()
@@ -53,14 +60,20 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCust
 							Enabled:                             SendOnMQTypeMT_SendMT540_1_0.TestInstruction_SubCustody_SendMT540.TestInstruction.Enabled,
 							TestInstructionInstanceVersionHash:  shared_code.InitialValueBeforeHashed,
 						},
+					},
+					TestInstructionVersionsHash: shared_code.InitialValueBeforeHashed,
+				},
+				//TestInstruction 'SendOnMQTypeMT_SendMT542'
+				SendOnMQTypeMT_SendMT542.TestInstructionUUID_SubCustody_SendMT542: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
+					TestInstructionVersions: []*TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
 
 						// Version 'SendOnMQTypeMT_SendMT542_1.0'
 						{
-							TestInstructionInstance:             SendOnMQTypeMT_SendMT540_1_0.TestInstruction_SubCustody_SendMT542,
-							TestInstructionInstanceMajorVersion: SendOnMQTypeMT_SendMT540_1_0.TestInstruction_SubCustody_SendMT542.TestInstruction.MajorVersionNumber,
-							TestInstructionInstanceMinorVersion: SendOnMQTypeMT_SendMT540_1_0.TestInstruction_SubCustody_SendMT542.TestInstruction.MinorVersionNumber,
-							Deprecated:                          SendOnMQTypeMT_SendMT540_1_0.TestInstruction_SubCustody_SendMT542.TestInstruction.Deprecated,
-							Enabled:                             SendOnMQTypeMT_SendMT540_1_0.TestInstruction_SubCustody_SendMT542.TestInstruction.Enabled,
+							TestInstructionInstance:             SendOnMQTypeMT_SendMT542_1_0.TestInstruction_SubCustody_SendMT542,
+							TestInstructionInstanceMajorVersion: SendOnMQTypeMT_SendMT542_1_0.TestInstruction_SubCustody_SendMT542.TestInstruction.MajorVersionNumber,
+							TestInstructionInstanceMinorVersion: SendOnMQTypeMT_SendMT542_1_0.TestInstruction_SubCustody_SendMT542.TestInstruction.MinorVersionNumber,
+							Deprecated:                          SendOnMQTypeMT_SendMT542_1_0.TestInstruction_SubCustody_SendMT542.TestInstruction.Deprecated,
+							Enabled:                             SendOnMQTypeMT_SendMT542_1_0.TestInstruction_SubCustody_SendMT542.TestInstruction.Enabled,
 							TestInstructionInstanceVersionHash:  shared_code.InitialValueBeforeHashed,
 						},
 					},
