@@ -5,9 +5,9 @@ import (
 	"github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/DomainData"
 	testInstructionContainer_SpecialSerialBaseContainer "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructionContainers/TestInstructionContainer_SpecialSerialBaseContainer"
 	testInstructionContainer_SpecialSerialBaseContainer_1_0 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructionContainers/TestInstructionContainer_SpecialSerialBaseContainer/version_1_0"
-	generalSetupTearDown_TestCaseSetUp "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp"
-	generalSetupTearDown_TestCaseSetUp_1_0 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp/version_1_0"
-	generalSetupTearDown_TestCaseSetUp_1_1 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp/version_1_1"
+	generalSetupTearDown_SendMT540 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_GeneralSetupTearDown_SendMT540"
+	generalSetupTearDown_SendMT540_1_0 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_GeneralSetupTearDown_SendMT540/version_1_0"
+	generalSetupTearDown_SendMT540_1_1 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_GeneralSetupTearDown_SendMT540/version_1_1"
 	generalSetupTearDown_TestCaseTearDown "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown"
 	generalSetupTearDown_TestCaseTearDown_1_0 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown/version_1_0"
 	isDateAPublicHoliday "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_IsDateAPublicHoliday"
@@ -35,9 +35,9 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCust
 	}
 
 	// Generate TestInstructions
-	// GeneralSetupTearDown::TestCaseSetUp
-	generalSetupTearDown_TestCaseSetUp_1_1.Initate_TestInstruction_SubCustody_TestCaseSetUp()
-	generalSetupTearDown_TestCaseSetUp_1_0.Initate_TestInstruction_SubCustody_TestCaseSetUp()
+	// GeneralSetupTearDown::SendMT540
+	generalSetupTearDown_SendMT540_1_1.Initate_TestInstruction_SubCustody_SendMT540()
+	generalSetupTearDown_SendMT540_1_0.Initate_TestInstruction_SubCustody_SendMT540()
 
 	// GeneralSetupTearDown::TestCaseTearDown
 	generalSetupTearDown_TestCaseTearDown_1_0.Initate_TestInstruction_SubCustody_TestCaseTearDown()
@@ -55,38 +55,38 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCust
 		TestInstructions: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionsStruct{
 			TestInstructionsMap: map[TypeAndStructs.OriginalElementUUIDType]*TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
 
-				//TestInstruction 'generalSetupTearDown_TestCaseSetUp'
-				generalSetupTearDown_TestCaseSetUp.TestInstructionUUID_SubCustody_TestCaseSetUp: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
+				//TestInstruction 'generalSetupTearDown_SendMT540'
+				generalSetupTearDown_SendMT540.TestInstructionUUID_SubCustody_SendMT540: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
 					TestInstructionVersions: []*TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
 
-						//Version 'generalSetupTearDown_TestCaseSetUp_1.1'
+						//Version 'generalSetupTearDown_SendMT540_1.1'
 						{
-							TestInstructionInstance:             generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SubCustody_TestCaseSetUp,
-							TestInstructionInstanceMajorVersion: generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SubCustody_TestCaseSetUp.TestInstruction.MajorVersionNumber,
-							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SubCustody_TestCaseSetUp.TestInstruction.MinorVersionNumber,
-							Deprecated:                          generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SubCustody_TestCaseSetUp.TestInstruction.Deprecated,
-							Enabled:                             generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SubCustody_TestCaseSetUp.TestInstruction.Enabled,
+							TestInstructionInstance:             generalSetupTearDown_SendMT540_1_1.TestInstruction_SubCustody_SendMT540,
+							TestInstructionInstanceMajorVersion: generalSetupTearDown_SendMT540_1_1.TestInstruction_SubCustody_SendMT540.TestInstruction.MajorVersionNumber,
+							TestInstructionInstanceMinorVersion: generalSetupTearDown_SendMT540_1_1.TestInstruction_SubCustody_SendMT540.TestInstruction.MinorVersionNumber,
+							Deprecated:                          generalSetupTearDown_SendMT540_1_1.TestInstruction_SubCustody_SendMT540.TestInstruction.Deprecated,
+							Enabled:                             generalSetupTearDown_SendMT540_1_1.TestInstruction_SubCustody_SendMT540.TestInstruction.Enabled,
 							TestInstructionInstanceVersionHash:  shared_code.InitialValueBeforeHashed,
 						},
 
-						// Version 'generalSetupTearDown_TestCaseSetUp_1.0'
+						// Version 'generalSetupTearDown_SendMT540_1.0'
 						{
-							TestInstructionInstance:             generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SubCustody_TestCaseSetUp,
-							TestInstructionInstanceMajorVersion: generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SubCustody_TestCaseSetUp.TestInstruction.MajorVersionNumber,
-							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SubCustody_TestCaseSetUp.TestInstruction.MinorVersionNumber,
-							Deprecated:                          generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SubCustody_TestCaseSetUp.TestInstruction.Deprecated,
-							Enabled:                             generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SubCustody_TestCaseSetUp.TestInstruction.Enabled,
+							TestInstructionInstance:             generalSetupTearDown_SendMT540_1_0.TestInstruction_SubCustody_SendMT540,
+							TestInstructionInstanceMajorVersion: generalSetupTearDown_SendMT540_1_0.TestInstruction_SubCustody_SendMT540.TestInstruction.MajorVersionNumber,
+							TestInstructionInstanceMinorVersion: generalSetupTearDown_SendMT540_1_0.TestInstruction_SubCustody_SendMT540.TestInstruction.MinorVersionNumber,
+							Deprecated:                          generalSetupTearDown_SendMT540_1_0.TestInstruction_SubCustody_SendMT540.TestInstruction.Deprecated,
+							Enabled:                             generalSetupTearDown_SendMT540_1_0.TestInstruction_SubCustody_SendMT540.TestInstruction.Enabled,
 							TestInstructionInstanceVersionHash:  shared_code.InitialValueBeforeHashed,
 						},
 					},
 					TestInstructionVersionsHash: shared_code.InitialValueBeforeHashed,
 				},
 
-				// TestInstruction 'generalSetupTearDown_TestCaseSetUp'
+				// TestInstruction 'generalSetupTearDown_SendMT540'
 				generalSetupTearDown_TestCaseTearDown.TestInstructionUUID_SubCustody_TestCaseTearDown: {
 					TestInstructionVersions: []*TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
 
-						// Version 'generalSetupTearDown_TestCaseSetUp_1.0'
+						// Version 'generalSetupTearDown_SendMT540_1.0'
 						{
 							TestInstructionInstance:             generalSetupTearDown_TestCaseTearDown_1_0.TestInstruction_SubCustody_TestCaseTearDown,
 							TestInstructionInstanceMajorVersion: generalSetupTearDown_TestCaseTearDown_1_0.TestInstruction_SubCustody_TestCaseTearDown.TestInstruction.MajorVersionNumber,

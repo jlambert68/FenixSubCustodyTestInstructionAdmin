@@ -1,4 +1,4 @@
-module github.com/jlambert68/FenixOnPremDemoTestInstructionAdmin
+module github.com/jlambert68/FenixSubCustodyTestInstructionAdmin
 
 go 1.21
 

@@ -58,8 +58,8 @@ var TestInstruction_SubCustody_TestCaseTearDown *TestInstructionAndTestInstuctio
 // Function that creates all data for the TestInstruction
 func Initate_TestInstruction_SubCustody_TestCaseTearDown() *TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct {
 
-	var fangMethodAttributeMap map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineClassesAndMethods.TestApiEngineAttributesStruct
-	fangMethodAttributeMap = make(map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineClassesAndMethods.TestApiEngineAttributesStruct)
+	var testApiEngineMethodAttributeMap map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineClassesAndMethods.TestApiEngineAttributesStruct
+	testApiEngineMethodAttributeMap = make(map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineClassesAndMethods.TestApiEngineAttributesStruct)
 
 	// Initiate variable to be able to store all TestInstruction data
 	TestInstruction_SubCustody_TestCaseTearDown = &TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct{
@@ -82,7 +82,7 @@ func Initate_TestInstruction_SubCustody_TestCaseTearDown() *TestInstructionAndTe
 					TestApiEngineClassNameNAME:  TestApiEngineClassesAndMethods.TestApiEngine_ClassName_Name_SubCustody_GeneralSetupTearDown,
 					TestApiEngineMethodNameUUID: TestApiEngineClassesAndMethods.TestApiEngine_MethodName_UUID_SubCustody_GeneralSetupTearDown_TearDown,
 					TestApiEngineMethodNameNAME: TestApiEngineClassesAndMethods.TestApiEngine_MethodName_Name_SubCustody_GeneralSetupTearDown_TearDown,
-					Attributes:                  fangMethodAttributeMap,
+					Attributes:                  testApiEngineMethodAttributeMap,
 				},
 			},
 		},
@@ -190,7 +190,7 @@ func Initate_TestInstruction_SubCustody_TestCaseTearDown() *TestInstructionAndTe
 		TestApiEngineAttributeNameUUID:   TestApiEngineClassesAndMethods.TestApiEngine_ClassName_UUID_SubCustody_GeneralAttribute_ExpectedToBePassed,
 		TestApiEngineAttributeNameName:   TestApiEngineClassesAndMethods.TestApiEngine_ClassName_Name_SubCustody_GeneralAttribute_ExpectedToBePassed,
 	}
-	fangMethodAttributeMap[TestInstructionAttributeUUID_SubCustody_TestCaseTearDown_ExpectedToBePassed] = tempTestApiEngineAttributeExpectedToBePassed
+	testApiEngineMethodAttributeMap[TestInstructionAttributeUUID_SubCustody_TestCaseTearDown_ExpectedToBePassed] = tempTestApiEngineAttributeExpectedToBePassed
 	//TestInstruction_SubCustody_TestCaseTearDown.LocalExecutionMethods.TestApiEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_SubCustody_TestCaseTearDown_ExpectedToBePassed] = tempTestApiEngineAttributeExpectedToBePassed
 
 	// ImmatureElementModel - TestCaseTearDown

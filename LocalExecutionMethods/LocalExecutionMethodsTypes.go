@@ -1,6 +1,8 @@
 package LocalExecutionMethods
 
-import "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/LocalExecutionMethods/TestApiEngineClassesAndMethods"
+import (
+	"github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/LocalExecutionMethods/TestApiEngineClassesAndMethods"
+)
 
 // MethodsForLocalExecutionsStruct
 // Struct for holding all information of how to execute a TestInstruction
