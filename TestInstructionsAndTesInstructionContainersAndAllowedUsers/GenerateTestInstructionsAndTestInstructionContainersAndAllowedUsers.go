@@ -59,6 +59,11 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCust
 							Deprecated:                          SendOnMQTypeMT_SendMT540_1_0.TestInstruction_SubCustody_SendMT540.TestInstruction.Deprecated,
 							Enabled:                             SendOnMQTypeMT_SendMT540_1_0.TestInstruction_SubCustody_SendMT540.TestInstruction.Enabled,
 							TestInstructionInstanceVersionHash:  shared_code.InitialValueBeforeHashed,
+							ResponseVariablesMapStructure: &TestInstructionAndTestInstuctionContainerTypes.ResponseVariablesMapStructureStruct{
+								ResponseVariablesMap:     SendOnMQTypeMT_SendMT540_1_0.TestInstructionResponseVariables_SubCustody_SendMT540,
+								ResponseVariablesMapHash: shared_code.InitialValueBeforeHashed,
+							},
+							TestInstructionInstanceVersionAndResponseVariablesHash: shared_code.InitialValueBeforeHashed,
 						},
 					},
 					TestInstructionVersionsHash: shared_code.InitialValueBeforeHashed,
@@ -75,6 +80,11 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCust
 							Deprecated:                          SendOnMQTypeMT_SendMT542_1_0.TestInstruction_SubCustody_SendMT542.TestInstruction.Deprecated,
 							Enabled:                             SendOnMQTypeMT_SendMT542_1_0.TestInstruction_SubCustody_SendMT542.TestInstruction.Enabled,
 							TestInstructionInstanceVersionHash:  shared_code.InitialValueBeforeHashed,
+							ResponseVariablesMapStructure: &TestInstructionAndTestInstuctionContainerTypes.ResponseVariablesMapStructureStruct{
+								ResponseVariablesMap:     SendOnMQTypeMT_SendMT542_1_0.TestInstructionResponseVariables_SubCustody_SendMT542,
+								ResponseVariablesMapHash: shared_code.InitialValueBeforeHashed,
+							},
+							TestInstructionInstanceVersionAndResponseVariablesHash: shared_code.InitialValueBeforeHashed,
 						},
 					},
 					TestInstructionVersionsHash: shared_code.InitialValueBeforeHashed,

@@ -57,6 +57,9 @@ var TestInstruction_SubCustody_SendMT540 *TestInstructionAndTestInstuctionContai
 // Function that creates all data for the TestInstruction
 func Initate_TestInstruction_SubCustody_SendMT540() *TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct {
 
+	// Generate Response variables for the TestInstruction
+	Initate_TestInstructionResponseVariables_SubCustody_SendMT540()
+
 	var testApiEngineMethodAttributeMap map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineClassesAndMethods.TestApiEngineAttributesStruct
 	testApiEngineMethodAttributeMap = make(map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineClassesAndMethods.TestApiEngineAttributesStruct)
 
