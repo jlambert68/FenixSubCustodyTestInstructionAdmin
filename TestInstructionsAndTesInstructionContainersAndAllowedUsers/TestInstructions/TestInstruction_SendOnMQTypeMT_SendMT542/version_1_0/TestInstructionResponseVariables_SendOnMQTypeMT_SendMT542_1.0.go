@@ -1,6 +1,7 @@
 package version_1_0
 
 import (
+	"github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/DomainData"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TestInstructionAndTestInstuctionContainerTypes"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TypeAndStructs"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/shared_code"
@@ -28,6 +29,8 @@ func Initate_TestInstructionResponseVariables_SubCustody_SendMT542() {
 				ResponseVariableName:        TypeAndStructs.ResponseVariableNameType(":20C::SEME//"),
 				ResponseVariableDescription: TypeAndStructs.ResponseVariableDescriptionType("An identifier for the MT542-message"),
 				ResponseVariableIsMandatory: TypeAndStructs.ResponseVariableIsMandatoryType(true),
+				ResponseVariableTypeUuid:    DomainData.ResponseVariableTypeUuid_5xx_20CSEME,
+				ResponseVariableTypeName:    DomainData.ResponseVariableTypeName_5xx_20CSEME,
 			},
 			ResponseVariableHash: shared_code.InitialValueBeforeHashed,
 		},
