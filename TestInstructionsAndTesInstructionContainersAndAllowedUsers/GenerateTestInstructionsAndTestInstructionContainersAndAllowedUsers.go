@@ -7,6 +7,8 @@ import (
 	SendOnMQTypeMT_SendMT540_1_0 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendOnMQTypeMT_SendMT540/version_1_0"
 	SendOnMQTypeMT_SendMT542 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendOnMQTypeMT_SendMT542"
 	SendOnMQTypeMT_SendMT542_1_0 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendOnMQTypeMT_SendMT542/version_1_0"
+	VerifyMQMessageTypeMT_VerifyMT544 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_ValidateMQTypeMT54x_ValidateMT544"
+	VerifyMQMessageTypeMT_VerifyMT544_1_0 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_ValidateMQTypeMT54x_ValidateMT544/version_1_0"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TestInstructionAndTestInstuctionContainerTypes"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TypeAndStructs"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/shared_code"
@@ -40,6 +42,9 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCust
 	// SendOnMQTypeMT::SendMT542
 	SendOnMQTypeMT_SendMT542_1_0.Initate_TestInstruction_SubCustody_SendMT542()
 
+	// SendOnMQTypeMT::SendMT542
+	VerifyMQMessageTypeMT_VerifyMT544_1_0.Initate_TestInstruction_SubCustody_ValidateMT544()
+
 	// Build structure for all TestInstructions & TestInstructionContainers to be sent over gRPC to Fenix Backend
 	TestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody = &TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct{
 
@@ -51,7 +56,7 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCust
 				SendOnMQTypeMT_SendMT540.TestInstructionUUID_SubCustody_SendMT540: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
 					TestInstructionVersions: []*TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
 
-						// Version 'SendOnMQTypeMT_SendMT540_1.0'
+						// Version 'SendOnMQTypeMT_SendMT540_1_0'
 						{
 							TestInstructionInstance:             SendOnMQTypeMT_SendMT540_1_0.TestInstruction_SubCustody_SendMT540,
 							TestInstructionInstanceMajorVersion: SendOnMQTypeMT_SendMT540_1_0.TestInstruction_SubCustody_SendMT540.TestInstruction.MajorVersionNumber,
@@ -72,7 +77,7 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCust
 				SendOnMQTypeMT_SendMT542.TestInstructionUUID_SubCustody_SendMT542: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
 					TestInstructionVersions: []*TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
 
-						// Version 'SendOnMQTypeMT_SendMT542_1.0'
+						// Version 'SendOnMQTypeMT_SendMT542_1_0'
 						{
 							TestInstructionInstance:             SendOnMQTypeMT_SendMT542_1_0.TestInstruction_SubCustody_SendMT542,
 							TestInstructionInstanceMajorVersion: SendOnMQTypeMT_SendMT542_1_0.TestInstruction_SubCustody_SendMT542.TestInstruction.MajorVersionNumber,
@@ -82,6 +87,27 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCust
 							TestInstructionInstanceVersionHash:  shared_code.InitialValueBeforeHashed,
 							ResponseVariablesMapStructure: &TestInstructionAndTestInstuctionContainerTypes.ResponseVariablesMapStructureStruct{
 								ResponseVariablesMap:     SendOnMQTypeMT_SendMT542_1_0.TestInstructionResponseVariables_SubCustody_SendMT542,
+								ResponseVariablesMapHash: shared_code.InitialValueBeforeHashed,
+							},
+							TestInstructionInstanceVersionAndResponseVariablesHash: shared_code.InitialValueBeforeHashed,
+						},
+					},
+					TestInstructionVersionsHash: shared_code.InitialValueBeforeHashed,
+				},
+				//TestInstruction 'SendOnMQTypeMT_SendMT542'
+				VerifyMQMessageTypeMT_VerifyMT544.TestInstructionUUID_SubCustody_ValidateMT544: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
+					TestInstructionVersions: []*TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
+
+						// Version 'VerifyMQMessageTypeMT_VerifyMT544_1_0'
+						{
+							TestInstructionInstance:             VerifyMQMessageTypeMT_VerifyMT544_1_0.TestInstruction_SubCustody_ValidateMT544,
+							TestInstructionInstanceMajorVersion: VerifyMQMessageTypeMT_VerifyMT544_1_0.TestInstruction_SubCustody_ValidateMT544.TestInstruction.MajorVersionNumber,
+							TestInstructionInstanceMinorVersion: VerifyMQMessageTypeMT_VerifyMT544_1_0.TestInstruction_SubCustody_ValidateMT544.TestInstruction.MinorVersionNumber,
+							Deprecated:                          VerifyMQMessageTypeMT_VerifyMT544_1_0.TestInstruction_SubCustody_ValidateMT544.TestInstruction.Deprecated,
+							Enabled:                             VerifyMQMessageTypeMT_VerifyMT544_1_0.TestInstruction_SubCustody_ValidateMT544.TestInstruction.Enabled,
+							TestInstructionInstanceVersionHash:  shared_code.InitialValueBeforeHashed,
+							ResponseVariablesMapStructure: &TestInstructionAndTestInstuctionContainerTypes.ResponseVariablesMapStructureStruct{
+								ResponseVariablesMap:     VerifyMQMessageTypeMT_VerifyMT544_1_0.TestInstructionResponseVariables_SubCustody_ValidateMT544,
 								ResponseVariablesMapHash: shared_code.InitialValueBeforeHashed,
 							},
 							TestInstructionInstanceVersionAndResponseVariablesHash: shared_code.InitialValueBeforeHashed,

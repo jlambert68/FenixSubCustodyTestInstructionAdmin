@@ -42,11 +42,18 @@ const (
 	TestInstructionAttributeUUID_SubCustody_ValidateMT544_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = "3b10634a-aaf5-4b62-89e6-90011d76b21d" //TestInstructionAttributeUUID_SubCustody_ExpectedToBePassed
 	TestInstructionAttributeName_SubCustody_ValidateMT544_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeName_SubCustody_ExpectedToBePassed
 	TestInstructionAttributeType_SubCustody_ValidateMT544_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_SubCustody_ExpectedToBePassed
+	TestInstructionAttributeDescription_SubCustody_ValidateMT544_ExpectedToBePassed        string                                          = "Should the TestInstruction execution to be expected to succeed or not"
+	TestInstructionAttributeMouseOverText_SubCustody_ValidateMT544_ExpectedToBePassed      string                                          = "Should the TestInstruction execution to be expected to succeed or not"
 	TestInstructionAttributeActionCommand_SubCustody_ValidateMT544_ExpectedToBePassed      TypeAndStructs.AttributeActionCommandType       = Domains.AttributeActionCommand_USE_DROPZONE_VALUE_FOR_ATTRIBUTE
 	TestInstructionAttributeValueAsStringValue_SubCustody_ValidateMT544_ExpectedToBePassed TypeAndStructs.AttributeValueAsStringType       = Domains.TestInstructionAttributeValueAsStringValue_TRUE
 	TestInstructionAttributeValueUUID_SubCustody_ValidateMT544_ExpectedToBePassed          TypeAndStructs.AttributeValueUUIDType           = Domains.TestInstructionAttributeValueUUID_TRUE
-	TestInstructionAttributeDescription_SubCustody_ValidateMT544_ExpectedToBePassed        string                                          = "Should the TestInstruction execution to be expected to succeed or not"
-	TestInstructionAttributeMouseOverText_SubCustody_ValidateMT544_ExpectedToBePassed      string                                          = "Should the TestInstruction execution to be expected to succeed or not"
+
+	// Attribute - 'RelatedReference_54x_20CRELA'
+	TestInstructionAttributeUUID_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA          TypeAndStructs.TestInstructionAttributeUUIDType = TestInstructions.TestInstructionAttributeUUID_SubCustody_RelatedReference_54x_20CRELA
+	TestInstructionAttributeName_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA          TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeName_SubCustody_RelatedReference_54x_20CRELA
+	TestInstructionAttributeType_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA          TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_SubCustody_RelatedReference_54x_20CRELA
+	TestInstructionAttributeDescription_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA   string                                          = "Extracts the response parameter from 54x_20CSEME that was sent on MQ"
+	TestInstructionAttributeMouseOverText_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA string                                          = "Extracts the response parameter from 54x_20CSEME that was sent on MQ"
 )
 
 // TestInstruction_SubCustody_ValidateMT544
@@ -183,14 +190,53 @@ func Initate_TestInstruction_SubCustody_ValidateMT544() *TestInstructionAndTestI
 	// Add TestApiEngine relation for Attribute - 'ExpectedToBePassed'
 	var tempTestApiEngineAttributeExpectedToBePassed *TestApiEngineClassesAndMethods.TestApiEngineAttributesStruct
 	tempTestApiEngineAttributeExpectedToBePassed = &TestApiEngineClassesAndMethods.TestApiEngineAttributesStruct{
-		TestInstructionAttributeUUID:     TestInstructionAttributeUUID_SubCustody_ValidateMT544_ExpectedToBePassed,
-		TestInstructionAttributeName:     TestInstructionAttributeName_SubCustody_ValidateMT544_ExpectedToBePassed,
+		TestInstructionAttributeUUID:     TestInstructionAttributeUUID_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA,
+		TestInstructionAttributeName:     TestInstructionAttributeName_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA,
 		TestInstructionAttributeTypeUUID: TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_ExpectedToPass,
 		TestApiEngineAttributeNameUUID:   TestApiEngineClassesAndMethods.TestApiEngine_ClassName_UUID_SubCustody_GeneralAttribute_ExpectedToBePassed,
 		TestApiEngineAttributeNameName:   TestApiEngineClassesAndMethods.TestApiEngine_ClassName_Name_SubCustody_GeneralAttribute_ExpectedToBePassed,
 	}
 	testApiEngineMethodAttributeMap[TestInstructionAttributeUUID_SubCustody_ValidateMT544_ExpectedToBePassed] = tempTestApiEngineAttributeExpectedToBePassed
 	//TestInstruction_SubCustody_ValidateMT544.LocalExecutionMethods.TestApiEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_SubCustody_ValidateMT544_ExpectedToBePassed] = tempTestApiEngineAttributeExpectedToBePassed
+
+	// TestInstruction Attribute - 'RelatedReference_54x_20CRELA'
+	var TestInstructionAttribute_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA *TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA = &TypeAndStructs.TestInstructionAttributeStruct{
+		DomainUUID:                                    DomainData.DomainUUID_SubCustody,
+		DomainName:                                    DomainData.DomainName_SubCustody,
+		TestInstructionUUID:                           TestInstructionUUID_SubCustody_ValidateMT544,
+		TestInstructionName:                           TestInstructionName_SubCustody_ValidateMT544,
+		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA,
+		TestInstructionAttributeName:                  TestInstructionAttributeName_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA,
+		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA,
+		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA,
+		TestInstructionAttributeTypeUUID:              TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_Standard,
+		TestInstructionAttributeTypeName:              TestInstructions.TestInstructionAttributeTypeName_SubCustody_Standard,
+		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
+		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUID_NO_VALUE,
+		TestInstructionAttributeVisible:               true,
+		TestInstructionAttributeEnabled:               true,
+		TestInstructionAttributeMandatory:             true,
+		TestInstructionAttributeVisibleInTestCaseArea: false,
+		TestInstructionAttributeIsDeprecated:          false,
+		TestInstructionAttributeInputMask:             ".",
+		TestInstructionAttributeType:                  TestInstructionAttributeType_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA,
+	}
+	TestInstruction_SubCustody_ValidateMT544.TestInstructionAttribute = append(
+		TestInstruction_SubCustody_ValidateMT544.TestInstructionAttribute,
+		TestInstructionAttribute_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA)
+
+	// Add TestApiEngine relation for Attribute - 'RelatedReference_54x_20CRELA'
+	var tempTestApiEngineAttributeRelatedReference_54x_20CRELA *TestApiEngineClassesAndMethods.TestApiEngineAttributesStruct
+	tempTestApiEngineAttributeRelatedReference_54x_20CRELA = &TestApiEngineClassesAndMethods.TestApiEngineAttributesStruct{
+		TestInstructionAttributeUUID:     TestInstructionAttributeUUID_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA,
+		TestInstructionAttributeName:     TestInstructionAttributeName_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA,
+		TestInstructionAttributeTypeUUID: TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_Standard,
+		TestApiEngineAttributeNameUUID:   TestApiEngineClassesAndMethods.FangEngine_AttributeName_UUID_SubCustody_VerifyMQMessageTypeMT_RelatedReference_54x_20CRELA,
+		TestApiEngineAttributeNameName:   TestApiEngineClassesAndMethods.FangEngine_AttributeName_Name_SubCustody_VerifyMQMessageTypeMT_RelatedReference_54x_20CRELA,
+	}
+	testApiEngineMethodAttributeMap[TestInstructionAttributeUUID_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA] = tempTestApiEngineAttributeRelatedReference_54x_20CRELA
+	//TestInstruction_SubCustody_ValidateMT544.LocalExecutionMethods.TestApiEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA] = tempTestApiEngineAttributeRelatedReference_54x_20CRELA
 
 	// ImmatureElementModel - ValidateMT544
 	var TestInstructionImmatureElementModel_SubCustody_ValidateMT544 *TypeAndStructs.ImmatureElementModelMessageStruct
