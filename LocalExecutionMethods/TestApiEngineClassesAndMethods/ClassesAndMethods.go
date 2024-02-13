@@ -34,11 +34,11 @@ type TestApiEngineAttributesStruct struct {
 
 // TestApiEngineClassesMethodsAttributesType
 // Type for map holding connecting Attributes for TestInstruction with attributes for TestApiEngine, for a specific version of the TestInstruction/TestApiEngine-call
-type TestApiEngineClassesMethodsAttributesType map[TestApiEngine_MethodNameVersion_SubCustody_Type]*TestApiEngineClassesMethodsAttributesStruct
+type TestApiEngineClassesMethodsAttributesVersionMapType map[TestApiEngine_MethodNameVersion_SubCustody_Type]*TestApiEngineClassesMethodsAttributesStruct
 
 // TestInstructionVersionMapType
 // Type for map connecting Original UUID for TestInstruction with the all versions of the TestInstruction
-type TestInstructionVersionMapType map[TypeAndStructs.OriginalElementUUIDType]TestApiEngineClassesMethodsAttributesType
+type TestInstructionsMapType map[TypeAndStructs.OriginalElementUUIDType]TestApiEngineClassesMethodsAttributesVersionMapType
 
 // Classes, Methods and their Parameters in TestApiEngine for SubCustody
 const (
