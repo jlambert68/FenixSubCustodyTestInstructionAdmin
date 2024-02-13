@@ -1,4 +1,4 @@
-package TestApiEngineClassesAndMethods
+package TestApiEngineClassesAndMethodsAndAttributes
 
 import "github.com/jlambert68/FenixTestInstructionsAdminShared/TypeAndStructs"
 
@@ -32,8 +32,13 @@ type TestApiEngineAttributesStruct struct {
 	TestApiEngineAttributeNameName   TestApiEngine_AttributeName_Name_SubCustody_Type    `json:"TestApiEngineAttributeNameName"`
 }
 
-// Type for map holding everything together towards TestApiEngine
-type TestApiEngineClassesMethodsAttributesMapType map[TypeAndStructs.OriginalElementUUIDType]map[TestApiEngine_MethodNameVersion_SubCustody_Type]*TestApiEngineClassesMethodsAttributesStruct
+// TestApiEngineClassesMethodsAttributesType
+// Type for map holding connecting Attributes for TestInstruction with attributes for TestApiEngine, for a specific version of the TestInstruction/TestApiEngine-call
+type TestApiEngineClassesMethodsAttributesType map[TestApiEngine_MethodNameVersion_SubCustody_Type]*TestApiEngineClassesMethodsAttributesStruct
+
+// TestInstructionVersionMapType
+// Type for map connecting Original UUID for TestInstruction with the all versions of the TestInstruction
+type TestInstructionVersionMapType map[TypeAndStructs.OriginalElementUUIDType]TestApiEngineClassesMethodsAttributesType
 
 // Classes, Methods and their Parameters in TestApiEngine for SubCustody
 const (
