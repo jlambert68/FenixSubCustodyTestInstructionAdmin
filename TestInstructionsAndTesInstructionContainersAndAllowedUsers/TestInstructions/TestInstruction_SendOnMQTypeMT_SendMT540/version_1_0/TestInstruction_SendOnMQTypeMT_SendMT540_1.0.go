@@ -60,8 +60,8 @@ func Initate_TestInstruction_SubCustody_SendMT540() *TestInstructionAndTestInstu
 	// Generate Response variables for the TestInstruction
 	Initate_TestInstructionResponseVariables_SubCustody_SendMT540()
 
-	var testApiEngineMethodAttributeMap map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineClassesAndMethods.TestApiEngineAttributesStruct
-	testApiEngineMethodAttributeMap = make(map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineClassesAndMethods.TestApiEngineAttributesStruct)
+	var testApiEngineMethodAttributeMap map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct
+	testApiEngineMethodAttributeMap = make(map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct)
 
 	// Initiate variable to store all TestInstruction data
 	TestInstruction_SubCustody_SendMT540 = &TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct{
@@ -74,14 +74,14 @@ func Initate_TestInstruction_SubCustody_SendMT540() *TestInstructionAndTestInstu
 		// Local Execution Methods are specified here
 		LocalExecutionMethods: TestInstructionAndTestInstuctionContainerTypes.AnyType{
 			&LocalExecutionMethods.MethodsForLocalExecutionsStruct{
-				TestApiEngineClassesMethodsAttributes: &TestApiEngineClassesAndMethods.TestApiEngineClassesMethodsAttributesStruct{
+				TestApiEngineClassesMethodsAttributes: &TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineClassesMethodsAttributesStruct{
 					TestInstructionOriginalUUID: TestInstructionUUID_SubCustody_SendMT540,
 					TestInstructionName:         TestInstructionName_SubCustody_SendMT540,
-					TestApiEngineClassNameUUID:  TestApiEngineClassesAndMethods.TestApiEngine_ClassName_UUID_SubCustody_SendOnMQTypeMT,
-					TestApiEngineClassNameNAME:  TestApiEngineClassesAndMethods.TestApiEngine_ClassName_Name_SubCustody_SendOnMQTypeMT,
-					TestApiEngineMethodNameUUID: TestApiEngineClassesAndMethods.TestApiEngine_MethodName_UUID_SubCustody_SendOnMQTypeMT_SendMT540,
-					TestApiEngineMethodNameNAME: TestApiEngineClassesAndMethods.TestApiEngine_MethodName_Name_SubCustody_SendOnMQTypeMT_SendMT540,
-					Attributes:                  testApiEngineMethodAttributeMap,
+					TestApiEngineClassNameUUID:  TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_UUID_SubCustody_SendOnMQTypeMT,
+					TestApiEngineClassNameNAME:  TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_Name_SubCustody_SendOnMQTypeMT,
+					TestApiEngineMethodNameUUID: TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodName_UUID_SubCustody_SendOnMQTypeMT_SendMT540,
+					TestApiEngineMethodNameNAME: TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodName_Name_SubCustody_SendOnMQTypeMT_SendMT540,
+					Attributes:                  &testApiEngineMethodAttributeMap,
 				},
 			},
 		},
@@ -181,13 +181,13 @@ func Initate_TestInstruction_SubCustody_SendMT540() *TestInstructionAndTestInstu
 		TestInstructionAttribute_SubCustody_SendMT540_ExpectedToBePassed)
 
 	// Add TestApiEngine relation for Attribute - 'ExpectedToBePassed'
-	var tempTestApiEngineAttributeExpectedToBePassed *TestApiEngineClassesAndMethods.TestApiEngineAttributesStruct
-	tempTestApiEngineAttributeExpectedToBePassed = &TestApiEngineClassesAndMethods.TestApiEngineAttributesStruct{
+	var tempTestApiEngineAttributeExpectedToBePassed *TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct
+	tempTestApiEngineAttributeExpectedToBePassed = &TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct{
 		TestInstructionAttributeUUID:     TestInstructionAttributeUUID_SubCustody_SendMT540_ExpectedToBePassed,
 		TestInstructionAttributeName:     TestInstructionAttributeName_SubCustody_SendMT540_ExpectedToBePassed,
 		TestInstructionAttributeTypeUUID: TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_ExpectedToPass,
-		TestApiEngineAttributeNameUUID:   TestApiEngineClassesAndMethods.TestApiEngine_ClassName_UUID_SubCustody_GeneralAttribute_ExpectedToBePassed,
-		TestApiEngineAttributeNameName:   TestApiEngineClassesAndMethods.TestApiEngine_ClassName_Name_SubCustody_GeneralAttribute_ExpectedToBePassed,
+		TestApiEngineAttributeNameUUID:   TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_UUID_SubCustody_GeneralAttribute_ExpectedToBePassed,
+		TestApiEngineAttributeNameName:   TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_Name_SubCustody_GeneralAttribute_ExpectedToBePassed,
 	}
 	testApiEngineMethodAttributeMap[TestInstructionAttributeUUID_SubCustody_SendMT540_ExpectedToBePassed] = tempTestApiEngineAttributeExpectedToBePassed
 	//TestInstruction_SubCustody_SendMT540.LocalExecutionMethods.TestApiEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_SubCustody_SendMT540_ExpectedToBePassed] = tempTestApiEngineAttributeExpectedToBePassed

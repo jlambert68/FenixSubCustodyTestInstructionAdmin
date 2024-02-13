@@ -12,17 +12,19 @@ type TestApiEngine_MethodName_Name_SubCustody_Type string
 type TestApiEngine_AttributeName_UUID_SubCustody_Type string
 type TestApiEngine_AttributeName_Name_SubCustody_Type string
 
+// TestApiEngineClassesMethodsAttributesStruct
 // Type this is used for specifying Classes, Methods and Attributes for TestApiEngine which is used by SubCustodys TestAutomation
 type TestApiEngineClassesMethodsAttributesStruct struct {
-	TestInstructionOriginalUUID TypeAndStructs.OriginalElementUUIDType                                             `json:"TestInstructionOriginalUUID"`
-	TestInstructionName         TypeAndStructs.TestInstructionNameType                                             `json:"TestInstructionName"`
-	TestApiEngineClassNameUUID  TestApiEngine_ClassName_UUID_SubCustody_Type                                       `json:"TestApiEngineClassNameUUID"`
-	TestApiEngineClassNameNAME  TestApiEngine_ClassName_Name_SubCustody_Type                                       `json:"TestApiEngineClassNameNAME"`
-	TestApiEngineMethodNameUUID TestApiEngine_MethodName_UUID_SubCustody_Type                                      `json:"TestApiEngineMethodNameUUID"`
-	TestApiEngineMethodNameNAME TestApiEngine_MethodName_Name_SubCustody_Type                                      `json:"TestApiEngineMethodNameNAME"`
-	Attributes                  map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineAttributesStruct `json:"Attributes"`
+	TestInstructionOriginalUUID TypeAndStructs.OriginalElementUUIDType                                              `json:"TestInstructionOriginalUUID"`
+	TestInstructionName         TypeAndStructs.TestInstructionNameType                                              `json:"TestInstructionName"`
+	TestApiEngineClassNameUUID  TestApiEngine_ClassName_UUID_SubCustody_Type                                        `json:"TestApiEngineClassNameUUID"`
+	TestApiEngineClassNameNAME  TestApiEngine_ClassName_Name_SubCustody_Type                                        `json:"TestApiEngineClassNameNAME"`
+	TestApiEngineMethodNameUUID TestApiEngine_MethodName_UUID_SubCustody_Type                                       `json:"TestApiEngineMethodNameUUID"`
+	TestApiEngineMethodNameNAME TestApiEngine_MethodName_Name_SubCustody_Type                                       `json:"TestApiEngineMethodNameNAME"`
+	Attributes                  *map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineAttributesStruct `json:"Attributes"`
 }
 
+// TestApiEngineAttributesStruct
 // Type for Attributes
 type TestApiEngineAttributesStruct struct {
 	TestInstructionAttributeUUID     TypeAndStructs.TestInstructionAttributeUUIDType     `json:"TestInstructionAttributeUUID"`
@@ -32,11 +34,11 @@ type TestApiEngineAttributesStruct struct {
 	TestApiEngineAttributeNameName   TestApiEngine_AttributeName_Name_SubCustody_Type    `json:"TestApiEngineAttributeNameName"`
 }
 
-// TestApiEngineClassesMethodsAttributesType
+// TestApiEngineClassesMethodsAttributesVersionMapType
 // Type for map holding connecting Attributes for TestInstruction with attributes for TestApiEngine, for a specific version of the TestInstruction/TestApiEngine-call
 type TestApiEngineClassesMethodsAttributesVersionMapType map[TestApiEngine_MethodNameVersion_SubCustody_Type]*TestApiEngineClassesMethodsAttributesStruct
 
-// TestInstructionVersionMapType
+// TestInstructionsMapType
 // Type for map connecting Original UUID for TestInstruction with the all versions of the TestInstruction
 type TestInstructionsMapType map[TypeAndStructs.OriginalElementUUIDType]TestApiEngineClassesMethodsAttributesVersionMapType
 
