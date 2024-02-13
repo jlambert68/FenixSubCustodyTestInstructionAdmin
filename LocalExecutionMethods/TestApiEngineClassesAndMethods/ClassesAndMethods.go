@@ -3,6 +3,8 @@ package TestApiEngineClassesAndMethods
 import "github.com/jlambert68/FenixTestInstructionsAdminShared/TypeAndStructs"
 
 // Types for TestApiEngine
+type TestApiEngine_MethodNameVersion_SubCustody_Type string // "1_0 or 13_3" or similar
+
 type TestApiEngine_ClassName_UUID_SubCustody_Type string
 type TestApiEngine_ClassName_Name_SubCustody_Type string
 type TestApiEngine_MethodName_UUID_SubCustody_Type string
@@ -21,6 +23,7 @@ type TestApiEngineClassesMethodsAttributesStruct struct {
 	Attributes                  map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineAttributesStruct `json:"Attributes"`
 }
 
+// Type for Attributes
 type TestApiEngineAttributesStruct struct {
 	TestInstructionAttributeUUID     TypeAndStructs.TestInstructionAttributeUUIDType     `json:"TestInstructionAttributeUUID"`
 	TestInstructionAttributeName     TypeAndStructs.TestInstructionAttributeNameType     `json:"TestInstructionAttributeName"`
@@ -29,7 +32,10 @@ type TestApiEngineAttributesStruct struct {
 	TestApiEngineAttributeNameName   TestApiEngine_AttributeName_Name_SubCustody_Type    `json:"TestApiEngineAttributeNameName"`
 }
 
-// Classes, Methods and their Parameters in TestApiEngine for -SubCustody
+// Type for map holding everything together towards TestApiEngine
+type TestApiEngineClassesMethodsAttributesMapType map[TypeAndStructs.OriginalElementUUIDType]map[TestApiEngine_MethodNameVersion_SubCustody_Type]*TestApiEngineClassesMethodsAttributesStruct
+
+// Classes, Methods and their Parameters in TestApiEngine for SubCustody
 const (
 
 	// General Attribute - ''
