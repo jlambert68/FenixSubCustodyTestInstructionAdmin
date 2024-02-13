@@ -2,6 +2,7 @@ package TestInstructionsAndTesInstructionContainersAndAllowedUsers
 
 import (
 	"fmt"
+	"github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/LocalExecutionMethods"
 	"github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/DomainData"
 	SendOnMQTypeMT_SendMT540 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendOnMQTypeMT_SendMT540"
 	SendOnMQTypeMT_SendMT540_1_0 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendOnMQTypeMT_SendMT540/version_1_0"
@@ -135,6 +136,8 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCust
 	// Generate TestInstructionContainers
 
 	// TestInstructionContainers
+
+	LocalExecutionMethods.InitiateFullTestApiEngineClassesMethodsAttributesMap(TestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody)
 
 	// Calculate hashes that is included in the Supported TestInstructions, TestInstructionContainers and Allowed Users message
 	err = shared_code.CalculateTestInstructionAndTestInstructionContainerAndUsersMessageHashes(

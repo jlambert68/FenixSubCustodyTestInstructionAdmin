@@ -40,7 +40,7 @@ type TestApiEngineClassesMethodsAttributesVersionMapType map[TestApiEngine_Metho
 
 // TestInstructionsMapType
 // Type for map connecting Original UUID for TestInstruction with the all versions of the TestInstruction
-type TestInstructionsMapType map[TypeAndStructs.OriginalElementUUIDType]TestApiEngineClassesMethodsAttributesVersionMapType
+type TestInstructionsMapType map[TypeAndStructs.OriginalElementUUIDType]*TestApiEngineClassesMethodsAttributesVersionMapType
 
 // Classes, Methods and their Parameters in TestApiEngine for SubCustody
 const (

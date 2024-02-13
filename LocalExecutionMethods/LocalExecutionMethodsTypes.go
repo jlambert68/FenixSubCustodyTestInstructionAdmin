@@ -8,9 +8,11 @@ import (
 // Struct for holding all information of how to execute a TestInstruction
 // Even when there are no information about the methods this struct must exist
 type MethodsForLocalExecutionsStruct struct {
-	LocalParametersUsedInRunTime          *LocalParametersUsedInRunTimeStruct                                                      `json:"LocalParametersUsedInRunTime"`
-	TestApiEngineClassesMethodsAttributes *TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineClassesMethodsAttributesStruct `json:"TestApiEngineClassesMethodsAttributes"`
+	LocalParametersUsedInRunTime *LocalParametersUsedInRunTimeStruct                                  `json:"LocalParametersUsedInRunTime"`
+	TestInstructionsMap          *TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType `json:"TestInstructionsMap"`
 }
+
+var FullTestApiEngineClassesMethodsAttributesVersionMap TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType
 
 // LocalParametersUsedInRunTimeStruct
 // Struct for holding the local parameters used during runtime

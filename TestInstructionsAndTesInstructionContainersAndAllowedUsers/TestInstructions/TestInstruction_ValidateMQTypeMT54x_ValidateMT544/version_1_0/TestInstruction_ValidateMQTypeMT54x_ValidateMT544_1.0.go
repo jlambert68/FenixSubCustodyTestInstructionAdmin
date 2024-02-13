@@ -10,6 +10,7 @@ import (
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TestCaseModelElementTypes"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TestInstructionAndTestInstuctionContainerTypes"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TypeAndStructs"
+	"strconv"
 )
 
 const (
@@ -67,8 +68,35 @@ func Initate_TestInstruction_SubCustody_ValidateMT544() *TestInstructionAndTestI
 	// Generate Response variables for the TestInstruction
 	Initate_TestInstructionResponseVariables_SubCustody_ValidateMT544()
 
+	// Create and Initialize maps used in 'LocalExecutionMethods'
 	var testApiEngineMethodAttributeMap map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct
 	testApiEngineMethodAttributeMap = make(map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct)
+
+	var testInstructionsMap TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType
+	testInstructionsMap = make(TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType)
+
+	var testApiEngineClassesMethodsAttributesVersionMap TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineClassesMethodsAttributesVersionMapType
+	testApiEngineClassesMethodsAttributesVersionMap = make(TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineClassesMethodsAttributesVersionMapType)
+
+	// Create version as string
+	var versionNumberAsString TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodNameVersion_SubCustody_Type // "1_0" or "13_3" ...)
+	versionNumberAsString = TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodNameVersion_SubCustody_Type(
+		strconv.Itoa(TestInstructionMajorVersionNumber_SubCustody_ValidateMT544) + "_" +
+			strconv.Itoa(TestInstructionMinorVersionNumber_SubCustody_ValidateMT544))
+
+	// Create 'TestApiEngineClassesMethodsAttributesVersionMap' for this TestInstruction-version
+	testApiEngineClassesMethodsAttributesVersionMap[versionNumberAsString] = &TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineClassesMethodsAttributesStruct{
+		TestInstructionOriginalUUID: TestInstructionUUID_SubCustody_ValidateMT544,
+		TestInstructionName:         TestInstructionName_SubCustody_ValidateMT544,
+		TestApiEngineClassNameUUID:  TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_UUID_SubCustody_SendOnMQTypeMT,
+		TestApiEngineClassNameNAME:  TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_Name_SubCustody_SendOnMQTypeMT,
+		TestApiEngineMethodNameUUID: TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodName_UUID_SubCustody_VerifyMQMessageTypeMT_VerifyMT544,
+		TestApiEngineMethodNameNAME: TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodName_Name_SubCustody_VerifyMQMessageTypeMT_VerifyMT544,
+		Attributes:                  &testApiEngineMethodAttributeMap,
+	}
+
+	// Create testInstructionsMap for this TestInstruction
+	testInstructionsMap[TestInstructionUUID_SubCustody_ValidateMT544] = &testApiEngineClassesMethodsAttributesVersionMap
 
 	// Initiate variable to store all TestInstruction data
 	TestInstruction_SubCustody_ValidateMT544 = &TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct{
@@ -81,16 +109,7 @@ func Initate_TestInstruction_SubCustody_ValidateMT544() *TestInstructionAndTestI
 		// Local Execution Methods are specified here
 		LocalExecutionMethods: TestInstructionAndTestInstuctionContainerTypes.AnyType{
 			&LocalExecutionMethods.MethodsForLocalExecutionsStruct{
-				TestApiEngineClassesMethodsAttributes: &TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineClassesMethodsAttributesStruct{
-					TestInstructionOriginalUUID: TestInstructionUUID_SubCustody_ValidateMT544,
-					TestInstructionName:         TestInstructionName_SubCustody_ValidateMT544,
-					TestApiEngineClassNameUUID:  TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_UUID_SubCustody_VerifyMQMessageTypeMT,
-					TestApiEngineClassNameNAME:  TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_Name_SubCustody_VerifyMQMessageTypeMT,
-					TestApiEngineMethodNameUUID: TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodName_UUID_SubCustody_VerifyMQMessageTypeMT_VerifyMT544,
-					TestApiEngineMethodNameNAME: TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodName_Name_SubCustody_VerifyMQMessageTypeMT_VerifyMT544,
-					Attributes:                  &testApiEngineMethodAttributeMap,
-				},
-			},
+				TestInstructionsMap: &testInstructionsMap},
 		},
 	}
 
@@ -197,7 +216,7 @@ func Initate_TestInstruction_SubCustody_ValidateMT544() *TestInstructionAndTestI
 		TestApiEngineAttributeNameName:   TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_Name_SubCustody_GeneralAttribute_ExpectedToBePassed,
 	}
 	testApiEngineMethodAttributeMap[TestInstructionAttributeUUID_SubCustody_ValidateMT544_ExpectedToBePassed] = tempTestApiEngineAttributeExpectedToBePassed
-	//TestInstruction_SubCustody_ValidateMT544.LocalExecutionMethods.TestApiEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_SubCustody_ValidateMT544_ExpectedToBePassed] = tempTestApiEngineAttributeExpectedToBePassed
+	//TestInstruction_SubCustody_ValidateMT544.LocalExecutionMethods.TestInstructionsMap.Attributes[TestInstructionAttributeUUID_SubCustody_ValidateMT544_ExpectedToBePassed] = tempTestApiEngineAttributeExpectedToBePassed
 
 	// TestInstruction Attribute - 'RelatedReference_54x_20CRELA'
 	var TestInstructionAttribute_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA *TypeAndStructs.TestInstructionAttributeStruct
@@ -236,7 +255,7 @@ func Initate_TestInstruction_SubCustody_ValidateMT544() *TestInstructionAndTestI
 		TestApiEngineAttributeNameName:   TestApiEngineClassesAndMethodsAndAttributes.FangEngine_AttributeName_Name_SubCustody_VerifyMQMessageTypeMT_RelatedReference_54x_20CRELA,
 	}
 	testApiEngineMethodAttributeMap[TestInstructionAttributeUUID_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA] = tempTestApiEngineAttributeRelatedReference_54x_20CRELA
-	//TestInstruction_SubCustody_ValidateMT544.LocalExecutionMethods.TestApiEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA] = tempTestApiEngineAttributeRelatedReference_54x_20CRELA
+	//TestInstruction_SubCustody_ValidateMT544.LocalExecutionMethods.TestInstructionsMap.Attributes[TestInstructionAttributeUUID_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA] = tempTestApiEngineAttributeRelatedReference_54x_20CRELA
 
 	// ImmatureElementModel - ValidateMT544
 	var TestInstructionImmatureElementModel_SubCustody_ValidateMT544 *TypeAndStructs.ImmatureElementModelMessageStruct

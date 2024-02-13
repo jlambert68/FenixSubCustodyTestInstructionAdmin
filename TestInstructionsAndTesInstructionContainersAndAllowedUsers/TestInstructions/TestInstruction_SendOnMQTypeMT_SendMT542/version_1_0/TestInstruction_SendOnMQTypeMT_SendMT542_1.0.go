@@ -10,6 +10,7 @@ import (
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TestCaseModelElementTypes"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TestInstructionAndTestInstuctionContainerTypes"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TypeAndStructs"
+	"strconv"
 )
 
 const (
@@ -60,8 +61,35 @@ func Initate_TestInstruction_SubCustody_SendMT542() *TestInstructionAndTestInstu
 	// Generate Response variables for the TestInstruction
 	Initate_TestInstructionResponseVariables_SubCustody_SendMT542()
 
+	// Create and Initialize maps used in 'LocalExecutionMethods'
 	var testApiEngineMethodAttributeMap map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct
 	testApiEngineMethodAttributeMap = make(map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct)
+
+	var testInstructionsMap TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType
+	testInstructionsMap = make(TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType)
+
+	var testApiEngineClassesMethodsAttributesVersionMap TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineClassesMethodsAttributesVersionMapType
+	testApiEngineClassesMethodsAttributesVersionMap = make(TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineClassesMethodsAttributesVersionMapType)
+
+	// Create version as string
+	var versionNumberAsString TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodNameVersion_SubCustody_Type // "1_0" or "13_3" ...)
+	versionNumberAsString = TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodNameVersion_SubCustody_Type(
+		strconv.Itoa(TestInstructionMajorVersionNumber_SubCustody_SendMT542) + "_" +
+			strconv.Itoa(TestInstructionMinorVersionNumber_SubCustody_SendMT542))
+
+	// Create 'TestApiEngineClassesMethodsAttributesVersionMap' for this TestInstruction-version
+	testApiEngineClassesMethodsAttributesVersionMap[versionNumberAsString] = &TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineClassesMethodsAttributesStruct{
+		TestInstructionOriginalUUID: TestInstructionUUID_SubCustody_SendMT542,
+		TestInstructionName:         TestInstructionName_SubCustody_SendMT542,
+		TestApiEngineClassNameUUID:  TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_UUID_SubCustody_SendOnMQTypeMT,
+		TestApiEngineClassNameNAME:  TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_Name_SubCustody_SendOnMQTypeMT,
+		TestApiEngineMethodNameUUID: TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodName_UUID_SubCustody_SendOnMQTypeMT_SendMT542,
+		TestApiEngineMethodNameNAME: TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodName_Name_SubCustody_SendOnMQTypeMT_SendMT542,
+		Attributes:                  &testApiEngineMethodAttributeMap,
+	}
+
+	// Create testInstructionsMap for this TestInstruction
+	testInstructionsMap[TestInstructionUUID_SubCustody_SendMT542] = &testApiEngineClassesMethodsAttributesVersionMap
 
 	// Initiate variable to store all TestInstruction data
 	TestInstruction_SubCustody_SendMT542 = &TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct{
@@ -74,16 +102,7 @@ func Initate_TestInstruction_SubCustody_SendMT542() *TestInstructionAndTestInstu
 		// Local Execution Methods are specified here
 		LocalExecutionMethods: TestInstructionAndTestInstuctionContainerTypes.AnyType{
 			&LocalExecutionMethods.MethodsForLocalExecutionsStruct{
-				TestApiEngineClassesMethodsAttributes: &TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineClassesMethodsAttributesStruct{
-					TestInstructionOriginalUUID: TestInstructionUUID_SubCustody_SendMT542,
-					TestInstructionName:         TestInstructionName_SubCustody_SendMT542,
-					TestApiEngineClassNameUUID:  TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_UUID_SubCustody_SendOnMQTypeMT,
-					TestApiEngineClassNameNAME:  TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_Name_SubCustody_SendOnMQTypeMT,
-					TestApiEngineMethodNameUUID: TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodName_UUID_SubCustody_SendOnMQTypeMT_SendMT542,
-					TestApiEngineMethodNameNAME: TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodName_Name_SubCustody_SendOnMQTypeMT_SendMT542,
-					Attributes:                  &testApiEngineMethodAttributeMap,
-				},
-			},
+				TestInstructionsMap: &testInstructionsMap},
 		},
 	}
 
@@ -190,7 +209,7 @@ func Initate_TestInstruction_SubCustody_SendMT542() *TestInstructionAndTestInstu
 		TestApiEngineAttributeNameName:   TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_Name_SubCustody_GeneralAttribute_ExpectedToBePassed,
 	}
 	testApiEngineMethodAttributeMap[TestInstructionAttributeUUID_SubCustody_SendMT542_ExpectedToBePassed] = tempTestApiEngineAttributeExpectedToBePassed
-	//TestInstruction_SubCustody_SendMT542.LocalExecutionMethods.TestApiEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_SubCustody_SendMT542_ExpectedToBePassed] = tempTestApiEngineAttributeExpectedToBePassed
+	//TestInstruction_SubCustody_SendMT542.LocalExecutionMethods.TestInstructionsMap.Attributes[TestInstructionAttributeUUID_SubCustody_SendMT542_ExpectedToBePassed] = tempTestApiEngineAttributeExpectedToBePassed
 
 	// ImmatureElementModel - SendMT542
 	var TestInstructionImmatureElementModel_SubCustody_SendMT542 *TypeAndStructs.ImmatureElementModelMessageStruct
