@@ -19,14 +19,3 @@ var FullTestApiEngineClassesMethodsAttributesVersionMap TestApiEngineClassesAndM
 type LocalParametersUsedInRunTimeStruct struct {
 	ExpectedTestInstructionExecutionDurationInSeconds int64 `json:"TimeOutTimeInSeconds"`
 }
-
-// Environment variables
-var (
-	// TestApiEngineAddress
-	// Network address to TestApiEngine
-	TestApiEngineAddress string
-
-	// TestApiEngineAddressPath
-	// URL-path used when calling TestApiEngine
-	TestApiEngineAddressPath string
-)
