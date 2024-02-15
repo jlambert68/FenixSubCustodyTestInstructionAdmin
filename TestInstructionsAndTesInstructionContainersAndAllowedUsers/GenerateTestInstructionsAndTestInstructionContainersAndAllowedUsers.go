@@ -137,7 +137,7 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCust
 
 	// TestInstructionContainers
 
-	LocalExecutionMethods.InitiateFullTestApiEngineClassesMethodsAttributesMap(TestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody)
+	_ = LocalExecutionMethods.InitiateFullTestApiEngineClassesMethodsAttributesMap(TestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody)
 
 	// Calculate hashes that is included in the Supported TestInstructions, TestInstructionContainers and Allowed Users message
 	err = shared_code.CalculateTestInstructionAndTestInstructionContainerAndUsersMessageHashes(

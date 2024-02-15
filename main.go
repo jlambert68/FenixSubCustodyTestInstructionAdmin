@@ -4,12 +4,15 @@ import (
 	_ "embed"
 	"fmt"
 	"github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers"
+	"github.com/jlambert68/FenixSyncShared/environmentVariables"
 )
 
 //go:embed TestInstructionsAndTesInstructionContainersAndAllowedUsers/allowedUsers/allowedUsers.json
 var allowedUsers []byte
 
 func main() {
+
+	environmentVariables.InitiateInjectedVariablesMap(&injectedVariablesMap)
 
 	TestInstructionsAndTesInstructionContainersAndAllowedUsers.GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody(allowedUsers)
 	TestInstructionsAndTesInstructionContainersAndAllowedUsers.GenerateAndVerifyRPCMessages()

@@ -11,7 +11,7 @@ import (
 
 func InitiateFullTestApiEngineClassesMethodsAttributesMap(
 	testInstructionsAndTestInstructionContainersAndAllowedUsers *TestInstructionAndTestInstuctionContainerTypes.
-		TestInstructionsAndTestInstructionsContainersStruct) {
+		TestInstructionsAndTestInstructionsContainersStruct) *TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType {
 
 	// Run 'init()' to load environment variables
 	Init()
@@ -150,5 +150,5 @@ func InitiateFullTestApiEngineClassesMethodsAttributesMap(
 			}
 		}
 	}
-	return
+	return &FullTestApiEngineClassesMethodsAttributesVersionMap
 }
