@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	ResponseVariableUuid_SendMT540_20CSEME TypeAndStructs.ResponseVariableUuidType = "39818ba1-676d-42d0-87da-e1080e9d5ffd"
+	ResponseVariableUuid_SendMT540_20CSEME TypeAndStructs.ResponseVariableUuidType = "24fa2f84-827a-4c01-a86c-da42d888c295"
 )
 
 // TestInstructionResponseVariables_SubCustody_SendMT540

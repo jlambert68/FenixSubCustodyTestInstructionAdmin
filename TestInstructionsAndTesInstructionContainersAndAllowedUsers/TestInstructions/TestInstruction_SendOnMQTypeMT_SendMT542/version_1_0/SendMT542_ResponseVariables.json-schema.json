@@ -24,8 +24,8 @@
     "additionalProperties": false,
     "enum": [
       {
-        "uuid": "9dd57f25-75e0-4024-862b-e0728c066604",
-        "name": ":20C::SEME//"
+        "ResponseVariableUuid": "9dd57f25-75e0-4024-862b-e0728c066604",
+        "ResponseVariableName": ":20C::SEME//"
       }
     ]
   }
