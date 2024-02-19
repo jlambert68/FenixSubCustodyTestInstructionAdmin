@@ -3,9 +3,9 @@ module github.com/jlambert68/FenixSubCustodyTestInstructionAdmin
 go 1.21
 
 require (
-	github.com/jlambert68/FenixGrpcApi v0.0.0-20240214145621-7060f4a311a9
+	github.com/jlambert68/FenixGrpcApi v0.0.0-20240219140949-64a3ef4c78f7
 	github.com/jlambert68/FenixSyncShared v0.0.0-20240215140904-db0840b5d70a
-	github.com/jlambert68/FenixTestInstructionsAdminShared v0.0.0-20240215122938-809872919af1
+	github.com/jlambert68/FenixTestInstructionsAdminShared v0.0.0-20240219141728-8af453f0932d
 )
 
 require (
