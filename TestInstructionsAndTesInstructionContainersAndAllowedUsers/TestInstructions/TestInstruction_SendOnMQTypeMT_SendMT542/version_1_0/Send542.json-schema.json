@@ -15,12 +15,8 @@
       "type": "string",
       "format": "uuid"
     },
-    "allowedKey3": {
-      "type": "TestInstructionExecutionVersion",
-      "pattern": "^[0-9]+$"
-    },
     "ExpectedToBePassed": {
-      "type": "ExpectedToBePassed",
+      "type": "string",
       "enum": ["true", "false"]
     }
   },
