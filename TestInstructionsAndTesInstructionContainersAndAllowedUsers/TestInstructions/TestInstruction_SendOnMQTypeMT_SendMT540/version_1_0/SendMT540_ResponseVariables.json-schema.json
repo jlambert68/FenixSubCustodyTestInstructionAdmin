@@ -12,6 +12,13 @@
       "ResponseVariableName": {
         "type": "string"
       },
+      "ResponseVariableTypeUuid": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "ResponseVariableTypeName": {
+        "type": "string"
+      },
       "ResponseVariableValueAsString": {
         "type": "string"
       }
@@ -19,6 +26,8 @@
     "required": [
       "ResponseVariableUuid",
       "ResponseVariableName",
+      "ResponseVariableTypeUuid",
+      "ResponseVariableTypeName",
       "ResponseVariableValueAsString"
     ],
     "additionalProperties": false,
@@ -26,7 +35,9 @@
       {
         "properties": {
           "ResponseVariableUuid": {"const": "24fa2f84-827a-4c01-a86c-da42d888c295"},
-          "ResponseVariableName": {"const": ":20C::SEME//"}
+          "ResponseVariableName": {"const": ":20C::SEME"},
+          "ResponseVariableTypeName": {"const": "0f6e945e-1556-4cb0-80e5-e021ebc5d8c1"},
+          "ResponseVariableTypeName": {"const": "54x_:20C::SEME type"}
         }
       }
     ]
