@@ -9,6 +9,7 @@ import (
 
 const (
 	ResponseVariableUuid_ValidateMT548_20CSEME TypeAndStructs.ResponseVariableUuidType = "8ed1ead9-741b-4115-9f78-f8a7db1d6274"
+	ResponseVariableName_ValidateMT548_20CSEME TypeAndStructs.ResponseVariableNameType = ":20C::SEME//"
 )
 
 // TestInstructionResponseVariables_SubCustody_ValidateMT548
@@ -26,7 +27,7 @@ func Initate_TestInstructionResponseVariables_SubCustody_ValidateMT548() {
 		ResponseVariableUuid_ValidateMT548_20CSEME: &TestInstructionAndTestInstuctionContainerTypes.ResponseVariableStructureStruct{
 			ResponseVariable: TypeAndStructs.ResponseVariableStruct{
 				ResponseVariableUuid:        ResponseVariableUuid_ValidateMT548_20CSEME,
-				ResponseVariableName:        TypeAndStructs.ResponseVariableNameType(":20C::SEME//"),
+				ResponseVariableName:        ResponseVariableName_ValidateMT548_20CSEME,
 				ResponseVariableDescription: TypeAndStructs.ResponseVariableDescriptionType("An identifier for the MT548-message"),
 				ResponseVariableIsMandatory: TypeAndStructs.ResponseVariableIsMandatoryType(true),
 				ResponseVariableTypeUuid:    TestInstructions.ResponseVariableTypeUuid_54x_20CSEME,

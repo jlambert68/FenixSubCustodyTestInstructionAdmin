@@ -5,6 +5,12 @@
   "items": {
     "type": "object",
     "properties": {
+      "TestInstructionVersion": {
+        "type": "string",
+        "enum": [
+          "v1.0"
+        ]
+      },
       "ResponseVariableUuid": {
         "type": "string",
         "format": "uuid"
@@ -24,6 +30,7 @@
       }
     },
     "required": [
+      "TestInstructionVersion",
       "ResponseVariableUuid",
       "ResponseVariableName",
       "ResponseVariableTypeUuid",

@@ -9,6 +9,7 @@ import (
 
 const (
 	ResponseVariableUuid_SendMT542_20CSEME TypeAndStructs.ResponseVariableUuidType = "9dd57f25-75e0-4024-862b-e0728c066604"
+	ResponseVariableName_SendMT542_20CSEME TypeAndStructs.ResponseVariableNameType = ":20C::SEME//"
 )
 
 // TestInstructionResponseVariables_SubCustody_SendMT542
@@ -26,7 +27,7 @@ func Initate_TestInstructionResponseVariables_SubCustody_SendMT542() {
 		ResponseVariableUuid_SendMT542_20CSEME: &TestInstructionAndTestInstuctionContainerTypes.ResponseVariableStructureStruct{
 			ResponseVariable: TypeAndStructs.ResponseVariableStruct{
 				ResponseVariableUuid:        ResponseVariableUuid_SendMT542_20CSEME,
-				ResponseVariableName:        TypeAndStructs.ResponseVariableNameType(":20C::SEME//"),
+				ResponseVariableName:        ResponseVariableName_SendMT542_20CSEME,
 				ResponseVariableDescription: TypeAndStructs.ResponseVariableDescriptionType("An identifier for the MT542-message"),
 				ResponseVariableIsMandatory: TypeAndStructs.ResponseVariableIsMandatoryType(true),
 				ResponseVariableTypeUuid:    TestInstructions.ResponseVariableTypeUuid_54x_20CSEME,

@@ -9,7 +9,7 @@ import (
 
 const (
 	ResponseVariableUuid_SendMT540_20CSEME TypeAndStructs.ResponseVariableUuidType = "24fa2f84-827a-4c01-a86c-da42d888c295"
-	ResponseVariableName_SendMT540_20CSEME TypeAndStructs.ResponseVariableNameType = ":20C::SEME"
+	ResponseVariableName_SendMT540_20CSEME TypeAndStructs.ResponseVariableNameType = ":20C::SEME//"
 )
 
 // TestInstructionResponseVariables_SubCustody_SendMT540
