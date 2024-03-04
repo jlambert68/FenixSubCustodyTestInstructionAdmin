@@ -67,7 +67,7 @@ const (
 
 	// ClassName: 'VerifyMQMessageTypeMT' - MethodName: 'VerifyMT544'
 	TestApiEngine_MethodName_UUID_SubCustody_VerifyMQMessageTypeMT_VerifyMT544 TestApiEngine_MethodName_UUID_SubCustody_Type = "09292093-751b-4b41-afd0-8e0a93d49e6a"
-	TestApiEngine_MethodName_Name_SubCustody_VerifyMQMessageTypeMT_VerifyMT544 TestApiEngine_MethodName_Name_SubCustody_Type = "VerifyMT544_v1_0"
+	TestApiEngine_MethodName_Name_SubCustody_VerifyMQMessageTypeMT_VerifyMT544 TestApiEngine_MethodName_Name_SubCustody_Type = "ValidateMT544_v1_0"
 
 	// ClassName:'VerifyMQMessageTypeMT' - MethodName: 'VerifyMT544' - Attributes
 	TestApiEngine_AttributeName_UUID_SubCustody_VerifyMQMessageTypeMT_RelatedReference_54x_20CRELA TestApiEngine_AttributeName_UUID_SubCustody_Type = "9d99a553-23fe-4f02-942f-0d53ddc8acfb"
@@ -75,9 +75,9 @@ const (
 
 	// ClassName: 'VerifyMQMessageTypeMT' - MethodName: 'VerifyMT546'
 	TestApiEngine_MethodName_UUID_SubCustody_VerifyMQMessageTypeMT_VerifyMT546 TestApiEngine_MethodName_UUID_SubCustody_Type = "db919745-f09b-4afa-9698-c0b9596fc67c"
-	TestApiEngine_MethodName_Name_SubCustody_VerifyMQMessageTypeMT_VerifyMT546 TestApiEngine_MethodName_Name_SubCustody_Type = "VerifyMT546_v1_0"
+	TestApiEngine_MethodName_Name_SubCustody_VerifyMQMessageTypeMT_VerifyMT546 TestApiEngine_MethodName_Name_SubCustody_Type = "ValidateMT546_v1_0"
 
 	// ClassName: 'VerifyMQMessageTypeMT' - MethodName: 'VerifyMT548'
 	TestApiEngine_MethodName_UUID_SubCustody_VerifyMQMessageTypeMT_VerifyMT548 TestApiEngine_MethodName_UUID_SubCustody_Type = "f7b0b0da-6b3a-40b8-bdbb-a032a6d8d056"
-	TestApiEngine_MethodName_Name_SubCustody_VerifyMQMessageTypeMT_VerifyMT548 TestApiEngine_MethodName_Name_SubCustody_Type = "VerifyMT548_v1_0"
+	TestApiEngine_MethodName_Name_SubCustody_VerifyMQMessageTypeMT_VerifyMT548 TestApiEngine_MethodName_Name_SubCustody_Type = "ValidateMT58_v1_0"
 )
