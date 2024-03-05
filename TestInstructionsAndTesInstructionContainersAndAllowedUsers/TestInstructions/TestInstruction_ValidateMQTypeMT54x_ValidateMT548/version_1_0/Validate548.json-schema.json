@@ -28,6 +28,10 @@
         false
       ]
     },
+    "TimeoutTimeInSeconds": {
+      "type": "string",
+      "pattern": "^[0-9]+$"
+    },
     "methodParameters": {
       "type": "object",
       "items": {
@@ -72,6 +76,10 @@
             "false"
           ]
         },
+        "TimeoutTimeInSeconds": {
+          "type": "string",
+          "pattern": "^[0-9]+$"
+        },
         "RelatedReference_54x_20CRELA": {
           "type": "string"
         }
@@ -82,6 +90,7 @@
         "TestInstructionExecutionUuid",
         "TestInstructionExecutionVersion",
         "ExpectedToBePassed",
+        "TimeoutTimeInSeconds",
         "RelatedReference_54x_20CRELA"
       ],
       "additionalProperties": false

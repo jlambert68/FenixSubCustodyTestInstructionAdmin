@@ -73,12 +73,17 @@
           ]
         }
       },
+      "TimeoutTimeInSeconds": {
+        "type": "string",
+        "pattern": "^[0-9]+$"
+      },
       "required": [
         "TestInstructionVersion",
         "TestCaseExecutionUuid",
         "TestInstructionExecutionUuid",
         "TestInstructionExecutionVersion",
-        "ExpectedToBePassed"
+        "ExpectedToBePassed",
+        "TimeoutTimeInSeconds"
       ],
       "additionalProperties": false
     }
