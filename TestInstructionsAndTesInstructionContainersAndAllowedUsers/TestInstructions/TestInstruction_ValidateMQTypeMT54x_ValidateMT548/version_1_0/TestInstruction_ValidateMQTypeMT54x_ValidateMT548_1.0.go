@@ -109,6 +109,9 @@ func Initate_TestInstruction_SubCustody_ValidateMT548() *TestInstructionAndTestI
 		// Local Execution Methods are specified here
 		LocalExecutionMethods: TestInstructionAndTestInstuctionContainerTypes.AnyType{
 			&LocalExecutionMethods.MethodsForLocalExecutionsStruct{
+				LocalParametersUsedInRunTime: &LocalExecutionMethods.LocalParametersUsedInRunTimeStruct{
+					ExpectedTestInstructionExecutionDurationInSeconds: 300,
+				},
 				TestInstructionsMap: &testInstructionsMap},
 		},
 	}

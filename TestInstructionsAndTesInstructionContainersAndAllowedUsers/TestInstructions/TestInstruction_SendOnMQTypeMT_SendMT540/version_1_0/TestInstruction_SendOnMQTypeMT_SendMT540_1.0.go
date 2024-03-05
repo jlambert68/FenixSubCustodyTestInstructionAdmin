@@ -102,6 +102,9 @@ func Initate_TestInstruction_SubCustody_SendMT540() *TestInstructionAndTestInstu
 		// Local Execution Methods are specified here
 		LocalExecutionMethods: TestInstructionAndTestInstuctionContainerTypes.AnyType{
 			&LocalExecutionMethods.MethodsForLocalExecutionsStruct{
+				LocalParametersUsedInRunTime: &LocalExecutionMethods.LocalParametersUsedInRunTimeStruct{
+					ExpectedTestInstructionExecutionDurationInSeconds: 30,
+				},
 				TestInstructionsMap: &testInstructionsMap},
 		},
 	}
