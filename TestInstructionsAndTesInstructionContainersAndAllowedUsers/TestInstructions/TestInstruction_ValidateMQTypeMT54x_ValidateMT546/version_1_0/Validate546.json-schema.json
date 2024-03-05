@@ -30,9 +30,7 @@
     },
     "methodParameters": {
       "type": "object",
-      "items": {
-        "$ref": "#/definitions/MethodParameters"
-      }
+      "$ref": "#/definitions/MethodParameters"
     }
   },
   "required": [
