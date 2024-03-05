@@ -69,11 +69,11 @@
             "true",
             "false"
           ]
+        },
+        "TimeoutTimeInSeconds": {
+          "type": "string",
+          "pattern": "^[0-9]+$"
         }
-      },
-      "TimeoutTimeInSeconds": {
-        "type": "string",
-        "pattern": "^[0-9]+$"
       },
       "required": [
         "TestInstructionVersion",
