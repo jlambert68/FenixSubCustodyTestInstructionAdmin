@@ -202,7 +202,7 @@ func Initate_TestInstruction_SubCustody_ValidateMT544() *TestInstructionAndTestI
 		TestInstructionAttributeMandatory:             true,
 		TestInstructionAttributeVisibleInTestCaseArea: false,
 		TestInstructionAttributeIsDeprecated:          false,
-		TestInstructionAttributeInputMask:             ".",
+		TestInstructionAttributeInputMask:             "^(true|false)$",
 		TestInstructionAttributeType:                  TestInstructionAttributeType_SubCustody_ValidateMT544_ExpectedToBePassed,
 	}
 	TestInstruction_SubCustody_ValidateMT544.TestInstructionAttribute = append(
@@ -241,7 +241,7 @@ func Initate_TestInstruction_SubCustody_ValidateMT544() *TestInstructionAndTestI
 		TestInstructionAttributeMandatory:             true,
 		TestInstructionAttributeVisibleInTestCaseArea: false,
 		TestInstructionAttributeIsDeprecated:          false,
-		TestInstructionAttributeInputMask:             ".",
+		TestInstructionAttributeInputMask:             "^.+$",
 		TestInstructionAttributeType:                  TestInstructionAttributeType_SubCustody_ValidateMT544_RelatedReference_54x_20CRELA,
 	}
 	TestInstruction_SubCustody_ValidateMT544.TestInstructionAttribute = append(

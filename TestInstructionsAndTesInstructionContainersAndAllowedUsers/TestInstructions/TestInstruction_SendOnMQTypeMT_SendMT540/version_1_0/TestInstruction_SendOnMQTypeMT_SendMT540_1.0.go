@@ -195,7 +195,7 @@ func Initate_TestInstruction_SubCustody_SendMT540() *TestInstructionAndTestInstu
 		TestInstructionAttributeMandatory:             true,
 		TestInstructionAttributeVisibleInTestCaseArea: false,
 		TestInstructionAttributeIsDeprecated:          false,
-		TestInstructionAttributeInputMask:             ".",
+		TestInstructionAttributeInputMask:             "^(true|false)$",
 		TestInstructionAttributeType:                  TestInstructionAttributeType_SubCustody_SendMT540_ExpectedToBePassed,
 	}
 	TestInstruction_SubCustody_SendMT540.TestInstructionAttribute = append(
