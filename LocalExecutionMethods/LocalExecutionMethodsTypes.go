@@ -12,6 +12,8 @@ type MethodsForLocalExecutionsStruct struct {
 	TestInstructionsMap          *TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType `json:"TestInstructionsMap"`
 }
 
+// FullTestApiEngineClassesMethodsAttributesVersionMap
+// Holds the reference to information about Local Methods to be used for each version
 var FullTestApiEngineClassesMethodsAttributesVersionMap TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType
 
 // LocalParametersUsedInRunTimeStruct

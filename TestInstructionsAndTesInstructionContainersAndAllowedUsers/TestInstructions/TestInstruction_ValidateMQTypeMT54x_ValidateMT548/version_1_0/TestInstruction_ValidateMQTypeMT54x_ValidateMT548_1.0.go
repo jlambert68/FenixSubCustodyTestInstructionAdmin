@@ -31,6 +31,7 @@ const (
 	TCRuleDeletion_SubCustody_ValidateMT548                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion020"
 	TCRuleSwap_SubCustody_ValidateMT548                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap020"
 	TestInstructionCreatingTimeStamp                           TypeAndStructs.UpdatedTimeStampType    = "2023-11-27 13:00:00"
+	ExpectedMaxTestInstructionExecutionDurationInSeconds       int64                                  = 300
 
 	// *** DropZone *** 'ValidateMT548_ExpectsToSucceed'
 	TestInstructionDropZoneUUID_SubCustody_ValidateMT548_ExpectsToSucceed        TypeAndStructs.DropZoneUUIDType = "49de2164-49e5-4eb9-a4a5-5e607ed6b221"
@@ -110,7 +111,7 @@ func Initate_TestInstruction_SubCustody_ValidateMT548() *TestInstructionAndTestI
 		LocalExecutionMethods: TestInstructionAndTestInstuctionContainerTypes.AnyType{
 			&LocalExecutionMethods.MethodsForLocalExecutionsStruct{
 				LocalParametersUsedInRunTime: &LocalExecutionMethods.LocalParametersUsedInRunTimeStruct{
-					ExpectedTestInstructionExecutionDurationInSeconds: 300,
+					ExpectedTestInstructionExecutionDurationInSeconds: ExpectedMaxTestInstructionExecutionDurationInSeconds,
 				},
 				TestInstructionsMap: &testInstructionsMap},
 		},

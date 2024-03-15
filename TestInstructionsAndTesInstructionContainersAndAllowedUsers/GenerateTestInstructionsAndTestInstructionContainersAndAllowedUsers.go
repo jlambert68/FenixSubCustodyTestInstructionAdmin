@@ -3,6 +3,7 @@ package TestInstructionsAndTesInstructionContainersAndAllowedUsers
 import (
 	"fmt"
 	"github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/LocalExecutionMethods"
+	TestApiEngineClassesAndMethodsAndAttributes "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/LocalExecutionMethods/TestApiEngineClassesAndMethods"
 	"github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/DomainData"
 	SendOnMQTypeMT_SendMT540 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendOnMQTypeMT_SendMT540"
 	SendOnMQTypeMT_SendMT540_1_0 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendOnMQTypeMT_SendMT540/version_1_0"
@@ -22,9 +23,13 @@ import (
 	"time"
 )
 
+// TestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody
+// Overall Message
 var TestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody *TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct
 
-func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody(allowedUsers []byte) {
+func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody(allowedUsers []byte) (
+	*TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct,
+	*TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType) {
 
 	var err error
 
@@ -37,8 +42,8 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCust
 
 	// Set AllUsersAuthorizationRights and initial Hash-value
 	shared_code.AllowedUsersLoadFromJsonFile.AllUsersAuthorizationRights = &TestInstructionAndTestInstuctionContainerTypes.AllUsersAuthorizationRightsStruct{
-		AllUsersCanListAndViewTestCaseHavingTIandTICFromThisDomain:  true,
-		AllUsersCanBuildAndSaveTestCaseHavingTIandTICFromThisDomain: true,
+		AllUsersCanListAndViewTestCaseHavingTIandTICFromThisDomain:  false,
+		AllUsersCanBuildAndSaveTestCaseHavingTIandTICFromThisDomain: false,
 	}
 	shared_code.AllowedUsersLoadFromJsonFile.AllowedUsersHash = shared_code.InitialValueBeforeHashed
 	// Generate TestInstructions
@@ -193,7 +198,10 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCust
 
 	// TestInstructionContainers
 
-	_ = LocalExecutionMethods.InitiateFullTestApiEngineClassesMethodsAttributesMap(TestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody)
+	// Create structure for Local Methods to call in TestApiEngine
+	var tempFullTestApiEngineClassesMethodsAttributesVersionMap *TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType
+	tempFullTestApiEngineClassesMethodsAttributesVersionMap = LocalExecutionMethods.
+		InitiateFullTestApiEngineClassesMethodsAttributesMap(TestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody)
 
 	// Calculate hashes that is included in the Supported TestInstructions, TestInstructionContainers and Allowed Users message
 	err = shared_code.CalculateTestInstructionAndTestInstructionContainerAndUsersMessageHashes(
@@ -203,5 +211,7 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCust
 		fmt.Println(err)
 		os.Exit(1)
 	}
+
+	return TestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody, tempFullTestApiEngineClassesMethodsAttributesVersionMap
 
 }

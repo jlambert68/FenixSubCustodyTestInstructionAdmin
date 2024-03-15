@@ -14,9 +14,13 @@ func main() {
 
 	environmentVariables.InitiateInjectedVariablesMap(&injectedVariablesMap)
 
-	TestInstructionsAndTesInstructionContainersAndAllowedUsers.GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody(allowedUsers)
+	tempTestInstructionsAndTestInstructionsContainers, tempTestApiEngineClassesAndMethodsAndAttributes :=
+		TestInstructionsAndTesInstructionContainersAndAllowedUsers.
+			GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody(allowedUsers)
 	TestInstructionsAndTesInstructionContainersAndAllowedUsers.GenerateAndVerifyRPCMessages()
 
+	fmt.Println(tempTestInstructionsAndTestInstructionsContainers)
+	fmt.Println(tempTestApiEngineClassesAndMethodsAndAttributes)
 	fmt.Println(TestInstructionsAndTesInstructionContainersAndAllowedUsers.TestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody)
 	fmt.Println("Success when generating and verifying all messages for TestInstructions, TestInstructionContainers and AllowedUsers")
 }
