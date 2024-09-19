@@ -11,6 +11,10 @@ const (
 	TestInstructionAttributeUUID_SubCustody_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeUUIDType = "43fef553-2424-4a82-ac7e-01db0a9a8e17"
 	TestInstructionAttributeName_SubCustody_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeNameType = "ExpectedToBePassed"
 	TestInstructionAttributeType_SubCustody_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeTypeType = "TEXTBOX"
+
+	TestInstructionAttributeName_SubCustody_ExpectedToBePassedComboBox TypeAndStructs.TestInstructionAttributeNameType = "ExpectedToBePassed"
+	TestInstructionAttributeType_SubCustody_ExpectedToBePassedComboBox TypeAndStructs.TestInstructionAttributeTypeType = "COMBOBOX"
+
 	TestInstructionAttributeTypeTypeName_SubCustody_ExpectedToBePassed
 
 	// Attribute 'RelatedReference_54x_20CRELA' is the parameter that gets its value from another TestInstructionExecutions output via a Response variable

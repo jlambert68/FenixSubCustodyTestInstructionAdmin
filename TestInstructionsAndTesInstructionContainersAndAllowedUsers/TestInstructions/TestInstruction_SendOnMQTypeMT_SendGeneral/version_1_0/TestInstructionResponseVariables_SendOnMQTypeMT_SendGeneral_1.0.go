@@ -1,0 +1,22 @@
+package version_1_0
+
+import (
+	"github.com/jlambert68/FenixTestInstructionsAdminShared/TestInstructionAndTestInstuctionContainerTypes"
+	"github.com/jlambert68/FenixTestInstructionsAdminShared/TypeAndStructs"
+)
+
+const ()
+
+// TestInstructionResponseVariables_SendOnMQTypeMT_SendGeneral
+// Variable that holds the data for the TestInstructionResponseVariables
+var TestInstructionResponseVariables_SendOnMQTypeMT_SendGeneral map[TypeAndStructs.ResponseVariableUuidType]*TestInstructionAndTestInstuctionContainerTypes.ResponseVariableStructureStruct
+
+// Initate_TestInstructionResponseVariables_SendOnMQTypeMT_SendGeneral
+// Function that creates all data for the TestInstructionResponseVariables
+func Initate_TestInstructionResponseVariables_SendOnMQTypeMT_SendGeneral() {
+
+	// Initiate the TestInstructionResponseVariable
+	TestInstructionResponseVariables_SendOnMQTypeMT_SendGeneral = make(map[TypeAndStructs.ResponseVariableUuidType]*TestInstructionAndTestInstuctionContainerTypes.ResponseVariableStructureStruct)
+
+	return
+}
