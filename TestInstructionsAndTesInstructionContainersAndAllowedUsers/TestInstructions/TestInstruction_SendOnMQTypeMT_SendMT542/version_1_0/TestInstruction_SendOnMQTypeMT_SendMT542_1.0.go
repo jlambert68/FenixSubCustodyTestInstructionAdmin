@@ -27,7 +27,7 @@ const (
 	TestInstructionEnabled_SubCustody_SendMT542            bool                                   = true
 	TestInstructionMajorVersionNumber_SubCustody_SendMT542 int                                    = 1
 	TestInstructionMinorVersionNumber_SubCustody_SendMT542 int                                    = 0
-	TestInstructionColor_SubCustody_SendMT542              TypeAndStructs.ColorType               = "#00ff00AA"
+	TestInstructionColor_SubCustody_SendMT542              TypeAndStructs.ColorType               = "#09AA4DAA"
 	TCRuleDeletion_SubCustody_SendMT542                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion020"
 	TCRuleSwap_SubCustody_SendMT542                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap020"
 	TestInstructionCreatingTimeStamp                       TypeAndStructs.UpdatedTimeStampType    = "2023-11-27 13:00:00"
@@ -38,7 +38,7 @@ const (
 	TestInstructionDropZoneName_SubCustody_SendMT542_ExpectsToSucceed        TypeAndStructs.DropZoneNameType = "SendMT542_ExpectsToSucceed"
 	TestInstructionDropZoneDescription_SubCustody_SendMT542_ExpectsToSucceed string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
 	TestInstructionDropZoneMouseOver_SubCustody_SendMT542_ExpectsToSucceed   string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
-	TestInstructionDropZoneColor_SubCustody_SendMT542_ExpectsToSucceed       TypeAndStructs.ColorType        = "#00000000"
+	TestInstructionDropZoneColor_SubCustody_SendMT542_ExpectsToSucceed       TypeAndStructs.ColorType        = "#09AA4DAA"
 
 	// Attribute - 'ExpectedToBePassed'
 	TestInstructionAttributeUUID_SubCustody_SendMT542_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = "11b48728-0228-43cc-8674-af2c72b2dfbf" //TestInstructionAttributeUUID_SubCustody_ExpectedToBePassed

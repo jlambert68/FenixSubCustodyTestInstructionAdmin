@@ -28,7 +28,7 @@ const (
 	TestInstructionEnabled_SendOnMQTypeMT_FenixAddonSendGeneralTemplate            bool                                       = true
 	TestInstructionMajorVersionNumber_SendOnMQTypeMT_FenixAddonSendGeneralTemplate int                                        = 1
 	TestInstructionMinorVersionNumber_SendOnMQTypeMT_FenixAddonSendGeneralTemplate int                                        = 0
-	TestInstructionColor_SendOnMQTypeMT_FenixAddonSendGeneralTemplate              TypeAndStructs.ColorType                   = "#fff000AA"
+	TestInstructionColor_SendOnMQTypeMT_FenixAddonSendGeneralTemplate              TypeAndStructs.ColorType                   = "#DBBC0CAA"
 	TCRuleDeletion_SendOnMQTypeMT_FenixAddonSendGeneralTemplate                    TypeAndStructs.TCRuleDeletionType          = "TCRuleDeletion020"
 	TCRuleSwap_SendOnMQTypeMT_FenixAddonSendGeneralTemplate                        TypeAndStructs.TCRuleSwapType              = "TCRuleSwap020"
 	TestInstructionCreatingTimeStamp                                               TypeAndStructs.UpdatedTimeStampType        = "2024-09-19 13:00:00"
