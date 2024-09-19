@@ -53,6 +53,10 @@ const (
 	TestApiEngine_ClassName_UUID_SubCustody_SendOnMQTypeMT TestApiEngine_ClassName_UUID_SubCustody_Type = "8baf20d0-3882-45f9-aa2e-a6eef24fbe21"
 	TestApiEngine_ClassName_Name_SubCustody_SendOnMQTypeMT TestApiEngine_ClassName_Name_SubCustody_Type = "SendOnMQTypeMT"
 
+	// ClassName: 'SendOnMQTypeMT' - MethodName: 'SendMTGeneral'
+	TestApiEngine_MethodName_UUID_SubCustody_SendOnMQTypeMT_SendMTGeneral TestApiEngine_MethodName_UUID_SubCustody_Type = "e59b252b-47a7-4a37-9059-75fc7dbdb355"
+	TestApiEngine_MethodName_Name_SubCustody_SendOnMQTypeMT_SendMTGeneral TestApiEngine_MethodName_Name_SubCustody_Type = "SendMTGeneral_v1_0"
+
 	// ClassName: 'SendOnMQTypeMT' - MethodName: 'SendMT540'
 	TestApiEngine_MethodName_UUID_SubCustody_SendOnMQTypeMT_SendMT540 TestApiEngine_MethodName_UUID_SubCustody_Type = "573c604d-62ad-4c2b-9bc8-57f46b3434a3"
 	TestApiEngine_MethodName_Name_SubCustody_SendOnMQTypeMT_SendMT540 TestApiEngine_MethodName_Name_SubCustody_Type = "SendMT540_v1_0"

@@ -1,24 +1,24 @@
 package version_1_0
 
 import (
-	"github.com/jlambert68/FenixStandardTestInstructionAdmin/LocalExecutionMethods/TestApiEngineClassesAndMethods"
 	fenixTestInstructions "github.com/jlambert68/FenixStandardTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions"
 	"github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/LocalExecutionMethods"
+	TestApiEngineClassesAndMethodsAndAttributes "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/LocalExecutionMethods/TestApiEngineClassesAndMethods"
 	"github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/DomainData"
 	"github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions"
-	"github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/"
-	fixedValuesOverVersions "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendOnMQTypeMT_SendMT540"
+	"github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_SendOnMQTypeMT_SendGeneral"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/Domains"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TestCaseModelElementTypes"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TestInstructionAndTestInstuctionContainerTypes"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TypeAndStructs"
+	"strconv"
 )
 
 const (
 
 	// *************************************
 	// *** TestInstruction *** 'SendSwiftMessageOnMQTypeMT'
-	TestInstructionUUID_SendOnMQTypeMT_FenixAddonSendGeneralTemplate               TypeAndStructs.OriginalElementUUIDType     = fixedValuesOverVersions.TestInstructionUUID_SendOnMQTypeMT_SendGeneral
+	TestInstructionUUID_SendOnMQTypeMT_FenixAddonSendGeneralTemplate               TypeAndStructs.OriginalElementUUIDType     = TestInstruction_SendOnMQTypeMT_SendGeneral.TestInstructionUUID_SendOnMQTypeMT_SendGeneral
 	TestInstructionName_SendOnMQTypeMT_FenixAddonSendGeneralTemplate               TypeAndStructs.TestInstructionNameType     = "SendSwiftMessageOnMQTypeMT"
 	TestInstructionTypeUUID_SendOnMQTypeMT_FenixAddonSendGeneralTemplate           TypeAndStructs.TestInstructionTypeUUIDType = fenixTestInstructions.TestInstructionTypeUUID_FenixSentToUsersDomain_FenixSendTemplateAddOn
 	TestInstructionTypeName_SendOnMQTypeMT_FenixAddonSendGeneralTemplate           TypeAndStructs.TestInstructionTypeNameType = fenixTestInstructions.TestInstructionTypeName_FenixSentToUsersDomain_FenixSendTemplateAddOn
@@ -36,20 +36,17 @@ const (
 
 	// Attribute - 'SwiftMessageTypeCombobox'
 	TestInstructionAttributeUUID_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_SwiftMessageTypeCombobox        TypeAndStructs.TestInstructionAttributeUUIDType = "79e71319-4dcf-4939-8b6f-0c4b1b0cb6b1" // TODO fix so they use the same UUID, Can't bu done now because UUID is key in Attrubutes-table in DB .TestInstructionAttributeUUID_SendOnMQTypeMT_SendTemplateToThisExecutionDomain
-	TestInstructionAttributeName_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_SwiftMessageTypeCombobox        TypeAndStructs.TestInstructionAttributeNameType = "Swift MT-message type
+	TestInstructionAttributeName_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_SwiftMessageTypeCombobox        TypeAndStructs.TestInstructionAttributeNameType = "Swift MT-message type"
 	TestInstructionAttributeType_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_SwiftMessageTypeCombobox        TypeAndStructs.TestInstructionAttributeTypeType = "COMBOBOX"
 	TestInstructionAttributeDescription_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_SwiftMessageTypeCombobox string                                          = "The Template is of this Swift MT-message Type"
 	TestInstructionAttributeMouseOver_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_SwiftMessageTypeCombobox   string                                          = "The Template is of this Swift MT-message Type"
 
 	// Attribute - 'ExpectedToBePassed'
-	TestInstructionAttributeUUID_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = "a160b777-caa7-44c7-a4c4-7814f8fd3691" //TestInstructionAttributeUUID_SubCustody_ExpectedToBePassed
-	TestInstructionAttributeName_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeName_SubCustody_ExpectedToBePassedComboBox
-	TestInstructionAttributeType_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_SubCustody_ExpectedToBePassedComboBox
-	TestInstructionAttributeActionCommand_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_ExpectedToBePassed      TypeAndStructs.AttributeActionCommandType       = Domains.AttributeActionCommand_USE_DROPZONE_VALUE_FOR_ATTRIBUTE
-	TestInstructionAttributeValueAsStringValue_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_ExpectedToBePassed TypeAndStructs.AttributeValueAsStringType       = Domains.TestInstructionAttributeValueAsStringValue_TRUE
-	TestInstructionAttributeValueUUID_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_ExpectedToBePassed          TypeAndStructs.AttributeValueUUIDType           = Domains.TestInstructionAttributeValueUUID_TRUE
-	TestInstructionAttributeDescription_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_ExpectedToBePassed        string                                          = "Should the TestInstruction execution to be expected to succeed or not"
-	TestInstructionAttributeMouseOverText_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_ExpectedToBePassed      string                                          = "Should the TestInstruction execution to be expected to succeed or not"
+	TestInstructionAttributeUUID_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_ExpectedToBePassed          TypeAndStructs.TestInstructionAttributeUUIDType = "a160b777-caa7-44c7-a4c4-7814f8fd3691" //TestInstructionAttributeUUID_SubCustody_ExpectedToBePassed
+	TestInstructionAttributeName_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_ExpectedToBePassed          TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeName_SubCustody_ExpectedToBePassedComboBox
+	TestInstructionAttributeType_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_ExpectedToBePassed          TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_SubCustody_ExpectedToBePassedComboBox
+	TestInstructionAttributeDescription_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_ExpectedToBePassed   string                                          = "Should the TestInstruction execution to be expected to succeed or not"
+	TestInstructionAttributeMouseOverText_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_ExpectedToBePassed string                                          = "Should the TestInstruction execution to be expected to succeed or not"
 )
 
 var (
@@ -58,11 +55,11 @@ var (
 
 	// Attribute - 'FenixOwnedSendRawTemplateComboBox'
 	TestInstructionAttributeComboBoxPredefinedValues_FenixAddonSendGeneralTemplate_SwiftMessageTypeComboboxValues = TypeAndStructs.
-	TestInstructionAttributeComboBoxPredefinedValuesType{"MT540", "MT542"}
+															TestInstructionAttributeComboBoxPredefinedValuesType{"MT540", "MT542"}
 
 	// Attribute - 'ExpectedToBePassed'
 	TestInstructionAttributeComboBoxPredefinedValues_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_ExpectedToBePassed = TypeAndStructs.
-	TestInstructionAttributeComboBoxPredefinedValuesType{"true", "false"}
+																TestInstructionAttributeComboBoxPredefinedValuesType{"true", "false"}
 )
 
 // TestInstruction_SendOnMQTypeMT_FenixAddonSendGeneralTemplate
@@ -73,7 +70,40 @@ var TestInstruction_SendOnMQTypeMT_FenixAddonSendGeneralTemplate *TestInstructio
 // Function that creates all data for the TestInstruction
 func Initate_TestInstruction_SendOnMQTypeMT_FenixAddonSendGeneralTemplate() *TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct {
 
-	// Initiate variable to be able to store all TestInstruction data
+	// Generate Response variables for the TestInstruction
+	Initate_TestInstructionResponseVariables_SendOnMQTypeMT_SendGeneral()
+
+	// Create and Initialize maps used in 'LocalExecutionMethods'
+	var testApiEngineMethodAttributeMap map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct
+	testApiEngineMethodAttributeMap = make(map[TypeAndStructs.TestInstructionAttributeUUIDType]*TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct)
+
+	var testInstructionsMap TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType
+	testInstructionsMap = make(TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType)
+
+	var testApiEngineClassesMethodsAttributesVersionMap TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineClassesMethodsAttributesVersionMapType
+	testApiEngineClassesMethodsAttributesVersionMap = make(TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineClassesMethodsAttributesVersionMapType)
+
+	// Create version as 'string'
+	var versionNumberAsString TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodNameVersion_SubCustody_Type // "1_0" or "13_3" ...)
+	versionNumberAsString = TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodNameVersion_SubCustody_Type(
+		strconv.Itoa(TestInstructionMajorVersionNumber_SendOnMQTypeMT_FenixAddonSendGeneralTemplate) + "_" +
+			strconv.Itoa(TestInstructionMinorVersionNumber_SendOnMQTypeMT_FenixAddonSendGeneralTemplate))
+
+	// Create 'TestApiEngineClassesMethodsAttributesVersionMap' for this TestInstruction-version
+	testApiEngineClassesMethodsAttributesVersionMap[versionNumberAsString] = &TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineClassesMethodsAttributesStruct{
+		TestInstructionOriginalUUID: TestInstructionUUID_SendOnMQTypeMT_FenixAddonSendGeneralTemplate,
+		TestInstructionName:         TestInstructionName_SendOnMQTypeMT_FenixAddonSendGeneralTemplate,
+		TestApiEngineClassNameUUID:  TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_UUID_SubCustody_SendOnMQTypeMT,
+		TestApiEngineClassNameNAME:  TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_Name_SubCustody_SendOnMQTypeMT,
+		TestApiEngineMethodNameUUID: TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodName_UUID_SubCustody_SendOnMQTypeMT_SendMTGeneral,
+		TestApiEngineMethodNameNAME: TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodName_Name_SubCustody_SendOnMQTypeMT_SendMTGeneral,
+		Attributes:                  &testApiEngineMethodAttributeMap,
+	}
+
+	// Create testInstructionsMap for this TestInstruction
+	testInstructionsMap[TestInstructionUUID_SendOnMQTypeMT_FenixAddonSendGeneralTemplate] = &testApiEngineClassesMethodsAttributesVersionMap
+
+	// Initiate variable to store all TestInstruction data
 	TestInstruction_SendOnMQTypeMT_FenixAddonSendGeneralTemplate = &TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct{
 		TestInstruction:                    &TypeAndStructs.TestInstructionStruct{},
 		BasicTestInstructionInformation:    &TypeAndStructs.BasicTestInstructionInformationStruct{},
@@ -87,8 +117,7 @@ func Initate_TestInstruction_SendOnMQTypeMT_FenixAddonSendGeneralTemplate() *Tes
 				LocalParametersUsedInRunTime: &LocalExecutionMethods.LocalParametersUsedInRunTimeStruct{
 					ExpectedTestInstructionExecutionDurationInSeconds: ExpectedMaxTestInstructionExecutionDurationInSeconds,
 				},
-				TestApiEngineClassesMethodsAttributes: &TestApiEngineClassesAndMethods.TestApiEngineClassesMethodsAttributesStruct{},
-			},
+				TestInstructionsMap: &testInstructionsMap},
 		},
 	}
 

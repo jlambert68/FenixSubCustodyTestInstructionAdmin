@@ -1,7 +1,7 @@
-package TestInstruction_Standard_SendTemplateToThisDomain
+package TestInstruction_SendOnMQTypeMT_SendGeneral
 
 import "github.com/jlambert68/FenixTestInstructionsAdminShared/TypeAndStructs"
 
 const (
-	TestInstructionUUID_SendOnMQTypeMT_SendGeneral TypeAndStructs.OriginalElementUUIDType = "10e57cc7-3880-4c16-bdd8-975ed9cf2819"
+	TestInstructionUUID_SendOnMQTypeMT_SendGeneral TypeAndStructs.OriginalElementUUIDType = "091d0f35-d74d-4634-9d3e-95a6138fb4d3"
 )

@@ -5,9 +5,9 @@ go 1.22
 toolchain go1.23.0
 
 require (
-	github.com/jlambert68/FenixGrpcApi v0.0.0-20240830054946-33e5771fee81
+	github.com/jlambert68/FenixGrpcApi v0.0.0-20240902161440-74b93725d1bc
 	github.com/jlambert68/FenixStandardTestInstructionAdmin v0.0.0-20240919081445-a249ea1fb7f5
-	github.com/jlambert68/FenixSyncShared v0.0.0-20240215140904-db0840b5d70a
+	github.com/jlambert68/FenixSyncShared v0.0.0-20240911064419-da3d922610cb
 	github.com/jlambert68/FenixTestInstructionsAdminShared v0.0.0-20240830110518-fbce28ce9256
 
 )
