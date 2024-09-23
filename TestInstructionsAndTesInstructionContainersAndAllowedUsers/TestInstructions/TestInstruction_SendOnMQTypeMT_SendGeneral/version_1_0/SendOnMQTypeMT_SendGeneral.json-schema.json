@@ -6,13 +6,13 @@
     "testStepClassName": {
       "type": "string",
       "enum": [
-        "SendMTGeneral_v1_0"
+        "SendOnMQTypeMT"
       ]
     },
     "testStepActionMethod": {
       "type": "string",
       "enum": [
-        "SendGeneral_v1_0"
+        "SendMTGeneral_v1_0"
       ]
     },
     "testDataParameterType": {
