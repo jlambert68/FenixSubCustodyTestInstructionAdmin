@@ -1,0 +1,9 @@
+[{
+  "TestStepActionMethod": "SendGeneral_v1_0",
+  "TestInstructionVersion": "v1.0",
+  "ResponseVariableUuid": "24fa2f84-827a-4c01-a86c-da42d888c295",
+  "ResponseVariableName": ":20C::SEME//",
+  "ResponseVariableTypeUuid": "0f6e945e-1556-4cb0-80e5-e021ebc5d8c1",
+  "ResponseVariableTypeName": "54x_:20C::SEME type",
+  "ResponseVariableValueAsString": "SampleValue"
+}]
