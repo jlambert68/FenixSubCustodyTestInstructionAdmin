@@ -27,11 +27,12 @@ type TestApiEngineClassesMethodsAttributesStruct struct {
 // TestApiEngineAttributesStruct
 // Type for Attributes
 type TestApiEngineAttributesStruct struct {
-	TestInstructionAttributeUUID     TypeAndStructs.TestInstructionAttributeUUIDType     `json:"TestInstructionAttributeUUID"`
-	TestInstructionAttributeName     TypeAndStructs.TestInstructionAttributeNameType     `json:"TestInstructionAttributeName"`
-	TestInstructionAttributeTypeUUID TypeAndStructs.TestInstructionAttributeTypeUUIDType `json:"TestInstructionAttributeTypeUUID"`
-	TestApiEngineAttributeNameUUID   TestApiEngine_AttributeName_UUID_SubCustody_Type    `json:"TestApiEngineAttributeNameUUID"`
-	TestApiEngineAttributeNameName   TestApiEngine_AttributeName_Name_SubCustody_Type    `json:"TestApiEngineAttributeNameName"`
+	TestInstructionAttributeUUID         TypeAndStructs.TestInstructionAttributeUUIDType     `json:"TestInstructionAttributeUUID"`
+	TestInstructionAttributeName         TypeAndStructs.TestInstructionAttributeNameType     `json:"TestInstructionAttributeName"`
+	TestInstructionAttributeTypeUUID     TypeAndStructs.TestInstructionAttributeTypeUUIDType `json:"TestInstructionAttributeTypeUUID"`
+	TestApiEngineAttributeNameUUID       TestApiEngine_AttributeName_UUID_SubCustody_Type    `json:"TestApiEngineAttributeNameUUID"`
+	TestApiEngineAttributeNameName       TestApiEngine_AttributeName_Name_SubCustody_Type    `json:"TestApiEngineAttributeNameName"`
+	AttributeShouldBeSentToTestApiEngine bool                                                `json:"AttributeShouldBeSentToTestApiEngine"`
 }
 
 // TestApiEngineClassesMethodsAttributesVersionMapType
