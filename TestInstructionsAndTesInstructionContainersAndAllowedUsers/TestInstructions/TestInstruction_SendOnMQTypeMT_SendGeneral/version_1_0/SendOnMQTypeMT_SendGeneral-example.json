@@ -1,5 +1,5 @@
 {
-  "testStepClassName": "SendOnMQTypeMT",
+  "testStepClassName": "SendMTGeneral_v1_0",
   "testStepActionMethod": "SendGeneral_v1_0",
   "testDataParameterType": "FixedValue",
   "methodParameters": {

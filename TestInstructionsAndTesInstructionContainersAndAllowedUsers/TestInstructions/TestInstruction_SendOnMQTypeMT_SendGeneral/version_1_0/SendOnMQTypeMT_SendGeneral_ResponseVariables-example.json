@@ -1,5 +1,5 @@
 [{
-  "TestStepActionMethod": "SendGeneral_v1_0",
+  "TestStepActionMethod": "SendMTGeneral_v1_0",
   "TestInstructionVersion": "v1.0",
   "ResponseVariableUuid": "24fa2f84-827a-4c01-a86c-da42d888c295",
   "ResponseVariableName": ":20C::SEME//",

@@ -6,7 +6,7 @@
     "testStepClassName": {
       "type": "string",
       "enum": [
-        "SendOnMQTypeMT"
+        "SendMTGeneral_v1_0"
       ]
     },
     "testStepActionMethod": {
