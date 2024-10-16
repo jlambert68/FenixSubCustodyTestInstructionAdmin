@@ -272,7 +272,7 @@ func Initate_TestInstruction_SendOnMQTypeMT_FenixAddonSendGeneralTemplate() *Tes
 		TestInstructionAttributeTypeUUID:     TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_Standard,
 		TestApiEngineAttributeNameUUID:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_UUID_SubCustody_SendOnMQTypeMT_ReplacePlaceholers,
 		TestApiEngineAttributeNameName:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_Name_SubCustody_SendOnMQTypeMT_ReplacePlaceholers,
-		AttributeShouldBeSentToTestApiEngine: true,
+		AttributeShouldBeSentToTestApiEngine: false,
 	}
 
 	testApiEngineMethodAttributeMap[TestInstruction_SendTemplateToThisDomain_version_1_0.
