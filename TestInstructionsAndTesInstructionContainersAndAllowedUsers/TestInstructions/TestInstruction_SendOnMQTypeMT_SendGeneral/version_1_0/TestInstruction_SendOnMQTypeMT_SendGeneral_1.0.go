@@ -207,8 +207,8 @@ func Initate_TestInstruction_SendOnMQTypeMT_FenixAddonSendGeneralTemplate() *Tes
 	// ImmatureElementModel - FenixOwnedSendTemplateToThisDomain
 
 	// TestInstruction Attribute - 'ExpectedToBePassed'
-	var TestInstructionAttribute_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_SwiftMessageTypeCombobox *TypeAndStructs.TestInstructionAttributeStruct
-	TestInstructionAttribute_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_SwiftMessageTypeCombobox = &TypeAndStructs.TestInstructionAttributeStruct{
+	var tempTestApiEngineAttributeExpectedToBePassedCombobox *TypeAndStructs.TestInstructionAttributeStruct
+	tempTestApiEngineAttributeExpectedToBePassedCombobox = &TypeAndStructs.TestInstructionAttributeStruct{
 		DomainUUID:                                       DomainData.DomainUUID_SubCustody,
 		DomainName:                                       DomainData.DomainName_SubCustody,
 		TestInstructionUUID:                              TestInstructionUUID_SendOnMQTypeMT_FenixAddonSendGeneralTemplate,
@@ -232,7 +232,7 @@ func Initate_TestInstruction_SendOnMQTypeMT_FenixAddonSendGeneralTemplate() *Tes
 	}
 	TestInstruction_SendOnMQTypeMT_FenixAddonSendGeneralTemplate.TestInstructionAttribute = append(
 		TestInstruction_SendOnMQTypeMT_FenixAddonSendGeneralTemplate.TestInstructionAttribute,
-		TestInstructionAttribute_SendOnMQTypeMT_FenixAddonSendGeneralTemplate_SwiftMessageTypeCombobox)
+		tempTestApiEngineAttributeExpectedToBePassedCombobox)
 
 	// Add TestApiEngine relation for Attribute - 'ExpectedToBePassed'
 	var tempTestApiEngineAttributeExpectedToBePassed *TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct
@@ -249,36 +249,6 @@ func Initate_TestInstruction_SendOnMQTypeMT_FenixAddonSendGeneralTemplate() *Tes
 
 	// *** Add Attributes that comes from Fenix ***
 
-	// Add TestApiEngine relation for Fenix-Attribute - 'TemplateAsString'
-	var tempTestApiEngineAttributeTemplateAsString *TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct
-	tempTestApiEngineAttributeTemplateAsString = &TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct{
-		TestInstructionAttributeUUID:         TestInstruction_SendTemplateToThisDomain_version_1_0.TestInstructionAttributeUUID_FenixOwnedSendTemplateToThisDomain_FenixOwnedTemplateAsString,
-		TestInstructionAttributeName:         TestInstruction_SendTemplateToThisDomain_version_1_0.TestInstructionAttributeName_FenixOwnedSendTemplateToThisDomain_FenixOwnedTemplateAsString,
-		TestInstructionAttributeTypeUUID:     TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_Standard,
-		TestApiEngineAttributeNameUUID:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_UUID_SubCustody_SendOnMQTypeMT_TemplateAsString,
-		TestApiEngineAttributeNameName:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_Name_SubCustody_SendOnMQTypeMT_TemplateAsString,
-		AttributeShouldBeSentToTestApiEngine: true,
-	}
-
-	testApiEngineMethodAttributeMap[TestInstruction_SendTemplateToThisDomain_version_1_0.
-		TestInstructionAttributeUUID_FenixOwnedSendTemplateToThisDomain_FenixOwnedTemplateAsString] = tempTestApiEngineAttributeTemplateAsString
-
-	// Add TestApiEngine relation for Fenix-Attribute - 'ReplacePlaceholers'
-	var tempTestApiEngineAttributeReplacePlaceholders *TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct
-	tempTestApiEngineAttributeReplacePlaceholders = &TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct{
-		TestInstructionAttributeUUID:         TestInstruction_SendTemplateToThisDomain_version_1_0.TestInstructionAttributeUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateReplacePlaceholersComboBox,
-		TestInstructionAttributeName:         TestInstruction_SendTemplateToThisDomain_version_1_0.TestInstructionAttributeName_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateReplacePlaceholersComboBox,
-		TestInstructionAttributeTypeUUID:     TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_Standard,
-		TestApiEngineAttributeNameUUID:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_UUID_SubCustody_SendOnMQTypeMT_ReplacePlaceholers,
-		TestApiEngineAttributeNameName:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_Name_SubCustody_SendOnMQTypeMT_ReplacePlaceholers,
-		AttributeShouldBeSentToTestApiEngine: true,
-	}
-
-	testApiEngineMethodAttributeMap[TestInstruction_SendTemplateToThisDomain_version_1_0.
-		TestInstructionAttributeUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateReplacePlaceholersComboBox] = tempTestApiEngineAttributeReplacePlaceholders
-
-	// *** Add Attributes that comes from Fenix and should not be sent to TestApiEngine ***
-
 	// Add TestApiEngine relation for Attribute - 'FenixOwnedSendTemplateComboBox' which not should be sent to TestApiEngine
 	var tempTestApiEngineAttributeFenixOwnedSendTemplateComboBox *TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct
 	tempTestApiEngineAttributeFenixOwnedSendTemplateComboBox = &TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct{
@@ -294,11 +264,39 @@ func Initate_TestInstruction_SendOnMQTypeMT_FenixAddonSendGeneralTemplate() *Tes
 		TestInstructionAttributeUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateComboBox] =
 		tempTestApiEngineAttributeFenixOwnedSendTemplateComboBox
 
+	// Add TestApiEngine relation for Fenix-Attribute - 'ReplacePlaceholers'
+	var tempTestApiEngineAttributeReplacePlaceholders *TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct
+	tempTestApiEngineAttributeReplacePlaceholders = &TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct{
+		TestInstructionAttributeUUID:         TestInstruction_SendTemplateToThisDomain_version_1_0.TestInstructionAttributeUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateReplacePlaceholersComboBox,
+		TestInstructionAttributeName:         TestInstruction_SendTemplateToThisDomain_version_1_0.TestInstructionAttributeName_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateReplacePlaceholersComboBox,
+		TestInstructionAttributeTypeUUID:     TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_Standard,
+		TestApiEngineAttributeNameUUID:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_UUID_SubCustody_SendOnMQTypeMT_ReplacePlaceholers,
+		TestApiEngineAttributeNameName:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_Name_SubCustody_SendOnMQTypeMT_ReplacePlaceholers,
+		AttributeShouldBeSentToTestApiEngine: true,
+	}
+
+	testApiEngineMethodAttributeMap[TestInstruction_SendTemplateToThisDomain_version_1_0.
+		TestInstructionAttributeUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateReplacePlaceholersComboBox] = tempTestApiEngineAttributeReplacePlaceholders
+
+	// Add TestApiEngine relation for Fenix-Attribute - 'TemplateAsString'
+	var tempTestApiEngineAttributeTemplateAsString *TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct
+	tempTestApiEngineAttributeTemplateAsString = &TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct{
+		TestInstructionAttributeUUID:         TestInstruction_SendTemplateToThisDomain_version_1_0.TestInstructionAttributeUUID_FenixOwnedSendTemplateToThisDomain_FenixOwnedTemplateAsString,
+		TestInstructionAttributeName:         TestInstruction_SendTemplateToThisDomain_version_1_0.TestInstructionAttributeName_FenixOwnedSendTemplateToThisDomain_FenixOwnedTemplateAsString,
+		TestInstructionAttributeTypeUUID:     TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_Standard,
+		TestApiEngineAttributeNameUUID:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_UUID_SubCustody_SendOnMQTypeMT_TemplateAsString,
+		TestApiEngineAttributeNameName:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_Name_SubCustody_SendOnMQTypeMT_TemplateAsString,
+		AttributeShouldBeSentToTestApiEngine: true,
+	}
+
+	testApiEngineMethodAttributeMap[TestInstruction_SendTemplateToThisDomain_version_1_0.
+		TestInstructionAttributeUUID_FenixOwnedSendTemplateToThisDomain_FenixOwnedTemplateAsString] = tempTestApiEngineAttributeTemplateAsString
+
 	// Add TestApiEngine relation for Attribute - 'FenixOwnedSendTemplateToThisExecutionDomainComboBox' which not should be sent to TestApiEngine
 	var tempTestApiEngineAttributeFenixOwnedSendTemplateToThisExecutionDomainComboBox *TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct
 	tempTestApiEngineAttributeFenixOwnedSendTemplateToThisExecutionDomainComboBox = &TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct{
-		TestInstructionAttributeUUID:         TestInstruction_SendTemplateToThisDomain_version_1_0.TestInstructionAttributeUUID_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateToThisDomainTextBox,
-		TestInstructionAttributeName:         TestInstruction_SendTemplateToThisDomain_version_1_0.TestInstructionAttributeName_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateToThisDomainTextBox,
+		TestInstructionAttributeUUID:         TestInstruction_SendTemplateToThisDomain_version_1_0.TestInstructionAttributeUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateToThisExecutionDomainComboBox,
+		TestInstructionAttributeName:         TestInstruction_SendTemplateToThisDomain_version_1_0.TestInstructionAttributeName_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateToThisExecutionDomainComboBox,
 		TestInstructionAttributeTypeUUID:     TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_Standard,
 		TestApiEngineAttributeNameUUID:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_UUID_SubCustody_Type(""),
 		TestApiEngineAttributeNameName:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_Name_SubCustody_Type(""),
@@ -306,7 +304,7 @@ func Initate_TestInstruction_SendOnMQTypeMT_FenixAddonSendGeneralTemplate() *Tes
 	}
 
 	testApiEngineMethodAttributeMap[TestInstruction_SendTemplateToThisDomain_version_1_0.
-		TestInstructionAttributeUUID_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateToThisDomainTextBox] =
+		TestInstructionAttributeUUID_FenixSentToUsersDomain_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateToThisExecutionDomainComboBox] =
 		tempTestApiEngineAttributeFenixOwnedSendTemplateToThisExecutionDomainComboBox
 
 	// Add TestApiEngine relation for Attribute - 'FenixOwnedSendTemplateToThisDomainTextBox' which not should be sent to TestApiEngine
@@ -338,6 +336,21 @@ func Initate_TestInstruction_SendOnMQTypeMT_FenixAddonSendGeneralTemplate() *Tes
 	testApiEngineMethodAttributeMap[TestInstruction_SendTemplateToThisDomain_version_1_0.
 		TestInstructionAttributeUUID_FenixOwnedSendTemplateToThisDomain_FenixOwnedSendTemplateToThisExecutionDomainTextBox] =
 		tempTestApiEngineAttributeFenixOwnedSendTemplateToThisExecutionDomainTextBox
+
+	// Add TestApiEngine relation for Attribute - 'FenixOwnedSendTemplateToThisExecutionDomainTextBox' which not should be sent to TestApiEngine
+	var tempTestApiEngineAttributeFenixOwnedTemplateAsStringTextBox *TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct
+	tempTestApiEngineAttributeFenixOwnedTemplateAsStringTextBox = &TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct{
+		TestInstructionAttributeUUID:         TestInstruction_SendTemplateToThisDomain_version_1_0.TestInstructionAttributeUUID_FenixOwnedSendTemplateToThisDomain_FenixOwnedTemplateAsString,
+		TestInstructionAttributeName:         TestInstruction_SendTemplateToThisDomain_version_1_0.TestInstructionAttributeName_FenixOwnedSendTemplateToThisDomain_FenixOwnedTemplateAsString,
+		TestInstructionAttributeTypeUUID:     TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_Standard,
+		TestApiEngineAttributeNameUUID:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_UUID_SubCustody_Type(""),
+		TestApiEngineAttributeNameName:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_Name_SubCustody_Type(""),
+		AttributeShouldBeSentToTestApiEngine: false,
+	}
+
+	testApiEngineMethodAttributeMap[TestInstruction_SendTemplateToThisDomain_version_1_0.
+		TestInstructionAttributeUUID_FenixOwnedSendTemplateToThisDomain_FenixOwnedTemplateAsString] =
+		tempTestApiEngineAttributeFenixOwnedTemplateAsStringTextBox
 
 	// ImmatureElementModel - FenixOwnedSendTemplateToThisDomain
 	var TestInstructionImmatureElementModel_SendOnMQTypeMT_FenixAddonSendGeneralTemplate *TypeAndStructs.ImmatureElementModelMessageStruct
