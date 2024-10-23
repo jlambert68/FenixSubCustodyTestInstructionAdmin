@@ -17,7 +17,8 @@ func GenerateAndVerifyRPCMessages() {
 	// Worker Server - gRPC-message
 
 	// Convert supported TestInstructions, TestInstructionContainers and Allowed Users message into a gRPC-Worker version of the message
-	var supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersGrpcWorkerMessage *fenixExecutionWorkerGrpcApi.SupportedTestInstructionsAndTestInstructionContainersAndAllowedUsersMessage
+	var supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersGrpcWorkerMessage *fenixExecutionWorkerGrpcApi.
+		SupportedTestInstructionsAndTestInstructionContainersAndAllowedUsersMessage
 	supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersGrpcWorkerMessage, err = shared_code.
 		GenerateTestInstructionAndTestInstructionContainerAndUserGrpcWorkerMessage(string(DomainData.DomainUUID_SubCustody),
 			TestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody)
@@ -27,7 +28,8 @@ func GenerateAndVerifyRPCMessages() {
 	}
 
 	// Convert back supported TestInstructions, TestInstructionContainers and Allowed Users message from a gRPC-Worker version of the message and check correctness of Hashes
-	var testInstructionsAndTestInstructionContainersFromGrpcWorkerMessage *TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct
+	var testInstructionsAndTestInstructionContainersFromGrpcWorkerMessage *TestInstructionAndTestInstuctionContainerTypes.
+		TestInstructionsAndTestInstructionsContainersStruct
 	testInstructionsAndTestInstructionContainersFromGrpcWorkerMessage, err = shared_code.
 		GenerateStandardFromGrpcWorkerMessageForTestInstructionsAndUsers(
 			supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersGrpcWorkerMessage)
@@ -52,8 +54,10 @@ func GenerateAndVerifyRPCMessages() {
 	// Convert supported TestInstructions, TestInstructionContainers and Allowed Users message into a gRPC-Builder version of the message
 	var supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersGrpcBuilderMessage *fenixTestCaseBuilderServerGrpcApi.SupportedTestInstructionsAndTestInstructionContainersAndAllowedUsersMessage
 	supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersGrpcBuilderMessage, err = shared_code.
-		GenerateTestInstructionAndTestInstructionContainerAndUserGrpcBuilderMessage(string(DomainData.DomainUUID_SubCustody),
-			TestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody)
+		GenerateTestInstructionAndTestInstructionContainerAndUserGrpcBuilderMessage(
+			string(DomainData.DomainUUID_SubCustody),
+			TestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody,
+			supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersGrpcWorkerMessage.MessageSignatureData)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)

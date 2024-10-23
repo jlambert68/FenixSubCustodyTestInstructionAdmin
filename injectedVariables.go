@@ -8,6 +8,7 @@ var (
 	Injected_TestApiEngineAddress string
 	Injected_TestApiEngineUrlPath string
 	Injected_TestApiEnginePort    string
+	Injected_PrivateKey           string
 )
 
 var falseValue string = "false"
@@ -21,4 +22,5 @@ var injectedVariablesMap = map[string]*string{
 	"Injected_TestApiEngineAddress": &Injected_TestApiEngineAddress,
 	"Injected_TestApiEngineUrlPath": &Injected_TestApiEngineUrlPath,
 	"Injected_TestApiEnginePort":    &Injected_TestApiEnginePort,
+	"Injected_PrivateKey":           &Injected_PrivateKey,
 }
