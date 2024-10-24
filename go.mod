@@ -5,17 +5,17 @@ go 1.22
 toolchain go1.23.0
 
 require (
-	github.com/jlambert68/FenixGrpcApi v0.0.0-20241022175244-86f2f20991d4
+	github.com/jlambert68/FenixGrpcApi v0.0.0-20241024112839-e9bc605c05df
 	github.com/jlambert68/FenixStandardTestInstructionAdmin v0.0.0-20241024080408-a282b5752b98
 	github.com/jlambert68/FenixSyncShared v0.0.0-20240911064419-da3d922610cb
-	github.com/jlambert68/FenixTestInstructionsAdminShared v0.0.0-20241024080234-e3febbebe27a
+	github.com/jlambert68/FenixTestInstructionsAdminShared v0.0.0-20241024120558-b5bcbcf2da45
 )
 
 require (
 	cloud.google.com/go/auth v0.9.9 // indirect
 	cloud.google.com/go/auth/oauth2adapt v0.2.4 // indirect
 	cloud.google.com/go/compute/metadata v0.5.2 // indirect
-	cloud.google.com/go/iam v1.2.1 // indirect
+	cloud.google.com/go/iam v1.2.2 // indirect
 	github.com/decred/dcrd/crypto/blake256 v1.0.1 // indirect
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.3.0 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
@@ -51,7 +51,7 @@ require (
 	golang.org/x/text v0.19.0 // indirect
 	golang.org/x/time v0.7.0 // indirect
 	gonum.org/v1/gonum v0.15.1 // indirect
-	google.golang.org/api v0.202.0 // indirect
+	google.golang.org/api v0.203.0 // indirect
 	google.golang.org/genproto v0.0.0-20241021214115-324edc3d5d38 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20241021214115-324edc3d5d38 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20241021214115-324edc3d5d38 // indirect
