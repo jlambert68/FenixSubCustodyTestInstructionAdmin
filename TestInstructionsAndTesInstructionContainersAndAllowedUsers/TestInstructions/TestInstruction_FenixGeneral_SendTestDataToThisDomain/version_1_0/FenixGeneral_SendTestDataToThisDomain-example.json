@@ -1,0 +1,10 @@
+{
+  "testStepClassName": "FenixGeneral",
+  "testStepActionMethod": "SendTestDataToThisDomain_v1_0",
+  "testDataParameterType": "FixedValue",
+  "methodParameters": {
+    "MethodParametersJsonAsString": "{ \"TestStepActionMethod\": \"SendTemplateToThisDomain_v1_0\", \"TestInstructionVersion\": \"v1.0\", \"ExpectedToBePassed\": \"true\", \"TestCaseExecutionUuid\": \"a0161997-4323-45a8-93fa-8ff7d64d1b7a\", \"TestInstructionExecutionUuid\": \"ae344db4-2d34-474e-bd91-1b24ac408b75\", \"TestInstructionExecutionVersion\": \"1\", \"ChosenTestDataAsJsonString\": \"{\"TestDataAreaName\": \"Main TestData Area\", \"TestDataAreaUuid\": \"010cc994-a913-4041-96fe-a96d7e0c97e8\", \"TestDataValueMap\": {\"MarketName\": {\"TestDataValue\": \"Canada\", \"HeaderDataName\": \"MarketName\" }, \"MarketSubType\": { \"TestDataValue\": \"BBH\", \"HeaderDataName\": \"MarketSubType\" }, \"TestDataId\": { \"TestDataValue\": \"38\", \"HeaderDataName\": \"TestDataId\" }, \"AccountEnvironment\": { \"TestDataValue\": \"SysTest\", \"HeaderDataName\": \"AccountEnvironment\" } }, \"TestDataDomainName\": \"Sub Custody\", \"TestDataDomainUuid\": \"7edf2269-a8d3-472c-aed6-8cdcc4a8b6ae\", \"TestDataRowIdentifier\": \"96f3de0e-6412-5434-b406-67ef3352ab85\", \"TestDataFileSha256Hash\": \"Main TestData Area\"}\" }"
+  },
+  "expectedToBePassed": true
+}
+
