@@ -93,4 +93,16 @@ const (
 	// ClassName: 'ValidateMQTypeMT54x' - MethodName: 'ValidateMT548'
 	TestApiEngine_MethodName_UUID_SubCustody_VerifyMQMessageTypeMT_VerifyMT548 TestApiEngine_MethodName_UUID_SubCustody_Type = "f7b0b0da-6b3a-40b8-bdbb-a032a6d8d056"
 	TestApiEngine_MethodName_Name_SubCustody_VerifyMQMessageTypeMT_VerifyMT548 TestApiEngine_MethodName_Name_SubCustody_Type = "ValidateMT548_v1_0"
+
+	// ClassName - ***** 'FenixGeneral' *****
+	TestApiEngine_ClassName_UUID_FenixGeneral  TestApiEngine_ClassName_UUID_SubCustody_Type = "524bf0ff-8ca9-4edc-a78e-9b4ffb876655"
+	TestApiEngine_ClassName_Name__FenixGeneral TestApiEngine_ClassName_Name_SubCustody_Type = "FenixGeneral"
+
+	// ClassName: 'FenixGeneral' - MethodName: 'SendTestDataToThisDomain'
+	TestApiEngine_MethodName_UUID_FenixGeneral_SendTestDataToThisDomain  TestApiEngine_MethodName_UUID_SubCustody_Type = "33b96905-28fe-49e6-80e4-f00d446a96ac"
+	TestApiEngine_MethodName_Name_FenixGeneralT_SendTestDataToThisDomain TestApiEngine_MethodName_Name_SubCustody_Type = "SendTestDataToThisDomain_v1_0"
+
+	// ClassName:'FenixGeneral' - MethodName: 'SendTestDataToThisDomain' - Attributes
+	TestApiEngine_AttributeName_UUID_FenixGeneral_SendTestDataToThisDomain_RelatedReference_54x_20CRELA  TestApiEngine_AttributeName_UUID_SubCustody_Type = "9d99a553-23fe-4f02-942f-0d53ddc8acfb"
+	TestApiEngine_AttributeName_Name_SFenixGeneral_SendTestDataToThisDomain_RelatedReference_54x_20CRELA TestApiEngine_AttributeName_Name_SubCustody_Type = "RelatedReference_54x_20CRELA"
 )
