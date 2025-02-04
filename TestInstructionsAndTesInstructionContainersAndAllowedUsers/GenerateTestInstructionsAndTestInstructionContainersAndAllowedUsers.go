@@ -228,10 +228,18 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCust
 
 	// TestInstructionContainers
 
+	// All TestInstructions that are managed by Fenix, for TestApiEngine
+	var testInstructionsManagedByFenix []*TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct
+	testInstructionsManagedByFenix = []*TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct{
+		FenixGeneral_SendTestDataToThisDomain_1_0.TestInstruction_FenixGeneral_SendTestDataToThisDomain,
+	}
+
 	// Create structure for Local Methods to call in TestApiEngine
 	var tempFullTestApiEngineClassesMethodsAttributesVersionMap *TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType
 	tempFullTestApiEngineClassesMethodsAttributesVersionMap = LocalExecutionMethods.
-		InitiateFullTestApiEngineClassesMethodsAttributesMap(TestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody)
+		InitiateFullTestApiEngineClassesMethodsAttributesMap(
+			TestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody,
+			testInstructionsManagedByFenix)
 
 	// Calculate hashes that is included in the Supported TestInstructions, TestInstructionContainers and Allowed Users message
 	err = shared_code.CalculateTestInstructionAndTestInstructionContainerAndUsersMessageHashes(

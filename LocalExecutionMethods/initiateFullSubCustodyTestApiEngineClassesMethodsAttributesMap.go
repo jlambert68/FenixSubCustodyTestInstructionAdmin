@@ -11,7 +11,8 @@ import (
 
 func InitiateFullTestApiEngineClassesMethodsAttributesMap(
 	testInstructionsAndTestInstructionContainersAndAllowedUsers *TestInstructionAndTestInstuctionContainerTypes.
-		TestInstructionsAndTestInstructionsContainersStruct) *TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType {
+		TestInstructionsAndTestInstructionsContainersStruct,
+	testInstructionsManagedByFenix []*TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct) *TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType {
 
 	// Run 'init()' to load environment variables
 	Init()
@@ -150,5 +151,78 @@ func InitiateFullTestApiEngineClassesMethodsAttributesMap(
 			}
 		}
 	}
+
+	//var tempOriginalTestInstructionUuid TypeAndStructs.OriginalElementUUIDType
+
+	// 	Loop all TestInstructions managed by Fenix to add TestApiEngine-mappings
+	for _, testInstructionManagedByFenix := range testInstructionsManagedByFenix {
+
+		fmt.Println(testInstructionManagedByFenix)
+
+		// Extract 'LocalExecutionMethods'
+		var tempLocalExecutionMethodsForSingleTestInstructionDefinition *TestInstructionAndTestInstuctionContainerTypes.AnyType
+		tempLocalExecutionMethodsForSingleTestInstructionDefinition = &testInstructionManagedByFenix.LocalExecutionMethods
+
+		// Cast 'AnyType' into type used for mapping towards TestApiEngine
+		if tempMethodsForLocalExecutionsForSingleTestInstructionDefinition, ok := tempLocalExecutionMethodsForSingleTestInstructionDefinition.Value.(*MethodsForLocalExecutionsStruct); ok {
+			// If ok is true, cast was successful
+
+			// Pointer to the Map holding all TestInstructions, with their versions
+			var TestInstructionsMapFromTestInstructionVersionForSingleTestInstructionDefinitionPtr *TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType
+			TestInstructionsMapFromTestInstructionVersionForSingleTestInstructionDefinitionPtr = tempMethodsForLocalExecutionsForSingleTestInstructionDefinition.TestInstructionsMap
+
+			// Map holding all TestInstructions, with their versions
+			var TestInstructionsMapFromTestInstructionVersionForSingleTestInstructionDefinition TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType
+			TestInstructionsMapFromTestInstructionVersionForSingleTestInstructionDefinition = make(TestApiEngineClassesAndMethodsAndAttributes.TestInstructionsMapType)
+
+			TestInstructionsMapFromTestInstructionVersionForSingleTestInstructionDefinition = *TestInstructionsMapFromTestInstructionVersionForSingleTestInstructionDefinitionPtr
+
+			for tempOriginalTestInstructionUuid, tempTestApiEngineClassesMethodsAttributesVersionMapForSingleTestInstructionDefinitionPtr := range TestInstructionsMapFromTestInstructionVersionForSingleTestInstructionDefinition {
+
+				// Pointer to the Map holding each TestInstructionVersion for the TestInstruction
+				//var tempTestApiEngineClassesMethodsAttributesVersionMapForSingleTestInstructionDefinitionPtr *TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineClassesMethodsAttributesVersionMapType
+				//tempTestApiEngineClassesMethodsAttributesVersionMapForSingleTestInstructionDefinitionPtr, existInMap := TestInstructionsMapFromTestInstructionVersionForSingleTestInstructionDefinition[tempOriginalTestInstructionUuid]
+				//if existInMap == false {
+				//	fmt.Println("TestInstruction should not be missing")
+				//	os.Exit(1)
+				//}
+
+				// Map holding each TestInstructionVersion for the TestInstruction
+				var tempTestApiEngineClassesMethodsAttributesVersionMapForSingleTestInstructionDefinition TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineClassesMethodsAttributesVersionMapType
+				tempTestApiEngineClassesMethodsAttributesVersionMapForSingleTestInstructionDefinition = *tempTestApiEngineClassesMethodsAttributesVersionMapForSingleTestInstructionDefinitionPtr
+
+				// Add back data into map that holds all TestInstructions and all their versions
+				FullTestApiEngineClassesMethodsAttributesVersionMap[tempOriginalTestInstructionUuid] = &tempTestApiEngineClassesMethodsAttributesVersionMapForSingleTestInstructionDefinition
+			}
+		} else {
+			// If ok is false, the cast failed and castedValue will be the zero value of the type
+			fmt.Println("Casting failed")
+			os.Exit(1)
+		}
+
+		/*
+			// Create the version number as a 'string'
+			versionNumberAsString = TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodNameVersion_SubCustody_Type(
+				strconv.Itoa(tempTestInstructionVersion.TestInstructionInstanceMajorVersion) + "_" +
+					strconv.Itoa(tempTestInstructionVersion.TestInstructionInstanceMinorVersion))
+
+			// Pointer to the Map holding a TestInstructions, with their versions
+			var testInstructionsMapPtr *TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineClassesMethodsAttributesVersionMapType
+
+			// Check if TestInstructionUuid exists in map
+			testInstructionsMapPtr, existInMap = FullTestApiEngineClassesMethodsAttributesVersionMap[tempOriginalTestInstructionUuid]
+			if existInMap == false {
+
+				// TestInstruction does not exist, so it should be created together with this version
+			} else {
+				// If ok is false, the cast failed and castedValue will be the zero value of the type
+				fmt.Println("Should never happen")
+				os.Exit(1)
+			}
+
+
+		*/
+	}
+
 	return &FullTestApiEngineClassesMethodsAttributesVersionMap
 }
