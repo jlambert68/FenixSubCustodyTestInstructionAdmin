@@ -157,8 +157,6 @@ func InitiateFullTestApiEngineClassesMethodsAttributesMap(
 	// 	Loop all TestInstructions managed by Fenix to add TestApiEngine-mappings
 	for _, testInstructionManagedByFenix := range testInstructionsManagedByFenix {
 
-		fmt.Println(testInstructionManagedByFenix)
-
 		// Extract 'LocalExecutionMethods'
 		var tempLocalExecutionMethodsForSingleTestInstructionDefinition *TestInstructionAndTestInstuctionContainerTypes.AnyType
 		tempLocalExecutionMethodsForSingleTestInstructionDefinition = &testInstructionManagedByFenix.LocalExecutionMethods
