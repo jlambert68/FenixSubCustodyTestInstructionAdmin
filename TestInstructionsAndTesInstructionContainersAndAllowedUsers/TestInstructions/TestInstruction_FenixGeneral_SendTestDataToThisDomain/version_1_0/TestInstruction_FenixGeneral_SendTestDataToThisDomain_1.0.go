@@ -93,7 +93,7 @@ func Initate_TestInstruction_FenixGeneral_SendTestDataToThisDomain() *TestInstru
 		TestInstructionAttributeTypeUUID:     TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_ExpectedToPass,
 		TestApiEngineAttributeNameUUID:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_UUID_SubCustody_GeneralAttribute_ExpectedToBePassed,
 		TestApiEngineAttributeNameName:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_Name_SubCustody_GeneralAttribute_ExpectedToBePassed,
-		AttributeShouldBeSentToTestApiEngine: true,
+		AttributeShouldBeSentToTestApiEngine: false,
 	}
 
 	testApiEngineMethodAttributeMap[TestInstructionAttributeUUID_FenixGeneral_SendTestDataToThisDomain_ExpectedToBePassed] = tempTestApiEngineAttributeExpectedToBePassed
