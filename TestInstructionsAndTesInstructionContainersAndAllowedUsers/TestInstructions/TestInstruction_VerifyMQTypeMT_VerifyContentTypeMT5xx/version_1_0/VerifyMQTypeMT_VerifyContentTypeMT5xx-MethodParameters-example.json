@@ -1,5 +1,5 @@
 {
-  "TestStepActionMethod": "VerifyReceivedTypeMT5xx_v1_0",
+  "TestStepActionMethod": "VerifyContentTypeMT5xx_v1_0",
   "TestInstructionVersion": "v1.0",
   "ExpectedToBePassed": "true",
   "TestCaseExecutionUuid": "a0161997-4323-45a8-93fa-8ff7d64d1b7a",
@@ -7,5 +7,5 @@
   "TestInstructionExecutionVersion": "1",
   "TimeoutTimeInSeconds": "600",
   "RelatedReference_5xx_20CRELA": "323840-3389",
-  "MessageType_5xx": "MT544"
+  "MessageType_5xx": "MT540"
 }
