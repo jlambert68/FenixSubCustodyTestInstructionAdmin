@@ -38,12 +38,24 @@
       "type": "string",
       "pattern": "^[0-9]+$"
     },
-    "RelatedReference_5xx_20CRELA": {
+    "Reference_5xx_20CSEME": {
       "type": "string"
     },
     "MessageType_5xx": {
       "type": "string",
       "pattern": "^MT5[0-9]{2}$"
+    },
+    "IgnoreFollowingChecks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Class": { "type": "string" },
+          "ActionMethod": { "type": "string" }
+        },
+        "required": ["Class", "ActionMethod"],
+        "additionalProperties": false
+      }
     }
   },
   "required": [
@@ -54,8 +66,9 @@
     "TestInstructionExecutionVersion",
     "ExpectedToBePassed",
     "TimeoutTimeInSeconds",
-    "RelatedReference_5xx_20CRELA",
-    "MessageType_5xx"
+    "Reference_5xx_20CSEME",
+    "MessageType_5xx",
+    "IgnoreFollowingChecks"
   ],
   "additionalProperties": false
 }
