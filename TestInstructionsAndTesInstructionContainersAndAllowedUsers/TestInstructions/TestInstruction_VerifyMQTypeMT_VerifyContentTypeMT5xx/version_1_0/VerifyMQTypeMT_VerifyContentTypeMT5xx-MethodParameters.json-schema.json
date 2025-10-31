@@ -51,9 +51,9 @@
         "type": "object",
         "properties": {
           "Class": { "type": "string" },
-          "ActionMethod": { "type": "string" }
+          "Method": { "type": "string" }
         },
-        "required": ["Class", "ActionMethod"],
+        "required": ["Class", "Method"],
         "additionalProperties": false
       }
     },
@@ -63,9 +63,9 @@
         "type": "object",
         "properties": {
           "Class": { "type": "string" },
-          "ActionMethod": { "type": "string" }
+          "Method": { "type": "string" }
         },
-        "required": ["Class", "ActionMethod"],
+        "required": ["Class", "Method"],
         "additionalProperties": false
       }
     }
