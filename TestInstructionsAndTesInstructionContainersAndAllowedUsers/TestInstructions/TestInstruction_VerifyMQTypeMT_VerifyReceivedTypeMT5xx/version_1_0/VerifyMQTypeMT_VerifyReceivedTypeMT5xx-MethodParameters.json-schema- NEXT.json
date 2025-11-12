@@ -6,7 +6,7 @@
     "TestStepActionMethod": {
       "type": "string",
       "enum": [
-        "VerifyContentTypeMT5xx_v1_0"
+        "VerifyReceivedTypeMT5xx_v1_0"
       ]
     },
     "TestInstructionVersion": {
@@ -38,7 +38,7 @@
       "type": "string",
       "pattern": "^[0-9]+$"
     },
-    "Reference_5xx_20CRELA": {
+    "RelatedReference_5xx_20CRELA": {
       "type": "string"
     },
     "MessageType_5xx": {
@@ -54,7 +54,7 @@
     "TestInstructionExecutionVersion",
     "ExpectedToBePassed",
     "TimeoutTimeInSeconds",
-    "Reference_5xx_20CRELA",
+    "RelatedReference_5xx_20CRELA",
     "MessageType_5xx"
   ],
   "additionalProperties": false

@@ -21,8 +21,14 @@ import (
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TestInstructionAndTestInstuctionContainerTypes"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/TypeAndStructs"
 	"github.com/jlambert68/FenixTestInstructionsAdminShared/shared_code"
+
 	"os"
 	"time"
+
+	VerifyMQTypeMT_VerifyReceivedTypeMT5xx "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_VerifyMQTypeMT_VerifyReceivedTypeMT5xx"
+	VerifyMQTypeMT_VerifyReceivedTypeMT5xx_1_0 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_VerifyMQTypeMT_VerifyReceivedTypeMT5xx/version_1_0"
+	//VerifyMQTypeMT_VerifyReceivedTypeMT5xx "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_VerifyMQTypeMT_VerifyReceivedTypeMT5xx"
+	//VerifyMQTypeMT_VerifyReceivedTypeMT5xx_1_0 "github.com/jlambert68/FenixSubCustodyTestInstructionAdmin/TestInstructionsAndTesInstructionContainersAndAllowedUsers/TestInstructions/TestInstruction_VerifyMQTypeMT_VerifyReceivedTypeMT5xx/version_1_0"
 )
 
 // TestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody
@@ -70,6 +76,9 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCust
 
 	// Initate_TestInstruction_FenixGeneral_SendTestDataToThisDomain
 	FenixGeneral_SendTestDataToThisDomain_1_0.Initate_TestInstruction_FenixGeneral_SendTestDataToThisDomain()
+
+	// VerifyMQTypeMT::VerifyReceivedTypeMT5xx
+	VerifyMQTypeMT_VerifyReceivedTypeMT5xx_1_0.Initate_TestInstruction_SubCustody_VerifyReceivedTypeMT5xx()
 
 	// Build structure for all TestInstructions & TestInstructionContainers to be sent over gRPC to Fenix Backend
 	TestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCustody = &TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct{
@@ -199,6 +208,28 @@ func GenerateTestInstructionsAndTestInstructionContainersAndAllowedUsers_SubCust
 							TestInstructionInstanceVersionHash:  shared_code.InitialValueBeforeHashed,
 							ResponseVariablesMapStructure: &TestInstructionAndTestInstuctionContainerTypes.ResponseVariablesMapStructureStruct{
 								ResponseVariablesMap:     VerifyMQMessageTypeMT_VerifyMT548_1_0.TestInstructionResponseVariables_SubCustody_ValidateMT548,
+								ResponseVariablesMapHash: shared_code.InitialValueBeforeHashed,
+							},
+							TestInstructionInstanceVersionAndResponseVariablesHash: shared_code.InitialValueBeforeHashed,
+						},
+					},
+
+					TestInstructionVersionsHash: shared_code.InitialValueBeforeHashed,
+				},
+				//TestInstruction 'VerifyMQTypeMT_VerifyReceivedTypeMT5xx'
+				VerifyMQTypeMT_VerifyReceivedTypeMT5xx.TestInstructionUUID_SubCustody_VerifyReceivedTypeMT5xx: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
+					TestInstructionVersions: []*TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
+
+						// Version 'VerifyMQTypeMT_VerifyReceivedTypeMT5xx_1_0'
+						{
+							TestInstructionInstance:             VerifyMQTypeMT_VerifyReceivedTypeMT5xx_1_0.TestInstruction_SubCustody_VerifyReceivedTypeMT5xx,
+							TestInstructionInstanceMajorVersion: VerifyMQTypeMT_VerifyReceivedTypeMT5xx_1_0.TestInstruction_SubCustody_VerifyReceivedTypeMT5xx.TestInstruction.MajorVersionNumber,
+							TestInstructionInstanceMinorVersion: VerifyMQTypeMT_VerifyReceivedTypeMT5xx_1_0.TestInstruction_SubCustody_VerifyReceivedTypeMT5xx.TestInstruction.MinorVersionNumber,
+							Deprecated:                          VerifyMQTypeMT_VerifyReceivedTypeMT5xx_1_0.TestInstruction_SubCustody_VerifyReceivedTypeMT5xx.TestInstruction.Deprecated,
+							Enabled:                             VerifyMQTypeMT_VerifyReceivedTypeMT5xx_1_0.TestInstruction_SubCustody_VerifyReceivedTypeMT5xx.TestInstruction.Enabled,
+							TestInstructionInstanceVersionHash:  shared_code.InitialValueBeforeHashed,
+							ResponseVariablesMapStructure: &TestInstructionAndTestInstuctionContainerTypes.ResponseVariablesMapStructureStruct{
+								ResponseVariablesMap:     VerifyMQTypeMT_VerifyReceivedTypeMT5xx_1_0.TestInstructionResponseVariables_SubCustody_VerifyReceivedTypeMT5xx,
 								ResponseVariablesMapHash: shared_code.InitialValueBeforeHashed,
 							},
 							TestInstructionInstanceVersionAndResponseVariablesHash: shared_code.InitialValueBeforeHashed,

@@ -7,5 +7,5 @@
   "TestInstructionExecutionVersion": "1",
   "TimeoutTimeInSeconds": "600",
   "RelatedReference_5xx_20CRELA": "323840-3389",
-  "MessageType_5xx": "MT540"
+  "MessageType_5xx": "MT544"
 }

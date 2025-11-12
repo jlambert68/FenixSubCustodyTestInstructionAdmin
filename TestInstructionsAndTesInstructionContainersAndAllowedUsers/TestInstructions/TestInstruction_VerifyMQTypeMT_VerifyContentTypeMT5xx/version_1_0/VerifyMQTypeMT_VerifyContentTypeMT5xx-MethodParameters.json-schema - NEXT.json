@@ -38,12 +38,36 @@
       "type": "string",
       "pattern": "^[0-9]+$"
     },
-    "Reference_5xx_20CRELA": {
+    "Reference_5xx_20CSEME": {
       "type": "string"
     },
     "MessageType_5xx": {
       "type": "string",
       "pattern": "^MT5[0-9]{2}$"
+    },
+    "ProcessFollowingActions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Class": { "type": "string" },
+          "Method": { "type": "string" }
+        },
+        "required": ["Class", "Method"],
+        "additionalProperties": false
+      }
+    },
+    "IgnoreFollowingActions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Class": { "type": "string" },
+          "Method": { "type": "string" }
+        },
+        "required": ["Class", "Method"],
+        "additionalProperties": false
+      }
     }
   },
   "required": [
@@ -55,7 +79,9 @@
     "ExpectedToBePassed",
     "TimeoutTimeInSeconds",
     "Reference_5xx_20CRELA",
-    "MessageType_5xx"
+    "MessageType_5xx",
+    "ProcessFollowingActions",
+    "IgnoreFollowingActions"
   ],
   "additionalProperties": false
 }
