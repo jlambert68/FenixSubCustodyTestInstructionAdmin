@@ -22,6 +22,11 @@ const (
 	TestInstructionAttributeName_SubCustody_RelatedReference_54x_20CRELA TypeAndStructs.TestInstructionAttributeNameType = "RelatedReference_54x_20CRELA"
 	TestInstructionAttributeType_SubCustody_RelatedReference_54x_20CRELA TypeAndStructs.TestInstructionAttributeTypeType = "RESPONSE_VARIABLE_COMBOBOX"
 
+	// Attribute 'RelatedReference_54x_20CRELA' is the parameter that gets its value from another TestInstructionExecutions output via a Response variable
+	TestInstructionAttributeUUID_SubCustody_RelatedReference_5xx_20CRELA TypeAndStructs.TestInstructionAttributeUUIDType = "ed997d43-d7db-4902-98e1-2143c8dd2c84"
+	TestInstructionAttributeName_SubCustody_RelatedReference_5xx_20CRELA TypeAndStructs.TestInstructionAttributeNameType = "RelatedReference_5xx_20CRELA"
+	TestInstructionAttributeType_SubCustody_RelatedReference_5xx_20CRELA TypeAndStructs.TestInstructionAttributeTypeType = "RESPONSE_VARIABLE_COMBOBOX"
+
 	TestInstructionAttributeTypeUUID_StandardAttributes TypeAndStructs.TestInstructionAttributeTypeUUIDType = "a0161997-4323-45a8-93fa-8ff7d64d1b7a"
 	TestInstructionAttributeTypeName_StandardAttributes TypeAndStructs.TestInstructionAttributeTypeNameType = "Standard Attributes"
 )

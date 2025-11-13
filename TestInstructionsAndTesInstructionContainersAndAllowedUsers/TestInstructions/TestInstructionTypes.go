@@ -21,4 +21,7 @@ const (
 const (
 	ResponseVariableTypeUuid_54x_20CSEME TypeAndStructs.ResponseVariableTypeUuidType = "0f6e945e-1556-4cb0-80e5-e021ebc5d8c1"
 	ResponseVariableTypeName_54x_20CSEME TypeAndStructs.ResponseVariableTypeNameType = "54x_20CSEME type"
+
+	ResponseVariableTypeUuid_5xx_20CSEME TypeAndStructs.ResponseVariableTypeUuidType = "c0247b44-597a-41cc-8612-aebf23e47ec3"
+	ResponseVariableTypeName_5xx_20CSEME TypeAndStructs.ResponseVariableTypeNameType = "5xx_20CSEME type"
 )

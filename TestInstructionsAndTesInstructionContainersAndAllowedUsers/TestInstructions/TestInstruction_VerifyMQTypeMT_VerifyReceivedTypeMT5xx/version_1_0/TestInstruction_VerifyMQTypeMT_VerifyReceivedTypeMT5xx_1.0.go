@@ -34,14 +34,14 @@ const (
 	ExpectedMaxTestInstructionExecutionDurationInSeconds                 int64                                  = 300
 
 	// *** DropZone *** 'VerifyReceivedTypeMT5xx_ExpectsToSucceed'
-	TestInstructionDropZoneUUID_SubCustody_VerifyReceivedTypeMT5xx_ExpectsToSucceed        TypeAndStructs.DropZoneUUIDType = "451da9d8-10b6-4dd2-beae-c64077f2804f"
+	TestInstructionDropZoneUUID_SubCustody_VerifyReceivedTypeMT5xx_ExpectsToSucceed        TypeAndStructs.DropZoneUUIDType = "b6213a14-a8bd-484f-8767-fe8ad187c857"
 	TestInstructionDropZoneName_SubCustody_VerifyReceivedTypeMT5xx_ExpectsToSucceed        TypeAndStructs.DropZoneNameType = "VerifyReceivedTypeMT5xx_ExpectsToSucceed"
 	TestInstructionDropZoneDescription_SubCustody_VerifyReceivedTypeMT5xx_ExpectsToSucceed string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
 	TestInstructionDropZoneMouseOver_SubCustody_VerifyReceivedTypeMT5xx_ExpectsToSucceed   string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
 	TestInstructionDropZoneColor_SubCustody_VerifyReceivedTypeMT5xx_ExpectsToSucceed       TypeAndStructs.ColorType        = "#0DF36EAA"
 
 	// Attribute - 'ExpectedToBePassed'
-	TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = "41e0a5a2-7225-465c-810c-d2e12c32f41a" //TestInstructionAttributeUUID_SubCustody_ExpectedToBePassed
+	TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = "a355e44b-9405-43b8-95a5-ed52f0436e66" //TestInstructionAttributeUUID_SubCustody_ExpectedToBePassed
 	TestInstructionAttributeName_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeName_SubCustody_ExpectedToBePassed
 	TestInstructionAttributeType_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_SubCustody_ExpectedToBePassed
 	TestInstructionAttributeDescription_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed        string                                          = "Should the TestInstruction execution to be expected to succeed or not"
@@ -50,12 +50,12 @@ const (
 	TestInstructionAttributeValueAsStringValue_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed TypeAndStructs.AttributeValueAsStringType       = Domains.TestInstructionAttributeValueAsStringValue_TRUE
 	TestInstructionAttributeValueUUID_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed          TypeAndStructs.AttributeValueUUIDType           = Domains.TestInstructionAttributeValueUUID_TRUE
 
-	// Attribute - 'RelatedReference_54x_20CRELA'
-	TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_54x_20CRELA          TypeAndStructs.TestInstructionAttributeUUIDType = TestInstructions.TestInstructionAttributeUUID_SubCustody_RelatedReference_54x_20CRELA
-	TestInstructionAttributeName_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_54x_20CRELA          TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeName_SubCustody_RelatedReference_54x_20CRELA
-	TestInstructionAttributeType_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_54x_20CRELA          TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_SubCustody_RelatedReference_54x_20CRELA
-	TestInstructionAttributeDescription_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_54x_20CRELA   string                                          = "Extracts the response parameter from 54x_20CSEME that was sent on MQ"
-	TestInstructionAttributeMouseOverText_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_54x_20CRELA string                                          = "Extracts the response parameter from 54x_20CSEME that was sent on MQ"
+	// Attribute - 'RelatedReference_5xx_20CRELA'
+	TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA          TypeAndStructs.TestInstructionAttributeUUIDType = TestInstructions.TestInstructionAttributeUUID_SubCustody_RelatedReference_5xx_20CRELA
+	TestInstructionAttributeName_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA          TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeName_SubCustody_RelatedReference_5xx_20CRELA
+	TestInstructionAttributeType_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA          TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_SubCustody_RelatedReference_5xx_20CRELA
+	TestInstructionAttributeDescription_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA   string                                          = "Extracts the response parameter from 5xx_20CSEME that was sent on MQ"
+	TestInstructionAttributeMouseOverText_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA string                                          = "Extracts the response parameter from 5xx_20CSEME that was sent on MQ"
 )
 
 // TestInstruction_SubCustody_VerifyReceivedTypeMT5xx
@@ -89,10 +89,10 @@ func Initate_TestInstruction_SubCustody_VerifyReceivedTypeMT5xx() *TestInstructi
 	testApiEngineClassesMethodsAttributesVersionMap[versionNumberAsString] = &TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineClassesMethodsAttributesStruct{
 		TestInstructionOriginalUUID: TestInstructionUUID_SubCustody_VerifyReceivedTypeMT5xx,
 		TestInstructionName:         TestInstructionName_SubCustody_VerifyReceivedTypeMT5xx,
-		TestApiEngineClassNameUUID:  TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_UUID_SubCustody_VerifyMQMessageTypeMT,
-		TestApiEngineClassNameNAME:  TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_Name_SubCustody_VerifyMQMessageTypeMT,
-		TestApiEngineMethodNameUUID: TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodName_UUID_SubCustody_VerifyMQMessageTypeMT_VerifyMT544,
-		TestApiEngineMethodNameNAME: TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodName_Name_SubCustody_VerifyMQMessageTypeMT_VerifyMT544,
+		TestApiEngineClassNameUUID:  TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_UUID_SubCustody_VerifyMQTypeMT,
+		TestApiEngineClassNameNAME:  TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_ClassName_Name_SubCustody_VerifyMQTypeMT,
+		TestApiEngineMethodNameUUID: TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodName_UUID_SubCustody_VerifyMQMessageTypeMT_VerifyContentTypeMT5xx,
+		TestApiEngineMethodNameNAME: TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_MethodName_Name_SubCustody_VerifyMQMessageTypeMT_VerifyContentTypeMT5xx,
 		Attributes:                  &testApiEngineMethodAttributeMap,
 	}
 
@@ -224,17 +224,17 @@ func Initate_TestInstruction_SubCustody_VerifyReceivedTypeMT5xx() *TestInstructi
 	testApiEngineMethodAttributeMap[TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed] = tempTestApiEngineAttributeExpectedToBePassed
 	//TestInstruction_SubCustody_VerifyReceivedTypeMT5xx.LocalExecutionMethods.TestInstructionsMap.Attributes[TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed] = tempTestApiEngineAttributeExpectedToBePassed
 
-	// TestInstruction Attribute - 'RelatedReference_54x_20CRELA'
-	var TestInstructionAttribute_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_54x_20CRELA *TypeAndStructs.TestInstructionAttributeStruct
-	TestInstructionAttribute_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_54x_20CRELA = &TypeAndStructs.TestInstructionAttributeStruct{
+	// TestInstruction Attribute - 'RelatedReference_5xx_20CRELA'
+	var TestInstructionAttribute_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA *TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA = &TypeAndStructs.TestInstructionAttributeStruct{
 		DomainUUID:                                    DomainData.DomainUUID_SubCustody,
 		DomainName:                                    DomainData.DomainName_SubCustody,
 		TestInstructionUUID:                           TestInstructionUUID_SubCustody_VerifyReceivedTypeMT5xx,
 		TestInstructionName:                           TestInstructionName_SubCustody_VerifyReceivedTypeMT5xx,
-		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_54x_20CRELA,
-		TestInstructionAttributeName:                  TestInstructionAttributeName_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_54x_20CRELA,
-		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_54x_20CRELA,
-		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_54x_20CRELA,
+		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA,
+		TestInstructionAttributeName:                  TestInstructionAttributeName_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA,
+		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA,
+		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA,
 		TestInstructionAttributeTypeUUID:              TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_Standard,
 		TestInstructionAttributeTypeName:              TestInstructions.TestInstructionAttributeTypeName_SubCustody_Standard,
 		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
@@ -245,25 +245,25 @@ func Initate_TestInstruction_SubCustody_VerifyReceivedTypeMT5xx() *TestInstructi
 		TestInstructionAttributeVisibleInTestCaseArea: false,
 		TestInstructionAttributeIsDeprecated:          false,
 		TestInstructionAttributeInputMask:             "^.+$",
-		TestInstructionAttributeType:                  TestInstructionAttributeType_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_54x_20CRELA,
+		TestInstructionAttributeType:                  TestInstructionAttributeType_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA,
 	}
 	TestInstruction_SubCustody_VerifyReceivedTypeMT5xx.TestInstructionAttribute = append(
 		TestInstruction_SubCustody_VerifyReceivedTypeMT5xx.TestInstructionAttribute,
-		TestInstructionAttribute_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_54x_20CRELA)
+		TestInstructionAttribute_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA)
 
-	// Add TestApiEngine relation for Attribute - 'RelatedReference_54x_20CRELA'
-	var tempTestApiEngineAttributeRelatedReference_54x_20CRELA *TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct
-	tempTestApiEngineAttributeRelatedReference_54x_20CRELA = &TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct{
-		TestInstructionAttributeUUID:         TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_54x_20CRELA,
-		TestInstructionAttributeName:         TestInstructionAttributeName_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_54x_20CRELA,
+	// Add TestApiEngine relation for Attribute - 'RelatedReference_5xx_20CRELA'
+	var tempTestApiEngineAttributeRelatedReference_5xx_20CRELA *TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct
+	tempTestApiEngineAttributeRelatedReference_5xx_20CRELA = &TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct{
+		TestInstructionAttributeUUID:         TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA,
+		TestInstructionAttributeName:         TestInstructionAttributeName_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA,
 		TestInstructionAttributeTypeUUID:     TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_Standard,
-		TestApiEngineAttributeNameUUID:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_UUID_SubCustody_VerifyMQMessageTypeMT_RelatedReference_54x_20CRELA,
-		TestApiEngineAttributeNameName:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_Name_SubCustody_VerifyMQMessageTypeMT_RelatedReference_54x_20CRELA,
+		TestApiEngineAttributeNameUUID:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_UUID_SubCustody_VerifyMQMessageTypeMT_RelatedReference_5xx_20CRELA,
+		TestApiEngineAttributeNameName:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_Name_SubCustody_VerifyMQMessageTypeMT_RelatedReference_5xx_20CRELA,
 		AttributeShouldBeSentToTestApiEngine: true,
 	}
 
-	testApiEngineMethodAttributeMap[TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_54x_20CRELA] = tempTestApiEngineAttributeRelatedReference_54x_20CRELA
-	//TestInstruction_SubCustody_VerifyReceivedTypeMT5xx.LocalExecutionMethods.TestInstructionsMap.Attributes[TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_54x_20CRELA] = tempTestApiEngineAttributeRelatedReference_54x_20CRELA
+	testApiEngineMethodAttributeMap[TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA] = tempTestApiEngineAttributeRelatedReference_5xx_20CRELA
+	//TestInstruction_SubCustody_VerifyReceivedTypeMT5xx.LocalExecutionMethods.TestInstructionsMap.Attributes[TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA] = tempTestApiEngineAttributeRelatedReference_5xx_20CRELA
 
 	// ImmatureElementModel - VerifyReceivedTypeMT5xx
 	var TestInstructionImmatureElementModel_SubCustody_VerifyReceivedTypeMT5xx *TypeAndStructs.ImmatureElementModelMessageStruct
