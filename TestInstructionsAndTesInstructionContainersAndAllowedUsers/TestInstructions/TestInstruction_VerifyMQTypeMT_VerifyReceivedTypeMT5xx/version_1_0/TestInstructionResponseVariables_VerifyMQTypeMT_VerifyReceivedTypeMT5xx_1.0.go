@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	ResponseVariableUuid_VerifyReceivedTypeMT5xx_20CSEME TypeAndStructs.ResponseVariableUuidType = "a3e33ac4-9065-4f1b-a066-82ebd122b098"
+	ResponseVariableUuid_VerifyReceivedTypeMT5xx_20CSEME TypeAndStructs.ResponseVariableUuidType = "17bdce39-6c5a-4d1b-b0c0-fc2c4800deb3"
 	ResponseVariableName_VerifyReceivedTypeMT5xx_20CSEME TypeAndStructs.ResponseVariableNameType = ":20C::SEME//"
 )
 
