@@ -51,7 +51,7 @@ const (
 	TestInstructionAttributeValueUUID_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed          TypeAndStructs.AttributeValueUUIDType           = Domains.TestInstructionAttributeValueUUID_TRUE
 
 	// Attribute - 'RelatedReference_5xx_20CRELA'
-	TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA          TypeAndStructs.TestInstructionAttributeUUIDType = TestInstructions.TestInstructionAttributeUUID_SubCustody_RelatedReference_5xx_20CRELA
+	TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA          TypeAndStructs.TestInstructionAttributeUUIDType = TestInstructions.TestInstructionAttributeUUID_SubCustody_RelatedReference_54x_20CRELA
 	TestInstructionAttributeName_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA          TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeName_SubCustody_RelatedReference_54x_20CRELA
 	TestInstructionAttributeType_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA          TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_SubCustody_RelatedReference_54x_20CRELA
 	TestInstructionAttributeDescription_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA   string                                          = "Extracts the response parameter from 5xx_20CSEME that was sent on MQ"
