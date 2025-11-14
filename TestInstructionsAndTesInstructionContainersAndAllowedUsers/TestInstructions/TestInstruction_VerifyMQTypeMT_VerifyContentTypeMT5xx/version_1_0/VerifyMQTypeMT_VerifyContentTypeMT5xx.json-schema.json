@@ -3,6 +3,9 @@
   "title": "Verify that a message of type MT5xx was received, version 1.0",
   "type": "object",
   "properties": {
+    "testCaseExecutionId": {
+      "type": "string"
+    },
     "testStepClassName": {
       "type": "string",
       "enum": [

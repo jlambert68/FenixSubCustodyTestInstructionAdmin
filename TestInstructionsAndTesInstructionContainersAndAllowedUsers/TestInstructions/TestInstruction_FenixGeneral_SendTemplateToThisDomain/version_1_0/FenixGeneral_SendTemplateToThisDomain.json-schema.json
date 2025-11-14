@@ -3,7 +3,7 @@
   "title": "FenixGeneral_SendTemplateToThisDomain Request, version 1.0",
   "type": "object",
   "properties": {
-    "testcase_execution_id": {
+    "testCaseExecutionId": {
       "type": "string"
     },
     "testStepClassName": {
