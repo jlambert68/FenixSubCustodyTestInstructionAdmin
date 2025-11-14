@@ -37,7 +37,7 @@
     }
   },
   "required": [
-    "testcase_execution_id",
+    "testCaseExecutionId",
     "testStepClassName",
     "testStepActionMethod",
     "testDataParameterType",
