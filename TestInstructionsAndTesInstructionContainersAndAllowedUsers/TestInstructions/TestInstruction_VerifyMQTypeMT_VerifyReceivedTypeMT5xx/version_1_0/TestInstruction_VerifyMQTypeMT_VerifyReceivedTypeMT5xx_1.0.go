@@ -59,7 +59,7 @@ const (
 
 	// Attribute - 'SwiftMessageTypeCombobox'
 	TestInstructionAttributeUUID_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox        TypeAndStructs.TestInstructionAttributeUUIDType = "7540e4fe-a5be-499c-92aa-70db14e0631d" // TODO fix so they use the same UUID, Can't bu done now because UUID is key in Attrubutes-table in DB .TestInstructionAttributeUUID_SendOnMQTypeMT_SendTemplateToThisExecutionDomain
-	TestInstructionAttributeName_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox        TypeAndStructs.TestInstructionAttributeNameType = "Swift MT-message type"
+	TestInstructionAttributeName_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox        TypeAndStructs.TestInstructionAttributeNameType = "MessageType_5xx"
 	TestInstructionAttributeType_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox        TypeAndStructs.TestInstructionAttributeTypeType = "COMBOBOX"
 	TestInstructionAttributeDescription_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox string                                          = "The Template is of this Swift MT-message Type"
 	TestInstructionAttributeMouseOver_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox   string                                          = "The Template is of this Swift MT-message Type"
