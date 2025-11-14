@@ -113,9 +113,9 @@ const (
 	TestApiEngine_ClassName_UUID_SubCustody_VerifyMQTypeMT TestApiEngine_ClassName_UUID_SubCustody_Type = "020d87ea-218d-4d40-aded-9c1bae6774a6"
 	TestApiEngine_ClassName_Name_SubCustody_VerifyMQTypeMT TestApiEngine_ClassName_Name_SubCustody_Type = "VerifyMQTypeMT"
 
-	// ClassName: 'VerifyMQTypeMT' - MethodName: 'VerifyContentTypeMT5xx'
-	TestApiEngine_MethodName_UUID_SubCustody_VerifyMQMessageTypeMT_VerifyContentTypeMT5xx TestApiEngine_MethodName_UUID_SubCustody_Type = "993664a9-2d1a-44a8-8b97-408dd3c59908"
-	TestApiEngine_MethodName_Name_SubCustody_VerifyMQMessageTypeMT_VerifyContentTypeMT5xx TestApiEngine_MethodName_Name_SubCustody_Type = "VerifyContentTypeMT5xx"
+	// ClassName: 'VerifyMQTypeMT' - MethodName: 'VerifyReceivedTypeMT5xx'
+	TestApiEngine_MethodName_UUID_SubCustody_VerifyMQMessageTypeMT_VerifyReceivedTypeMT5xx TestApiEngine_MethodName_UUID_SubCustody_Type = "993664a9-2d1a-44a8-8b97-408dd3c59908"
+	TestApiEngine_MethodName_Name_SubCustody_VerifyMQMessageTypeMT_VerifyReceivedTypeMT5xx TestApiEngine_MethodName_Name_SubCustody_Type = "VerifyReceivedTypeMT5xx_v1_0"
 
 	// ClassName:'VerifyMQTypeMT' - MethodName: 'VerifyContentTypeMT5xx' - Attributes
 	TestApiEngine_AttributeName_UUID_SubCustody_VerifyMQMessageTypeMT_RelatedReference_5xx_20CRELA TestApiEngine_AttributeName_UUID_SubCustody_Type = "327946da-abe1-42d5-8141-06ee7fb11cad"
