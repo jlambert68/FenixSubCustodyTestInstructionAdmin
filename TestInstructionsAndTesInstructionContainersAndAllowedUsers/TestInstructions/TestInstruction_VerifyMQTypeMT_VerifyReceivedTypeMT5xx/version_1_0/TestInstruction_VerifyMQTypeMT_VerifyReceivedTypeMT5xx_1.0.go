@@ -56,6 +56,23 @@ const (
 	TestInstructionAttributeType_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA          TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_SubCustody_RelatedReference_54x_20CRELA
 	TestInstructionAttributeDescription_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA   string                                          = "Extracts the response parameter from 5xx_20CSEME that was sent on MQ"
 	TestInstructionAttributeMouseOverText_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA string                                          = "Extracts the response parameter from 5xx_20CSEME that was sent on MQ"
+
+	// Attribute - 'SwiftMessageTypeCombobox'
+	TestInstructionAttributeUUID_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox        TypeAndStructs.TestInstructionAttributeUUIDType = "7540e4fe-a5be-499c-92aa-70db14e0631d" // TODO fix so they use the same UUID, Can't bu done now because UUID is key in Attrubutes-table in DB .TestInstructionAttributeUUID_SendOnMQTypeMT_SendTemplateToThisExecutionDomain
+	TestInstructionAttributeName_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox        TypeAndStructs.TestInstructionAttributeNameType = "Swift MT-message type"
+	TestInstructionAttributeType_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox        TypeAndStructs.TestInstructionAttributeTypeType = "COMBOBOX"
+	TestInstructionAttributeDescription_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox string                                          = "The Template is of this Swift MT-message Type"
+	TestInstructionAttributeMouseOver_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox   string                                          = "The Template is of this Swift MT-message Type"
+)
+
+var (
+	// Attribute - 'FenixOwnedSendRawTemplateComboBox'
+	TestInstructionAttributeComboBoxPredefinedValues_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeComboboxValues = TypeAndStructs.
+																TestInstructionAttributeComboBoxPredefinedValuesType{"MT544", "MT546", "MT548"}
+
+	// Attribute - 'ExpectedToBePassed'
+	TestInstructionAttributeComboBoxPredefinedValues_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_ExpectedToBePassed = TypeAndStructs.
+															TestInstructionAttributeComboBoxPredefinedValuesType{"true", "false"}
 )
 
 // TestInstruction_SubCustody_VerifyReceivedTypeMT5xx
@@ -186,25 +203,26 @@ func Initate_TestInstruction_SubCustody_VerifyReceivedTypeMT5xx() *TestInstructi
 	// TestInstruction Attribute - 'ExpectedToBePassed'
 	var TestInstructionAttribute_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed *TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed = &TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    DomainData.DomainUUID_SubCustody,
-		DomainName:                                    DomainData.DomainName_SubCustody,
-		TestInstructionUUID:                           TestInstructionUUID_SubCustody_VerifyReceivedTypeMT5xx,
-		TestInstructionName:                           TestInstructionName_SubCustody_VerifyReceivedTypeMT5xx,
-		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed,
-		TestInstructionAttributeName:                  TestInstructionAttributeName_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed,
-		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed,
-		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed,
-		TestInstructionAttributeTypeUUID:              TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_ExpectedToPass,
-		TestInstructionAttributeTypeName:              TestInstructions.TestInstructionAttributeTypeName_SubCustody_ExpectedToPass,
-		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
-		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUID_NO_VALUE,
-		TestInstructionAttributeVisible:               true,
-		TestInstructionAttributeEnabled:               true,
-		TestInstructionAttributeMandatory:             true,
-		TestInstructionAttributeVisibleInTestCaseArea: false,
-		TestInstructionAttributeIsDeprecated:          false,
-		TestInstructionAttributeInputMask:             "^(true|false)$",
-		TestInstructionAttributeType:                  TestInstructionAttributeType_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed,
+		DomainUUID:                                       DomainData.DomainUUID_SubCustody,
+		DomainName:                                       DomainData.DomainName_SubCustody,
+		TestInstructionUUID:                              TestInstructionUUID_SubCustody_VerifyReceivedTypeMT5xx,
+		TestInstructionName:                              TestInstructionName_SubCustody_VerifyReceivedTypeMT5xx,
+		TestInstructionAttributeUUID:                     TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed,
+		TestInstructionAttributeName:                     TestInstructionAttributeName_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed,
+		TestInstructionAttributeDescription:              TestInstructionAttributeDescription_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed,
+		TestInstructionAttributeMouseOver:                TestInstructionAttributeMouseOverText_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed,
+		TestInstructionAttributeTypeUUID:                 TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_ExpectedToPass,
+		TestInstructionAttributeTypeName:                 TestInstructions.TestInstructionAttributeTypeName_SubCustody_ExpectedToPass,
+		TestInstructionAttributeValueAsString:            Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
+		TestInstructionAttributeValueUUID:                Domains.TestInstructionAttributeValueUUID_NO_VALUE,
+		TestInstructionAttributeVisible:                  true,
+		TestInstructionAttributeEnabled:                  true,
+		TestInstructionAttributeMandatory:                true,
+		TestInstructionAttributeVisibleInTestCaseArea:    false,
+		TestInstructionAttributeIsDeprecated:             false,
+		TestInstructionAttributeInputMask:                "^(true|false)$",
+		TestInstructionAttributeType:                     TestInstructionAttributeType_SubCustody_VerifyReceivedTypeMT5xx_ExpectedToBePassed,
+		TestInstructionAttributeComboBoxPredefinedValues: TestInstructionAttributeComboBoxPredefinedValues_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_ExpectedToBePassed,
 	}
 	TestInstruction_SubCustody_VerifyReceivedTypeMT5xx.TestInstructionAttribute = append(
 		TestInstruction_SubCustody_VerifyReceivedTypeMT5xx.TestInstructionAttribute,
@@ -264,6 +282,47 @@ func Initate_TestInstruction_SubCustody_VerifyReceivedTypeMT5xx() *TestInstructi
 
 	testApiEngineMethodAttributeMap[TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA] = tempTestApiEngineAttributeRelatedReference_5xx_20CRELA
 	//TestInstruction_SubCustody_VerifyReceivedTypeMT5xx.LocalExecutionMethods.TestInstructionsMap.Attributes[TestInstructionAttributeUUID_SubCustody_VerifyReceivedTypeMT5xx_RelatedReference_5xx_20CRELA] = tempTestApiEngineAttributeRelatedReference_5xx_20CRELA
+
+	// TestInstruction Attribute - 'SwiftMessageTypeCombobox'
+	var TestInstructionAttribute_SubCustody_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_ExpectedToBePassed *TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_SubCustody_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_ExpectedToBePassed = &TypeAndStructs.TestInstructionAttributeStruct{
+		DomainUUID:                                       DomainData.DomainUUID_SubCustody,
+		DomainName:                                       DomainData.DomainName_SubCustody,
+		TestInstructionUUID:                              TestInstructionUUID_SubCustody_VerifyReceivedTypeMT5xx,
+		TestInstructionName:                              TestInstructionName_SubCustody_VerifyReceivedTypeMT5xx,
+		TestInstructionAttributeUUID:                     TestInstructionAttributeUUID_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox,
+		TestInstructionAttributeName:                     TestInstructionAttributeName_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox,
+		TestInstructionAttributeDescription:              TestInstructionAttributeDescription_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox,
+		TestInstructionAttributeMouseOver:                TestInstructionAttributeMouseOver_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox,
+		TestInstructionAttributeTypeUUID:                 TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_Standard,
+		TestInstructionAttributeTypeName:                 TestInstructions.TestInstructionAttributeTypeName_SubCustody_Standard,
+		TestInstructionAttributeValueAsString:            Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
+		TestInstructionAttributeValueUUID:                Domains.TestInstructionAttributeValueUUID_NO_VALUE,
+		TestInstructionAttributeVisible:                  true,
+		TestInstructionAttributeEnabled:                  true,
+		TestInstructionAttributeMandatory:                true,
+		TestInstructionAttributeVisibleInTestCaseArea:    false,
+		TestInstructionAttributeIsDeprecated:             false,
+		TestInstructionAttributeInputMask:                "^.+$",
+		TestInstructionAttributeType:                     TestInstructionAttributeType_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox,
+		TestInstructionAttributeComboBoxPredefinedValues: TestInstructionAttributeComboBoxPredefinedValues_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeComboboxValues,
+	}
+	TestInstruction_SubCustody_VerifyReceivedTypeMT5xx.TestInstructionAttribute = append(
+		TestInstruction_SubCustody_VerifyReceivedTypeMT5xx.TestInstructionAttribute,
+		TestInstructionAttribute_SubCustody_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_ExpectedToBePassed)
+
+	// Add TestApiEngine relation for Attribute - 'SwiftMessageTypeCombobox'
+	var tempTestApiEngineAttributeSwiftMessageTypeCombobox *TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct
+	tempTestApiEngineAttributeSwiftMessageTypeCombobox = &TestApiEngineClassesAndMethodsAndAttributes.TestApiEngineAttributesStruct{
+		TestInstructionAttributeUUID:         TestInstructionAttributeUUID_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox,
+		TestInstructionAttributeName:         TestInstructionAttributeName_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox,
+		TestInstructionAttributeTypeUUID:     TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_Standard,
+		TestApiEngineAttributeNameUUID:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_UUID_SubCustody_SendOnMQTypeMT_SwiftMessageType,
+		TestApiEngineAttributeNameName:       TestApiEngineClassesAndMethodsAndAttributes.TestApiEngine_AttributeName_Name_SubCustody_SendOnMQTypeMT_SwiftMessageType,
+		AttributeShouldBeSentToTestApiEngine: true,
+	}
+
+	testApiEngineMethodAttributeMap[TestInstructionAttributeUUID_VerifyMQTypeMT_VerifyReceivedTypeMT5xx_SwiftMessageTypeCombobox] = tempTestApiEngineAttributeSwiftMessageTypeCombobox
 
 	// ImmatureElementModel - VerifyReceivedTypeMT5xx
 	var TestInstructionImmatureElementModel_SubCustody_VerifyReceivedTypeMT5xx *TypeAndStructs.ImmatureElementModelMessageStruct
