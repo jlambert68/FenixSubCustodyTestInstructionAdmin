@@ -1,0 +1,12 @@
+package TestApiEngineClassesAndMethodsAndAttributes
+
+// Classes, Methods and their Parameters in TestApiEngine for SubCustody
+const (
+	// Zero Attribute UUID
+	TestApiEngine_ClassName_UUID_SubCustody_ZeroEmptyUuid TestApiEngine_AttributeName_UUID_SubCustody_Type = "00000000-0000-0000-0000-000000000000"
+	TestApiEngine_ClassName_Name_SubCustody_ZeroEmptyName TestApiEngine_AttributeName_Name_SubCustody_Type = "TestApiEngine_ClassName_Name_SubCustody_EmptyName"
+
+	// General Attribute - ''
+	TestApiEngine_ClassName_UUID_SubCustody_GeneralAttribute_ExpectedToBePassed TestApiEngine_AttributeName_UUID_SubCustody_Type = "9edb935e-e683-4fee-bfca-f05faa0af595"
+	TestApiEngine_ClassName_Name_SubCustody_GeneralAttribute_ExpectedToBePassed TestApiEngine_AttributeName_Name_SubCustody_Type = "expectedToBePassed"
+)

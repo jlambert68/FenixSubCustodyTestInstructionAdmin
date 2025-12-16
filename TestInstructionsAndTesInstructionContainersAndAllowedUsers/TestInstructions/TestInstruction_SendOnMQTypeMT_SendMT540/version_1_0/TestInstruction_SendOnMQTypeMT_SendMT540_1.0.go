@@ -13,26 +13,54 @@ import (
 	"strconv"
 )
 
+// OwnerDomain and ExecutionDomain for TestInstruction // CHANGE HERE
+const (
+	domainUUID          TypeAndStructs.DomainUUIDType = DomainData.DomainUUID_SubCustody
+	domainName          TypeAndStructs.DomainNameType = DomainData.DomainName_SubCustody
+	executionDomainUUID TypeAndStructs.DomainUUIDType = DomainData.ExecutionDomainUUID_SubCustody_OnPrem
+	executionDomainName TypeAndStructs.DomainNameType = DomainData.ExecutionDomainName_SubCustody_OnPrem
+)
+
+// Constants for TestInstruction "SubCustody_SendMT540"  // CHANGE HERE
+const (
+	testInstructionUUID                                  TypeAndStructs.OriginalElementUUIDType = fixedValuesOverVersions.TestInstructionUUID_SubCustody_SendMT540
+	testInstructionTypeUUID                                                                     = TestInstructions.TestInstructionTypeUUID_SubCustody_SendOnMQTypeMT
+	testInstructionTypeName                                                                     = TestInstructions.TestInstructionTypeName_SubCustody_SendOnMQTypeMT
+	testInstructionName                                  TypeAndStructs.TestInstructionNameType = "SendMT540"
+	testInstructionDescription                           string                                 = "Sends a MT540 message on MQ"
+	testInstructionMouseOverText                         string                                 = "Sends a MT540 message on MQ"
+	testInstructionDeprecated                            bool                                   = false
+	testInstructionEnabled                               bool                                   = true
+	testInstructionMajorVersionNumber                    int                                    = 1
+	testInstructionMinorVersionNumber                    int                                    = 0
+	testInstructionColor                                 TypeAndStructs.ColorType               = "#09AA4DAA"
+	tCRuleDeletion                                       TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion020"
+	tCRuleSwap                                           TypeAndStructs.TCRuleSwapType          = "TCRuleSwap020"
+	testInstructionCreatingTimeStamp                     TypeAndStructs.UpdatedTimeStampType    = "2023-11-27 13:00:00"
+	expectedMaxTestInstructionExecutionDurationInSeconds int64                                  = 30
+)
+
 const (
 
 	// *************************************
 	// *** TestInstruction *** 'SendMT540'
-	TestInstructionUUID_SubCustody_SendMT540               TypeAndStructs.OriginalElementUUIDType = fixedValuesOverVersions.TestInstructionUUID_SubCustody_SendMT540
-	TestInstructionName_SubCustody_SendMT540               TypeAndStructs.TestInstructionNameType = "SendMT540"
-	TestInstructionTypeUUID_SubCustody_SendMT540                                                  = TestInstructions.TestInstructionTypeUUID_SubCustody_SendOnMQTypeMT
-	TestInstructionTypeName_SubCustody_SendMT540                                                  = TestInstructions.TestInstructionTypeName_SubCustody_SendOnMQTypeMT
-	TestInstructionDescription_SubCustody_SendMT540        string                                 = "Sends a MT540 message on MQ"
-	TestInstructionMouseOverText_SubCustody_SendMT540      string                                 = "Sends a MT540 message on MQ"
-	TestInstructionDeprecated_SubCustody_SendMT540         bool                                   = false
-	TestInstructionEnabled_SubCustody_SendMT540            bool                                   = true
-	TestInstructionMajorVersionNumber_SubCustody_SendMT540 int                                    = 1
-	TestInstructionMinorVersionNumber_SubCustody_SendMT540 int                                    = 0
-	TestInstructionColor_SubCustody_SendMT540              TypeAndStructs.ColorType               = "#09AA4DAA"
-	TCRuleDeletion_SubCustody_SendMT540                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion020"
-	TCRuleSwap_SubCustody_SendMT540                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap020"
-	TestInstructionCreatingTimeStamp                       TypeAndStructs.UpdatedTimeStampType    = "2023-11-27 13:00:00"
-	ExpectedMaxTestInstructionExecutionDurationInSeconds   int64                                  = 30
+	TestInstructionUUID_SubCustody_SendMT540                                  TypeAndStructs.OriginalElementUUIDType = testInstructionUUID
+	TestInstructionName_SubCustody_SendMT540                                  TypeAndStructs.TestInstructionNameType = testInstructionName
+	TestInstructionTypeUUID_SubCustody_SendMT540                                                                     = testInstructionTypeUUID
+	TestInstructionTypeName_SubCustody_SendMT540                                                                     = testInstructionTypeName
+	TestInstructionDescription_SubCustody_SendMT540                           string                                 = testInstructionDescription
+	TestInstructionMouseOverText_SubCustody_SendMT540                         string                                 = testInstructionMouseOverText
+	TestInstructionDeprecated_SubCustody_SendMT540                            bool                                   = testInstructionDeprecated
+	TestInstructionEnabled_SubCustody_SendMT540                               bool                                   = testInstructionEnabled
+	TestInstructionMajorVersionNumber_SubCustody_SendMT540                    int                                    = testInstructionMajorVersionNumber
+	TestInstructionMinorVersionNumber_SubCustody_SendMT540                    int                                    = testInstructionMinorVersionNumber
+	TestInstructionColor_SubCustody_SendMT540                                 TypeAndStructs.ColorType               = testInstructionColor
+	TCRuleDeletion_SubCustody_SendMT540                                       TypeAndStructs.TCRuleDeletionType      = tCRuleDeletion
+	TCRuleSwap_SubCustody_SendMT540                                           TypeAndStructs.TCRuleSwapType          = tCRuleSwap
+	TestInstructionCreatingTimeStamp_SubCustody_SendMT540                     TypeAndStructs.UpdatedTimeStampType    = testInstructionCreatingTimeStamp
+	ExpectedMaxTestInstructionExecutionDurationInSeconds_SubCustody_SendMT540 int64                                  = expectedMaxTestInstructionExecutionDurationInSeconds
 
+	// DropZone // CHANGE HERE
 	// *** DropZone *** 'SendMT540_ExpectsToSucceed'
 	TestInstructionDropZoneUUID_SubCustody_SendMT540_ExpectsToSucceed        TypeAndStructs.DropZoneUUIDType = "ae344db4-2d34-474e-bd91-1b24ac408b75"
 	TestInstructionDropZoneName_SubCustody_SendMT540_ExpectsToSucceed        TypeAndStructs.DropZoneNameType = "SendMT540_ExpectsToSucceed"
@@ -40,8 +68,8 @@ const (
 	TestInstructionDropZoneMouseOver_SubCustody_SendMT540_ExpectsToSucceed   string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
 	TestInstructionDropZoneColor_SubCustody_SendMT540_ExpectsToSucceed       TypeAndStructs.ColorType        = "#09AA4DAA"
 
-	// Attribute - 'ExpectedToBePassed'
-	TestInstructionAttributeUUID_SubCustody_SendMT540_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = "3b10634a-aaf5-4b62-89e6-90011d76b21d" //TestInstructionAttributeUUID_SubCustody_ExpectedToBePassed
+	// Attribute  - SendMT540 - 'ExpectedToBePassed'
+	TestInstructionAttributeUUID_SubCustody_SendMT540_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = "3b10634a-aaf5-4b62-89e6-90011d76b21d"
 	TestInstructionAttributeName_SubCustody_SendMT540_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeName_SubCustody_ExpectedToBePassed
 	TestInstructionAttributeType_SubCustody_SendMT540_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_SubCustody_ExpectedToBePassed
 	TestInstructionAttributeActionCommand_SubCustody_SendMT540_ExpectedToBePassed      TypeAndStructs.AttributeActionCommandType       = Domains.AttributeActionCommand_USE_DROPZONE_VALUE_FOR_ATTRIBUTE
@@ -50,6 +78,32 @@ const (
 	TestInstructionAttributeDescription_SubCustody_SendMT540_ExpectedToBePassed        string                                          = "Should the TestInstruction execution to be expected to succeed or not"
 	TestInstructionAttributeMouseOverText_SubCustody_SendMT540_ExpectedToBePassed      string                                          = "Should the TestInstruction execution to be expected to succeed or not"
 )
+
+/*
+// var TestInstructionAttribute_SubCustody_SendMT540_ExpectedToBePassed *TypeAndStructs.TestInstructionAttributeStruct
+var TestInstructionAttribute_SubCustody_SendMT540_ExpectedToBePassed = &TypeAndStructs.TestInstructionAttributeStruct{
+	DomainUUID:                                    domainUUID,
+	DomainName:                                    domainName,
+	TestInstructionUUID:                           testInstructionUUID,
+	TestInstructionName:                           testInstructionName,
+	TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_SubCustody_SendMT540_ExpectedToBePassed,
+	TestInstructionAttributeName:                  TestInstructionAttributeName_SubCustody_SendMT540_ExpectedToBePassed,
+	TestInstructionAttributeDescription:           TestInstructionAttributeDescription_SubCustody_SendMT540_ExpectedToBePassed,
+	TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_SubCustody_SendMT540_ExpectedToBePassed,
+	TestInstructionAttributeTypeUUID:              TestInstructions.TestInstructionAttributeTypeUUID_SubCustody_ExpectedToPass,
+	TestInstructionAttributeTypeName:              TestInstructions.TestInstructionAttributeTypeName_SubCustody_ExpectedToPass,
+	TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
+	TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUID_NO_VALUE,
+	TestInstructionAttributeVisible:               true,
+	TestInstructionAttributeEnabled:               true,
+	TestInstructionAttributeMandatory:             true,
+	TestInstructionAttributeVisibleInTestCaseArea: false,
+	TestInstructionAttributeIsDeprecated:          false,
+	TestInstructionAttributeInputMask:             "^(true|false)$",
+	TestInstructionAttributeType:                  TestInstructionAttributeType_SubCustody_SendMT540_ExpectedToBePassed,
+}
+
+*/
 
 // TestInstruction_SubCustody_SendMT540
 // Variable that holds the data for the TestInstruction
@@ -104,7 +158,7 @@ func Initate_TestInstruction_SubCustody_SendMT540() *TestInstructionAndTestInstu
 		LocalExecutionMethods: TestInstructionAndTestInstuctionContainerTypes.AnyType{
 			&LocalExecutionMethods.MethodsForLocalExecutionsStruct{
 				LocalParametersUsedInRunTime: &LocalExecutionMethods.LocalParametersUsedInRunTimeStruct{
-					ExpectedTestInstructionExecutionDurationInSeconds: ExpectedMaxTestInstructionExecutionDurationInSeconds,
+					ExpectedTestInstructionExecutionDurationInSeconds: ExpectedMaxTestInstructionExecutionDurationInSeconds_SubCustody_SendMT540,
 				},
 				TestInstructionsMap: &testInstructionsMap},
 		},
@@ -112,53 +166,53 @@ func Initate_TestInstruction_SubCustody_SendMT540() *TestInstructionAndTestInstu
 
 	// TestInstruction - SendMT540
 	TestInstruction_SubCustody_SendMT540.TestInstruction = &TypeAndStructs.TestInstructionStruct{
-		DomainUUID:                   DomainData.DomainUUID_SubCustody,
-		DomainName:                   DomainData.DomainName_SubCustody,
-		ExecutionDomainUUID:          DomainData.ExecutionDomainUUID_SubCustody_OnPrem,
-		ExecutionDomainName:          DomainData.ExecutionDomainName_SubCustody_OnPrem,
-		TestInstructionUUID:          TestInstructionUUID_SubCustody_SendMT540,
-		TestInstructionName:          TestInstructionName_SubCustody_SendMT540,
-		TestInstructionTypeUUID:      TestInstructionTypeUUID_SubCustody_SendMT540,
-		TestInstructionTypeName:      TestInstructionTypeName_SubCustody_SendMT540,
-		TestInstructionDescription:   TestInstructionDescription_SubCustody_SendMT540,
-		TestInstructionMouseOverText: TestInstructionMouseOverText_SubCustody_SendMT540,
-		Deprecated:                   TestInstructionDeprecated_SubCustody_SendMT540,
-		Enabled:                      TestInstructionEnabled_SubCustody_SendMT540,
-		MajorVersionNumber:           TestInstructionMajorVersionNumber_SubCustody_SendMT540,
-		MinorVersionNumber:           TestInstructionMinorVersionNumber_SubCustody_SendMT540,
-		UpdatedTimeStamp:             TestInstructionCreatingTimeStamp,
+		DomainUUID:                   domainUUID,
+		DomainName:                   domainName,
+		ExecutionDomainUUID:          executionDomainUUID,
+		ExecutionDomainName:          executionDomainName,
+		TestInstructionUUID:          testInstructionUUID,
+		TestInstructionName:          testInstructionName,
+		TestInstructionTypeUUID:      testInstructionTypeUUID,
+		TestInstructionTypeName:      testInstructionTypeName,
+		TestInstructionDescription:   testInstructionDescription,
+		TestInstructionMouseOverText: testInstructionMouseOverText,
+		Deprecated:                   testInstructionDeprecated,
+		Enabled:                      testInstructionEnabled,
+		MajorVersionNumber:           testInstructionMajorVersionNumber,
+		MinorVersionNumber:           testInstructionMinorVersionNumber,
+		UpdatedTimeStamp:             testInstructionCreatingTimeStamp,
 	}
 
 	// BasicTestInstructionInformation - SendMT540
 	TestInstruction_SubCustody_SendMT540.BasicTestInstructionInformation = &TypeAndStructs.BasicTestInstructionInformationStruct{
-		DomainUUID:                   DomainData.DomainUUID_SubCustody,
-		DomainName:                   DomainData.DomainName_SubCustody,
-		ExecutionDomainUUID:          DomainData.ExecutionDomainUUID_SubCustody_OnPrem,
-		ExecutionDomainName:          DomainData.ExecutionDomainName_SubCustody_OnPrem,
-		TestInstructionUUID:          TestInstructionUUID_SubCustody_SendMT540,
-		TestInstructionName:          TestInstructionName_SubCustody_SendMT540,
-		TestInstructionTypeUUID:      TestInstructionTypeUUID_SubCustody_SendMT540,
-		TestInstructionTypeName:      TestInstructionTypeName_SubCustody_SendMT540,
-		Deprecated:                   TestInstructionDeprecated_SubCustody_SendMT540,
-		MajorVersionNumber:           TestInstructionMajorVersionNumber_SubCustody_SendMT540,
-		MinorVersionNumber:           TestInstructionMinorVersionNumber_SubCustody_SendMT540,
-		UpdatedTimeStamp:             TestInstructionCreatingTimeStamp,
-		TestInstructionColor:         TestInstructionColor_SubCustody_SendMT540,
-		TCRuleDeletion:               TCRuleDeletion_SubCustody_SendMT540,
-		TCRuleSwap:                   TCRuleSwap_SubCustody_SendMT540,
-		TestInstructionDescription:   TestInstructionDescription_SubCustody_SendMT540,
-		TestInstructionMouseOverText: TestInstructionMouseOverText_SubCustody_SendMT540,
-		Enabled:                      TestInstructionEnabled_SubCustody_SendMT540,
+		DomainUUID:                   domainUUID,
+		DomainName:                   domainName,
+		ExecutionDomainUUID:          executionDomainUUID,
+		ExecutionDomainName:          executionDomainName,
+		TestInstructionUUID:          testInstructionUUID,
+		TestInstructionName:          testInstructionName,
+		TestInstructionTypeUUID:      testInstructionTypeUUID,
+		TestInstructionTypeName:      testInstructionTypeName,
+		Deprecated:                   testInstructionDeprecated,
+		MajorVersionNumber:           testInstructionMajorVersionNumber,
+		MinorVersionNumber:           testInstructionMinorVersionNumber,
+		UpdatedTimeStamp:             testInstructionCreatingTimeStamp,
+		TestInstructionColor:         testInstructionColor,
+		TCRuleDeletion:               tCRuleDeletion,
+		TCRuleSwap:                   tCRuleSwap,
+		TestInstructionDescription:   testInstructionDescription,
+		TestInstructionMouseOverText: testInstructionMouseOverText,
+		Enabled:                      testInstructionEnabled,
 	}
 
 	// DropZone 'SendMT540_ExpectsToSucceed'
 	// ImmatureTestInstructionInformation  - DropZone: SendMT540_ExpectsToSucceed, Attr: ExpectedToBePassed
 	var TestInstruction_SubCustody_SendMT540_ExpectedToBePassed *TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_SubCustody_SendMT540_ExpectedToBePassed = &TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   DomainData.DomainUUID_SubCustody,
-		DomainName:                   DomainData.DomainName_SubCustody,
-		TestInstructionUUID:          TestInstructionUUID_SubCustody_SendMT540,
-		TestInstructionName:          TestInstructionName_SubCustody_SendMT540,
+		DomainUUID:                   domainUUID,
+		DomainName:                   domainName,
+		TestInstructionUUID:          testInstructionUUID,
+		TestInstructionName:          testInstructionName,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_SubCustody_SendMT540_ExpectsToSucceed,
 		DropZoneName:                 TestInstructionDropZoneName_SubCustody_SendMT540_ExpectsToSucceed,
 		DropZoneDescription:          TestInstructionDropZoneDescription_SubCustody_SendMT540_ExpectsToSucceed,
@@ -179,10 +233,10 @@ func Initate_TestInstruction_SubCustody_SendMT540() *TestInstructionAndTestInstu
 	// TestInstruction Attribute - 'ExpectedToBePassed'
 	var TestInstructionAttribute_SubCustody_SendMT540_ExpectedToBePassed *TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_SubCustody_SendMT540_ExpectedToBePassed = &TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    DomainData.DomainUUID_SubCustody,
-		DomainName:                                    DomainData.DomainName_SubCustody,
-		TestInstructionUUID:                           TestInstructionUUID_SubCustody_SendMT540,
-		TestInstructionName:                           TestInstructionName_SubCustody_SendMT540,
+		DomainUUID:                                    domainUUID,
+		DomainName:                                    domainName,
+		TestInstructionUUID:                           testInstructionUUID,
+		TestInstructionName:                           testInstructionName,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_SubCustody_SendMT540_ExpectedToBePassed,
 		TestInstructionAttributeName:                  TestInstructionAttributeName_SubCustody_SendMT540_ExpectedToBePassed,
 		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_SubCustody_SendMT540_ExpectedToBePassed,
@@ -215,15 +269,14 @@ func Initate_TestInstruction_SubCustody_SendMT540() *TestInstructionAndTestInstu
 	}
 
 	testApiEngineMethodAttributeMap[TestInstructionAttributeUUID_SubCustody_SendMT540_ExpectedToBePassed] = tempTestApiEngineAttributeExpectedToBePassed
-	//TestInstruction_SubCustody_SendMT540.LocalExecutionMethods.TestInstructionsMap.Attributes[TestInstructionAttributeUUID_SubCustody_SendMT540_ExpectedToBePassed] = tempTestApiEngineAttributeExpectedToBePassed
 
 	// ImmatureElementModel - SendMT540
 	var TestInstructionImmatureElementModel_SubCustody_SendMT540 *TypeAndStructs.ImmatureElementModelMessageStruct
 	TestInstructionImmatureElementModel_SubCustody_SendMT540 = &TypeAndStructs.ImmatureElementModelMessageStruct{
-		DomainUUID:               DomainData.DomainUUID_SubCustody,
-		DomainName:               DomainData.DomainName_SubCustody,
-		ImmatureElementUUID:      TestInstructionUUID_SubCustody_SendMT540,
-		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionName_SubCustody_SendMT540),
+		DomainUUID:               domainUUID,
+		DomainName:               domainName,
+		ImmatureElementUUID:      testInstructionUUID,
+		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(testInstructionName),
 		PreviousElementUUID:      TestInstructionUUID_SubCustody_SendMT540,
 		NextElementUUID:          TestInstructionUUID_SubCustody_SendMT540,
 		FirstChildElementUUID:    TestInstructionUUID_SubCustody_SendMT540,
